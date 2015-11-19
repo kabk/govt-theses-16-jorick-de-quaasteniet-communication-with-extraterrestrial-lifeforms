@@ -1,0 +1,322 @@
+
+
+
+body{  color:#000; background-color:#fff; }
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-left:0px;
+
+}
+
+#footnote:hover{
+  color:#ff1;
+}
+
+#footnote:hover ~ #note {
+  opacity:0.9;
+}
+
+#chapter{text-decoration: }
+
+h4 {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000;
+  line-height: 1px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+  Modules
+
+ */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #000;
+  line-height: 05px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 300;
+  width: 60%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 0px 0;
+}
+section.module.parallax {
+  height: 750px;
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  
+  padding-top:200px;
+  
+  font-size:10px; 
+  color:#fff; 
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  line-height: 65px;
+  
+  text-align: center;
+  
+  
+     
+  
+}
+
+section.module.parallax h3 {
+  font-size: 70px;
+  line-height: 80px;
+  padding-top:80px;
+  color:#000; 
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  font-weight: bold;
+  
+  text-align: left;
+ 
+  /*
+  text-shadow: 30px 20px 7px rgba(0, 0, 0, 1);   
+  */
+}
+
+
+/*
+section.module.parallax-1 {
+  background-image: url("images/tumblr_nkp568LZoh1ups3geo3_500.jpg");
+}
+*/
+section.module.parallax-2 {
+  background-image: url("images/Pioneer_F_Plaque_Symbology_-_GPN-2000-001623.jpg");
+
+}
+
+section.module.parallax-3 {
+  background-image: url("images/marsattacks.gif");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 20px;
+  }
+  section.module p {
+    font-size: 20px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+  section.module.parallax h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+
+
+/* nav bar */
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 10%;
+  height: 0px;
+  background-color: #000;
+}
+
+
+
+
+
+
+.fixed-nav-bar ul{
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+
+
+}
+
+.fixed-nav-bar li {
+    display: block;
+    line-height: 25px;
+
+   
+}
+.fixed-nav-bar li a {
+	font-size:20px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+ 
+  /*
+  text-shadow: 30px 20px 7px rgba(0, 0, 0, 1);
+  */
+}
+
+
+
+
+
+/*scroll indicator*/
+
+.progress-indicator {
+    position: fixed;
+
+    top: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+}
+.progress-indicator2 {
+  
+position: fixed;
+    top: 40px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+}
+.progress-count {
+  font-size:22px; 
+  color:#fff;
+  font-family: 'PT Serif', serif; font-weight:700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+.fixed-nav-bar span{
+
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #000;
+  line-height: 0px;
+  text-decoration: none;
+
+}
+
+ 
+svg {
+    position: absolute;
+
+
+}
+
+circle {
+    fill: #000;);
+}
+
+
+
+
+
+/*
+
+Tooltip images
+
+*/
+
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+
+
+
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:20px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:45px; 
+    margin-left:-160px;
+    width:300px; 
+  font-family:'Inconsolata';
+  color:black;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:13px;
+  
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; 
+    background:red;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+}
+
+a.tooltip2 {outline:none; }
+a.tooltip strong2 {line-height:20px;}
+a.tooltip2:hover {text-decoration:none;} 
+a.tooltip2 span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:32px; 
+    margin-left:-160px;
+    width:300px; 
+  font-family:'Inconsolata';
+  color:white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:13px;
+
+  
+  
+}
+a.tooltip2:hover span{
+    display:inline; position:absolute; 
+    background:black;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+}
+
+
+
+
