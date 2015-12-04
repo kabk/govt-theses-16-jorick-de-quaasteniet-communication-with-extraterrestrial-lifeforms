@@ -6,11 +6,22 @@
 WORDS
 
 */
-
+.jorick{
+  color:green;
+  font-family: "arial";
+}
+.alice{
+  color:red;
+  font-family: "arial";
+}
+.sophie{
+  color:blue;
+  font-family: "arial";
+}
 
 li.bold{
 
-color:pink;
+
  font-size: 60px;
 position:fixed;
 font-family: "Merriweather Sans";
