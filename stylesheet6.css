@@ -1,0 +1,287 @@
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+body{  
+  color:#000; 
+  font-size:25px
+
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Georgia;
+  text-decoration: none;
+}
+
+span{
+  font-size: 100px;
+  text-decoration: none;
+}
+
+
+.universe{
+  width:10000px; height:10000px; overflow:scroll;
+  background-color:white;
+  z-index:-99999999;
+
+}
+
+
+.next {
+  color: blue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+#startid {
+position:absolute; 
+  content: " "; 
+  margin-top:-300px; 
+  margin-left:-300px;
+  visibility: hidden; 
+}
+#start {
+  z-index:0;
+  position:absolute;
+  margin-top:100px;
+  margin-left:600px;
+  width:750px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+  padding:20px;
+  background-color: white;
+}
+
+
+
+
+#abstractid { 
+  position:absolute;
+  content: " "; 
+  margin-top:7900px; 
+  margin-left:7600px;
+  visibility: hidden; 
+
+}
+
+#abstract {
+  position:absolute;
+  margin-top:8000px;
+  margin-left:8000px;
+  width:550px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+  padding:20px;
+  background-color: white;
+}
+
+
+
+#introductionid {
+ position:absolute;
+  content: " "; 
+  margin-top:2280px; 
+  margin-left:3700px;
+  visibility: hidden; 
+}
+#introduction {
+  position:absolute; 
+  margin-top:2300px;
+  margin-left:4000px;
+  width:750px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+  padding:20px;
+  background-color: white;
+}
+
+
+#chapter1id {
+ position:absolute;
+  content: " "; 
+  margin-top:2900px; 
+  margin-left:2700px;
+  visibility: hidden; 
+}
+
+#chapter1 {
+  position:absolute;
+  margin-top:3000px;
+  margin-left:3000px;
+  width:400px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+  padding:20px;
+}
+
+#chapter2id {
+ position:absolute;
+  content: " "; 
+  margin-top:700px; 
+  margin-left:6700px;
+  visibility: hidden; 
+}
+
+#chapter2 {
+  position:absolute;
+  margin-top:800px;
+  margin-left:7000px;
+  width:400px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+  padding:20px;
+}
+
+
+
+
+
+
+
+
+
+h4 {
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #000;
+  
+}
+
+
+
+
+/* nav bar */
+
+.nav-bar {
+  position: fixed;
+  top:40px;
+  padding-left: 25px;
+  z-index: 9999;
+  width: 180px;
+  height: 0px;
+  background-color: #000;
+  background-color: white;
+}
+
+.nav-bar ul{
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+    padding-bottom:30px;
+    background-color: white;
+    box-shadow: 15px 15px 55px rgba(0, 0, 0, 1);
+}
+
+.nav-bar li {
+    display: block;
+    line-height: 40px;
+    background-color: white;   
+}
+
+
+.nav-bar li a {
+  text-decoration: none;
+	font-size:28px;
+	color: #000;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+Tooltip images
+
+*/
+
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+
+
+
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:20px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:34px; 
+    margin-left:0px;
+    width:300px; 
+  font-family:'Inconsolata';
+  color:black;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:12px;
+  
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; 
+    background:red;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+}
+
+a.tooltip2 {outline:none; }
+a.tooltip2 strong {line-height:20px;}
+a.tooltip2:hover {text-decoration:none;} 
+a.tooltip2 span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:40px; 
+    margin-left:-200px;
+    width:300px; 
+  font-family:'Inconsolata';
+  color:white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:12px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 1);
+
+  
+  
+}
+
+a.tooltip2 span img{
+
+}
+
+a.tooltip2 span iframe{
+margin-left:-80px;
+box-shadow: 19px 10px 12px rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+a.tooltip2:hover span{
+    display:inline; position:absolute; 
+    background:blue;
+    text-decoration: none;
+}
+
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+}
+
+
+
