@@ -1,7 +1,7 @@
 #spacecraft{
 
-top:200px;
-left:850px;
+top:9630px;
+left:10100px;
   z-index:1;
   height:200px;
 position: absolute;
@@ -14,18 +14,18 @@ position: absolute;
 }
 
 @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(600px) rotate(0deg); } 
-    to   { -webkit-transform: rotate(360deg) translateX(600px) rotate(-360deg); }
+    from { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); } 
+    to   { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
 }
 
 @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(600px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { -moz-transform: rotate(0deg) translateX(400px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
 }
 
 @-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(600px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(1500px) rotate(-360deg); }
+    from { -o-transform: rotate(0deg) translateX(400px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
 }
 
 @keyframes myOrbit {
@@ -33,6 +33,7 @@ position: absolute;
     to   { transform: rotate(360deg) translateX(400px) rotate(-360deg); }
     
 
-    0% { z-index: 100; }
-  	30% { z-index: 0; }
+    80% { z-index: 0; }
+    50% { z-index: 10; }
+  	0% { z-index: 0; }
 }
