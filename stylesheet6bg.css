@@ -449,20 +449,19 @@ footnotes that fade-out
 
 
 
-@media (max-width: 10000px) and (min-width: 1920px) {
-  html {
-   -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      transform: scale(1.2);
+@media (max-width: 10000px) and (min-width: 1700px) {
+  .universe {
+   -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      transform: scale(1);
   }
 }
 
-
-
-@media (max-width: 1480px) and (min-width: 1066px) {
-  html {
-   -webkit-transform: scale(0,75);
+@media (max-width: 1700px) and (min-width: 700px) {
+  .universe {
+   -webkit-transform: scale(0.75);
       -moz-transform: scale(0.75);
       transform: scale(0.75);
   }
 }
+
