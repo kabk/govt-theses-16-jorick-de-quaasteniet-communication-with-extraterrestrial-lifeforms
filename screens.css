@@ -17,19 +17,27 @@
 
 @media screen and (max-width: 700px) {
     /* we want smaller headings*/
-    
+    .universe{background-color: white; background-image:none;}
     p {font-size: 18px; line-height: 22px;}
     .bgtitle{font-size:38px;}
     .firstline{font-size: 28px;}
     h3{font-size: 22px;}
     .container{width:400px; display:}
-    .zonnetje{position: fixed;}
+    .zonnetje{
+      position: fixed;
+      top:20px;
+      padding-left: 25px;
+      z-index: 9999;
+      height: 0px;
+      float: left; }
     .zonnetje2{visibility: hidden;}
+    .circle{color:black;}
+    
 
     .next a{font-size: 30px;}
     #start{width:200px;}
-    #main_link1{font-size: 38px;}
-
+    #main_link1{font-size: 52px;color:black; }
+    #first_next a{color:black;}
 
     #startid{margin-left:4500px;}
     #abstractid{margin-left:6800px;}
