@@ -20,8 +20,8 @@ body{
   z-index:-999;
 }
 
-.next{text-align: center;}
-.next a{text-decoration: none; font-size: 60px; color:white; text-align: right;}
+.next{text-align: left;}
+.next a{text-decoration: none; font-size: 60px; color:white; text-align: left;}
 
 
 
@@ -70,14 +70,16 @@ p{
   padding:0px;
   font-family:Arial;
   font-size: 80px;
-  color: #000; 
+  color:yellow;
 }
 
 
 
 
-#main_titel{font-size: 100px; color:black; font-family: "Lucida Console", Monaco, monospace; font-weight: bold; z-index: 20; color:white;}
-#eerste{text-align: center; color:white;}
+#main_titel{font-size: 100px; color:black; font-family:'Inconsolata'; font-weight: bold; z-index: 20; color:white; padding:;}
+#main_link1{width:300px; display: inline-block; }
+#main_link2{width:300px; display: inline-block; }
+#eerste{text-align: left; color:white;}
 .bgtitle{
   font-family: 'Exo', sans-serif;
   float:left;
@@ -93,10 +95,10 @@ p{
   margin-bottom: 20px;
   text-align: center;
 }
-.firstline{font-family: 'Merriweather', serif;
+.firstline{
   line-height: 33px;
   font-style: italic;
-  font-weight: bold;
+  
   font-size:45px;
   position: relative;}
 
@@ -105,18 +107,18 @@ p{
 position:absolute; 
   content: " "; 
   margin-top:4550px; 
-  margin-left:4300px;
+  margin-left:4150px;
   visibility: hidden; 
 
 }
-#start {
-  background-image: url("images/animation.gif");
 
+#start {
   z-index:20;
   position:absolute;
   margin-top:4650px;
-  margin-left:4700px;
-  padding:20px;
+  margin-left:4550px;
+  padding:80px;
+  width:650px;
   border: 1px solid white;
 }
 
@@ -184,7 +186,7 @@ position:absolute;
   position:absolute;
   content: " "; 
   margin-top:600px; 
-  margin-left:5600px;
+  margin-left:5800px;
   visibility: hidden; 
 }
 
@@ -258,7 +260,7 @@ position:absolute;
  position:absolute;
   content: " "; 
   margin-top:7900px; 
-  margin-left:7100px;
+  margin-left:7200px;
   visibility: hidden; 
 }
 
@@ -298,7 +300,6 @@ position:absolute;
   padding-left: 25px;
   z-index: 9999;
   height: 0px;
-  background-color: white;
   float: left; 
 }
 .zonnetje a{text-decoration: none;}
@@ -369,7 +370,7 @@ position:absolute;
 }
 
 .nav-bar2 ul{
-    background-color: rgba(0, 198, 44, 0.5);
+    background-color: rgba(0, 120, 255, 0.6);
     float: left;
     width: 100%;
     padding-top: 10px;
@@ -416,7 +417,7 @@ footnotes that fade-out
 .hidden{
   position:absolute;
   opacity:0;
-  background-color: rgba(85, 160, 229, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   transition:2s 5s; 
   padding:12px 20px;
   left:-500%;  
@@ -449,19 +450,5 @@ footnotes that fade-out
 
 
 
-@media (max-width: 10000px) and (min-width: 1700px) {
-  .universe {
-   -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      transform: scale(1);
-  }
-}
 
-@media (max-width: 1700px) and (min-width: 700px) {
-  .universe {
-   -webkit-transform: scale(0.75);
-      -moz-transform: scale(0.75);
-      transform: scale(0.75);
-  }
-}
 

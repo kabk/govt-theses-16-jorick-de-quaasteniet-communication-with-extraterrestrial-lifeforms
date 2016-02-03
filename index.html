@@ -34,13 +34,14 @@
         <meta property="dc:created" content="2015-12-05T00:00:00Z" />
         <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
 	
-        <meta name="viewport" content="width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="max-width=1000px, initial-scale=0.5"/>
+
 
 
     <link rel="stylesheet" href="stylesheet6bg.css">
-    <link rel="stylesheet" href="imagesbg.css">
-    <link rel="stylesheet" media="printbg" href="print.css">
+    <link rel="stylesheet" href="imagesbg.css"> 
+    <link rel="stylesheet" href="screens.css">
+    <link rel="stylesheet" media="print" href="printbg.css">
 
 
  
@@ -74,9 +75,9 @@
 	
     
 </head>
-<body onload="extraterrestrial()">
+<body>
 
-<script>
+<script onload="extraterrestrial()">
 function extraterrestrial() {
     document.getElementById("load").click();
 }
@@ -196,21 +197,21 @@ $(document).ready(function(){
 
 <div class="universe">
 
-
-
-
+<!--
 <img src="images/voyager.png" id="spacecraft">
-
+-->
 
 <div id="startid">
 </div>
 
 <div id="start">
   <a name="start" class="print">
-<span id="main_titel">EXTRA&nbsp;&nbsp;&nbsp;COMM<br />TERRE&nbsp;&nbsp;&nbsp;UNIC<br />STRIAL&nbsp;&nbsp;ATION<br /></span> 
+<span id="main_titel">
+<div id="main_link1">EXTRA<br />TERRE<br />STRIAL</span>
+</div>
 
-
-
+<div id="main_link1">MONO<br />LOGU<br />ES
+</div>
 
 <h1 class="next"> <a href="#abstractid">  >&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;>   </a></h1>
 </div>
@@ -233,7 +234,11 @@ $(document).ready(function(){
 <p>
 <span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="images/nasa.png"><br />National Aeronautics and Space Administration</span></a> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="images/pioneer_family.jpg"><br />A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <br /> <i>Image date: March 11, 1982.<br /> Image Credit: NASA</i>
 </span></a> spacecrafts. Both of them had a gold-anodized <span class="hide">aluminium plaque</span>. <span class="hidden"><img src="random/abstract/Pioneer-Plaque.jpeg"><br />The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan. <a href="www.nasa.gov/centers/ames/missions/archive/pioneer.html">source</a></span> 
- on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any extraterrestrial life form that might come upon them. Some years later, in 1977, NASA launched the <span class="hide">Voyager probes </span><span class="hidden"><img src="random/abstract/voyager.jpg">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. <a href="http://voyager.jpl.nasa.gov/">source</a></span> 
+ on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any <span class="hide">extraterrestrial</span><span class="hidden">ex·tra·ter·res·tri·al  (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
+<i>adj.</i><br />
+Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
+<i>n.</i><br />
+An extraterrestrial being or life form. </span> life form that might come upon them. Some years later, in 1977, NASA launched the <span class="hide">Voyager probes </span><span class="hidden"><img src="random/abstract/voyager.jpg">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. <a href="http://voyager.jpl.nasa.gov/">source</a></span> 
  On board they included golden <span class="hide">phonograph records</span><span class="hidden"><img src="random/abstract/The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html">source</a></span>
  containing a selection of <span class="hide">sounds</span><span class="hidden"><iframe width="100%" height="450" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/129030648&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe></iframe></span> and <span class="hide">images</span><span class="hidden"><img src="images/animation.gif"> </span> selected to portray our way of living on earth. The launching of these spacecraft could be compared to throwing a bottle with a message in the ocean, hoping that someone, or something, will encounter it and be able to read the message.</p>
 
@@ -552,6 +557,7 @@ www.virgingalactic.com
 
 <div id="printpage">
 <a href="printguide">Print guide</a>
+<li><input type="button" class="button" onClick="window.print ()" value="Print"></li>
 </div>
 
 
