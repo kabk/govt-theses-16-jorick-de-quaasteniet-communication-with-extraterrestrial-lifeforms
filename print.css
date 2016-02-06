@@ -46,10 +46,8 @@ p{
 
 .bgtitle{
   font-family: 'Exo', sans-serif;
-  display: inline-block;
-  position: static;
   float:left;
-  font-size:400px;
+  font-size:100px;
   color:black;
   border: 1px solid black;
   padding-left:10px;

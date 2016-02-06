@@ -1,0 +1,174 @@
+
+@page {
+    size: 10000px 10000px;
+    margin-left: 40mm;
+    margin-bottom:30mm;
+    margin-top:10mm;
+}
+
+h2 {
+    color:black;
+}
+
+body{  
+  color:#fff; 
+  font-size:15px;
+  z-index:-999;
+}
+
+h3 {
+  font-size:27px;
+  font-family: 'Inconsolata';
+  font-weight: normal;
+  color:black;
+}
+
+
+p{
+  font-family: Georgia;
+  line-height: 25px;
+  font-size:21px;
+  position: relative;
+}
+
+
+.hide{
+  color:black;
+}
+
+#main_link1{width:300px; display: inline-block; border: 1px solid black; padding:10px; background-color: white; color:black;}
+.next{color:black;}
+
+
+.bgtitle{
+  color:black;
+}
+
+.nav-bar2{display: none;}
+.nav-bar{display: none;}
+ul{display: none;}
+li{display: none;}
+
+.zonnetje{
+    display: none;
+}
+.zonnetje2{
+    display: none;
+}
+
+.universe{width:10000px; height:10000px; overflow:scroll;
+  z-index:0;
+  background-image:
+  radial-gradient(
+  circle closest-side,black,grey);
+}
+.container{
+  z-index:100;
+  width:800px;
+  position:absolute;
+  background-color: #fff;
+  padding-left:30px;
+  padding-right:40px;
+  padding-bottom:20px;
+  padding-top: 40px;
+  color:black;
+}
+
+
+
+#start {
+  z-index:20;
+  position:absolute;
+  margin-top:4650px;
+  margin-left:4550px;
+  padding:80px;
+  width:700px;
+  border: 1px solid black;
+}
+
+
+
+#abstract {
+    z-index:100;
+    background-color: white;
+    color:black;
+ margin-top:6000px;
+  margin-left:6800px;
+  
+}
+
+
+
+
+
+#introduction {
+  z-index:100;
+    background-color: white;
+    color:black;
+  margin-top:6400px;
+  margin-left:1400px;
+}
+
+
+
+
+#chapter1 {
+  z-index:100;
+    background-color: white;
+    color:black;
+  margin-top:1200px;
+  margin-left:8600px; 
+}
+
+
+
+#chapter2 {
+  margin-top:800px;
+  margin-left:1000px;
+}
+
+
+
+
+#chapter3 {
+
+  margin-top:700px;
+  margin-left:6100px;
+}
+
+
+
+#chapter4a {
+  margin-top:2700px;
+  margin-left:3100px;
+}
+
+
+
+#chapter4b {
+margin-top:1400px;
+  margin-left:4300px;
+}
+
+
+
+#chapter4c {
+
+ margin-top:6000px;
+  margin-left:4300px;
+}
+
+
+
+#conclusion {
+margin-top:400px;
+  margin-left:2400px;
+}
+
+
+
+#references {
+
+ margin-top:8000px;
+  margin-left:7500px;
+}
