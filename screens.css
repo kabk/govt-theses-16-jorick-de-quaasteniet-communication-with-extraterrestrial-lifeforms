@@ -15,6 +15,7 @@
 }
 
 
+
 @media screen and (max-width: 700px) {
     /* we want smaller headings*/
     .universe{background-color: grey; background-image:none;}
@@ -52,4 +53,5 @@
     transition:0s;
     left:10%;
     }
+    
     }

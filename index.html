@@ -42,13 +42,45 @@
     <!--  <link rel="stylesheet" type="text/css" href="printmap.css" media="print" />  -->
     
 
-    <link href='https://fonts.googleapis.com/css?family=Exo:600' rel='stylesheet' type='text/css'>
+    
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-   
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
 
+<script type='text/javascript'>//<![CDATA[
+window.onload=function(){
+//window.onload = function() {
+    var el = document.getElementById('random');
+    var mover = false, x, y, posx, posy, first = true;
+    el.onmousedown = function() {
+        mover = true;
+    };
+    el.onmouseup = function() {
+        mover = false;
+        first = true;
+    };
+    el.onmousemove = function(e) {
+        if (mover) {
+            if (first) {
+                x = e.offsetX;
+                y = e.offsetY;
+                first = false;
+            }
+            posx = e.pageX - x;
+            posy = e.pageY - y;
+            this.style.left = posx + 'px';
+            this.style.top = posy + 'px';
+        }
+    };
+//}
+}//]]> 
 
+</script>
+    
 
 
 
@@ -63,10 +95,54 @@
 	
 
 
+
+
+<script type="text/javascript">
+        function startDrag(e) {
+        
+        if (!e) {
+          var e = window.event;
+        }
+                if(e.preventDefault) e.preventDefault();
+        targ = e.target ? e.target : e.srcElement;
+        if (targ.className != 'random') {return};
+        
+          offsetX = e.clientX;
+          offsetY = e.clientY;
+
+        
+        if(!targ.style.left) { targ.style.left='0px'};
+        if (!targ.style.top) { targ.style.top='0px'};
+        coordX = parseInt(targ.style.left);
+        coordY = parseInt(targ.style.top);
+        drag = true;
+          document.onmousemove=dragDiv;
+                return false;
+        
+      }
+      function dragDiv(e) {
+        if (!drag) {return};
+        if (!e) { var e= window.event};
+        targ.style.left=coordX+e.clientX-offsetX+'px';
+        targ.style.top=coordY+e.clientY-offsetY+'px';
+        return false;
+      }
+      function stopDrag() {
+        drag=false;
+      }
+      window.onload = function() {
+        document.onmousedown = startDrag;
+        document.onmouseup = stopDrag;
+      }
+
+
+</script>
+
+
 	
     
 </head>
-<body onload="extraterrestrial()">
+<body>
 
 
 
@@ -214,7 +290,7 @@ so·lil·o·quy  (sə-lĭl′ə-kwē)<br /><br />
 1.<br /><br />
 a. A dramatic or literary form of discourse in which a character talks to himself or herself or reveals his or her thoughts when alone or unaware of the presence of other characters.<br /><br />
 b. A specific speech or piece of writing in this form.<br /><br />
-2. The act of speaking to oneself.
+2. The act of speaking to oneself.<br /><br /><i id="source">The Free Dictionary</i>
 </span>
 </div>
 
@@ -242,7 +318,7 @@ b. A specific speech or piece of writing in this form.<br /><br />
 <br /><br /><br /><br />
 <span class="bgtitle">A<br />B<br />S<br />T<br />R<br />A<br />C<br />T </span>
 <p>
-<span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="images/nasa.png"><br /> National Aeronautics and Space Administration</span> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="images/pioneer_family.jpg"><br />A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <br /> <i id="source">Image date: March 11, 1982.<br /> Image Credit: NASA</i>
+<span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="images/nasa.png"><br /> National Aeronautics and Space Administration</span><span id="sup">1</span> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="images/pioneer_family.jpg"><br />A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <br /> <i id="source">Image date: March 11, 1982.<br /> Image Credit: NASA</i>
 </span></a> spacecrafts. Both of them had a gold-anodized <span class="hide">aluminium plaque</span>. <span class="hidden"><img src="random/abstract/Pioneer-Plaque.jpeg"><br />The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan. <i id="source">Image Credit: NASA</i></span> 
  on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any <span class="hide">extraterrestrial</span><span class="hidden">ex·tra·ter·res·tri·al  (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
 <i>adj.</i><br />
@@ -257,8 +333,8 @@ But in the case of such an encounter, would these images and sounds be sufficien
 </h3>
 
 <p>
-In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. And who is to say whether these life forms are capable of communication? It might be bacteria, dwelling in the depths of <span class="hide">Titan</span><span class="hidden"><img src="random/abstract/Liquid_lakes_on_titan.jpg">Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells.<br /><i> Cassini radar image, 2006.</i><br />
-<a href="www.cosmosmagazine.com/space/could-there-be-life-titans-methane-sea">source</a></span>’s methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills. Apart from the possibilty that they exist, who is to say we will make first contact with them? They might innitiate contact. Will we be able to understand each other? Who decides on the content of our message? How important is our cultural context in such a message? 
+In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. And who is to say whether these life forms are capable of communication? It might be bacteria, dwelling in the depths of <span class="hide">Titan</span><span class="hidden"><img src="random/abstract/Liquid_lakes_on_titan.jpg">Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells.<br /><i id="source">Cassini radar image, 2006.</i><br />
+</span>’s methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p> <h3>Apart from the possibilty that they exist, who is to say we will make first contact with them? They might innitiate contact. Will we be able to understand each other? Who decides on the content of our message? How important is our cultural context in such a message? </h3><p>
     Until we actually do make contact, the answers to these questions will remain mostly unanswered. But, we can at least consider them, seeing as the search for answers to these questions can teach us a lot about our own ways of communication and the way we look at ourselves as a species. 
 </p>
 
@@ -291,7 +367,7 @@ In the last century, technological advancements have made it possible for humank
 
 <p>And when we finally do make contact, it will be an entirely new question on how we are going to communicate with one another. As of yet, there has been no hard evidence on the existence of extraterrestrial life, but it might not be such a bad idea to think ahead of the many possibilities that this kind of discovery will bring with itself. Both in a practical way in the case of actual communication and in a reflective way; who are we and what can we say about ourselves? Therefore my research question is as follows:</p>
 
-<h3>In the hypothetical case of contact with an extraterrestrial life-form, what will the design of such a way of communication look like?</h3>
+<span class="firstline">In the hypothetical case of contact with an extraterrestrial life-form, what will the design of such a way of communication look like?</span>
 
 <p>To make one thing clear though, this thesis is not about the possibility of making contact with an extraterrestrial life-form, it is about the hypothetical case in which we actually do make contact and in what way we can make this contact successful. For that matter, I will be taking a closer look into the actual attempts that have already been made to make contact, the attempts of fiction to describe such contact and the way communication studies here on earth can help in designing a successful form of communication. You see, the thing that all these ways of communicating have in common, is that they are all designed to communicate. They have been designed for a specific purpose. They are the products of thought-processes from scientists and artists that are trying to figure out in what way we will communicate with an extraterrestrial life-form.
 </p>
@@ -352,7 +428,7 @@ When designing something for human use, say a book, every design choice has a ce
 
 <div id="chapter2"  class="container">
 <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.2</span>
-<h2>Lessons from our past</h2>
+<h2>Lessons from <br /> our past</h2>
 
 <p>
 In the 1997 movie The Fifth Element35, an archeologist finds strange markings among Egyptian hieroglyphics. They appear different from the rest and seem to refer to something of extraterrestrial origins. This would imply that extraterrestrials have already visited earth in ancient times. This usage of ancient civilizations in science-fiction is not uncommon. In many books and films, and even in some historic theories, the mystery that often still surrounds these ancient civilizations is used as a way of explaining the innitially mysterious imagery often found in archeological expeditions. If something unexplainable is found on this planet, one of the simplest explanations would be that it originated from another. 
@@ -380,7 +456,7 @@ In other cases of indecipherable systems of writing from the past, the amount of
 
 <div id="chapter3"  class="container">
 <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.3</span>
-<h2><i>The politics of content</i></h2>
+<h2>The politics <br />of content</h2>
 <p>
 But before we can even start thinking about the practicalities of sending a message intended for an alien civilization into space, we will have to think about the content of this message—what it is that we want to tell them? Will the message contain an objective compilation of facts about our world and our species, or will we go further than that and try to create a message with a more substantial and subjective meaning? This message we send to extraterrestrials will most probably tell them a lot about us. But it can also tell us a lot about ourselves. 
 </p><p>
@@ -418,7 +494,7 @@ A problem with this seemingly democratic way of forming a message, is that it is
 
 <div id="chapter4a"  class="container">
 <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.4</span>
-<h2><i>Container</i></h2><br />
+<h2>Container</h2><br />
 
 After having given thought to the ways we can give meaning to our messages, it is time to think of how to contain them—what shape we give to them. 
 <p>
@@ -567,7 +643,7 @@ www.virgingalactic.com
 </div>
 
 <div id="printpage">
-<a href="" onClick="window.print ()" value="Print">Print guide</a>
+<a href="" onClick="window.print()" value="Print">Print guide</a>
 
 </div>
 
@@ -576,13 +652,13 @@ www.virgingalactic.com
 
 
 <span class="hide2"> <img class="random" src="random/abstract/nasa.png"></span>
-<span class="hidden2"><br />National Aeronautics and Space Administration</span>
+<span class="hidden2"><br /><span id="sup2">1.</span>National Aeronautics and Space Administration</span>
 
 
-<span class="hide2"> <img class="random" src="random/abstract/voyager.jpg"></span><span class="hidden2"><br />Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. </span>
-<span class="hide2"><img class="random" src="random/abstract/pioneer_family.jpg"></span><span class="hidden2"><br />A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <br /> <i>Image date: March 11, 1982.<br /> Image Credit: NASA</i></span>
+<span class="hide2"> <img class="random" src="random/abstract/voyager.jpg"></span><span class="hidden2">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. </span>
+<span class="hide2"><img class="random" src="random/abstract/pioneer_family.jpg"></span><span class="hidden2">A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <br /> <i>Image date: March 11, 1982.<br /> Image Credit: NASA</i></span>
 <span class="hide2"><img class="random" src="random/abstract/Pioneer-Plaque.jpeg"></span><span class="hidden2">The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan.</span>
-<span class="hide2"><img class="random" src="random/abstract/The_Sounds_of_Earth_-_GPN-2000-001976.jpg"></span><span class="hidden2">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials, www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html</span>
+<span class="hide2"><img class="random" src="random/abstract/The_Sounds_of_Earth_-_GPN-2000-001976.jpg" ></span><span class="hidden2">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials, www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html</span>
 
 <span class="hide2"><img class="random" src="random/abstract/The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg"></span><span class="hidden2">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials, www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html</span>
 
