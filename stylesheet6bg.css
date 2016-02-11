@@ -9,8 +9,17 @@
   padding-top: 40px;
 }
 
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
 
-
+#printindex{display: none;}
  
 
 img.random{z-index:40; cursor: move; position:absolute;}
@@ -42,8 +51,7 @@ h2 {
   text-decoration: none;
   padding-top: -20px;
   margin-top:0px;
-  margin-bottom:0px;
-   
+  margin-bottom:0px;  
 }
 
 h3 {
@@ -126,7 +134,7 @@ position:absolute;
 
 }
 
-#start {
+#start { 
   z-index:41;
   position:absolute;
   margin-top:4650px;
@@ -173,13 +181,13 @@ position:absolute;
  position:absolute;
   content: " "; 
   margin-top:1100px; 
-  margin-left:8300px;
+  margin-left:7800px;
   visibility: hidden; 
 }
 
 #chapter1 {
   margin-top:1200px;
-  margin-left:8600px; 
+  margin-left:8100px; 
 }
 
 #chapter2id {
@@ -316,6 +324,7 @@ position:absolute;
   height: 0px;
   float: left; 
 }
+
 .zonnetje a{text-decoration: none;}
 .zonnetje a:hover{cursor: pointer;}
 
@@ -429,6 +438,7 @@ footnotes that fade-out
 
 
 .hidden{
+  z-index: 999;
   position:absolute;
   opacity:0;
   background-color: rgba(255, 255, 255, 1);
@@ -451,6 +461,7 @@ footnotes that fade-out
 
 .hide:active + .hidden{
     opacity:1;
+    z-index: 999;
     transition:0s;
     left:110%;
     font-family:Georgia, serif;
@@ -461,6 +472,7 @@ footnotes that fade-out
 
 .hidden iframe{
   width:500px;
+  z-index: 999;
 }
 
 
@@ -472,6 +484,7 @@ footnotes that fade-out
 }
 
 .hidden2{
+  z-index: 999;
   position:fixed;
   opacity:0;
   right:20px;
@@ -497,6 +510,7 @@ footnotes that fade-out
 
 .hide2:active + .hidden2{
     position:fixed;
+    z-index: 999;
   opacity:1;
   right:20px;
   bottom:20px;
@@ -507,6 +521,7 @@ footnotes that fade-out
 
 .hidden iframe{
   width:500px;
+  z-index: 999;
 }
 
 
