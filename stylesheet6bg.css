@@ -1,5 +1,5 @@
 .container{
-  z-index:20;
+  z-index:30;
   width:800px;
   position:absolute;
   background-color: #000;
@@ -7,23 +7,30 @@
   padding-right:40px;
   padding-bottom:20px;
   padding-top: 40px;
+  border: 2px solid white;
 }
 
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
-}
+
 
 #printindex{display: none;}
- 
 
-img.random{z-index:40; cursor: move; position:absolute;}
-#first_next{background-color:black;margin-bottom:0px; border: 1px solid white; padding:10px; margin-top:40px; text-decoration: none; font-size: 60px; color:white; text-align: center; width:550px;}
+polyline {
+  z-index:0;
+    fill: none;
+    stroke:white;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+svg {
+  z-index:0;
+  position: absolute;
+  width:10000px;
+  height:10000px;
+
+}
+
+img.random{z-index:10; cursor: move; position:absolute;}
+#first_next{background-color:black;margin-bottom:0px; border: 2px solid white; padding:10px; margin-top:40px; text-decoration: none; font-size: 60px; color:white; text-align: center; width:550px;}
 #first_next a h1{text-decoration: none;}
 
 a {text-decoration: none;}
@@ -34,7 +41,7 @@ body{
   z-index:-999;
 }
 
-.next{margin:0 auto; margin-bottom:40px; border: 1px solid white; padding:10px; margin-top:40px; text-decoration: none; font-size: 60px; color:white; text-align: center; width:65%;}
+.next{margin:0 auto; margin-bottom:40px; border: 2px solid white; padding:10px; margin-top:40px; text-decoration: none; font-size: 60px; color:white; text-align: center; width:65%;}
 .next a{text-decoration: none; font-size: 60px; color:white; text-align: center;}
 
 
@@ -98,7 +105,7 @@ p{
 
 
 #main_titel{font-size: 100px; color:black; font-family:'Inconsolata'; font-weight: bold; z-index: 20; color:white; padding:0px;}
-#main_link1{width:300px; display: inline-block; border: 1px solid white; padding:10px; background-color: black}
+#main_link1{width:300px; display: inline-block; border: 2px solid white; padding:10px; background-color: black}
 
 
 #eerste{text-align: left; color:white; padding:10px;}
@@ -107,7 +114,7 @@ p{
   float:left;
   font-size:100px;
   color:white;
-  border: 1px solid white;
+  border: 2px solid white;
   padding-left:10px;
   padding-right:10px;
   padding-bottom: 10px;
@@ -141,7 +148,7 @@ position:absolute;
   margin-left:4550px;
   padding:80px;
   width:700px;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 
@@ -461,7 +468,6 @@ footnotes that fade-out
 
 .hide:active + .hidden{
     opacity:1;
-    z-index: 999;
     transition:0s;
     left:110%;
     font-family:Georgia, serif;
@@ -472,7 +478,6 @@ footnotes that fade-out
 
 .hidden iframe{
   width:500px;
-  z-index: 999;
 }
 
 
@@ -484,7 +489,6 @@ footnotes that fade-out
 }
 
 .hidden2{
-  z-index: 999;
   position:fixed;
   opacity:0;
   right:20px;
@@ -509,8 +513,7 @@ footnotes that fade-out
 
 
 .hide2:active + .hidden2{
-    position:fixed;
-    z-index: 999;
+  position:fixed;
   opacity:1;
   right:20px;
   bottom:20px;
@@ -521,7 +524,6 @@ footnotes that fade-out
 
 .hidden iframe{
   width:500px;
-  z-index: 999;
 }
 
 

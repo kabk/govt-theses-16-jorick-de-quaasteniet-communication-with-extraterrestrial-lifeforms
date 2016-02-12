@@ -1,4 +1,6 @@
-@media screen and (max-width: 10000px) and (min-width: 1700px) {
+
+
+@media screen and (min-width: 1700px) {
   .universe {
    -webkit-transform: scale(100%);
       -moz-transform: scale(100%);
@@ -6,47 +8,58 @@
   }
 }
 
-@media screen and (max-width: 1700px) and (min-width: 700px) {
-  .universe {
-   -webkit-transform: scale(200%);
-      -moz-transform: scale(200%);
-      transform: scale(200%);
+@media screen and (max-width: 1400px) {
+}
+ .universe {
+   -webkit-transform: scale(80%);
+      -moz-transform: scale(80%);
+      transform: scale(80%);
   }
 }
 
 
-
 @media screen and (max-width: 700px) {
     /* we want smaller headings*/
-    .universe{background-color: grey; background-image:none;}
-    p {font-size: 18px; line-height: 22px;}
+    .universe{background-color: grey; background-image:none; height:12000px;}
+    p {font-size: 22px; line-height: 25px;}
     .bgtitle{font-size:38px;}
     .firstline{font-size: 28px;}
     h3{font-size: 22px;}
-    .container{width:400px; display:}
+
+    .container{width:350px; display:}
+
     .zonnetje{
       position: fixed;
       top:20px;
+      left:20px;
       padding-left: 25px;
       z-index: 9999;
-      height: 0px;
-      float: left; }
+      }
+
     .zonnetje2{visibility: hidden;}
     .circle{color:white;}
     
 
     .next a{font-size: 30px;}
     #start{width:200px;border: 1px solid black;}
-    #main_link1{font-size: 52px;color:black; }
-    #first_next a{color:black;}
+
+    #main_link1{
+      font-size: 40px;
+      color:white;
+      width:150px; 
+      }
+
+    #first_next{width:200px; height:80px;}  
+    #first_next a{color:white; font-size: 26px;}
 
     #startid{margin-left:4500px;}
     #abstractid{margin-left:6800px;}
 
 
     .nav-bar2{visibility: hidden;}
+    #source{font-size:17px;}
+    .hidden{left:110%;background-color: rgba(255, 255, 255, 1);font-size: 20px;}
 
-    .hidden{left:-500%;background-color: rgba(255, 255, 255, 1);}
 
     .hide:active + .hidden{
     opacity:1;
