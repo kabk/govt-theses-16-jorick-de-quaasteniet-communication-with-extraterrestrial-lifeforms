@@ -10,7 +10,12 @@
   border: 2px solid black;
 }
 
-
+#loading{
+  width:400px;
+  position: absolute;
+  left:300px;
+  bottom:500px;
+}
 
 #printindex{display: none;}
 
@@ -126,6 +131,7 @@ p{
   margin-bottom: 20px;
   text-align: center;
 }
+
 .firstline{
   font-family: Georgia, serif;
   line-height: 48px;
@@ -201,14 +207,14 @@ p{
 #chapter2id {
   position:absolute;
   content: " "; 
-  margin-top:700px; 
+  margin-top:1100px; 
   margin-left:700px;
   visibility: hidden; 
 }
 
 #chapter2 {
-  margin-top:800px;
-  margin-left:1000px;
+  margin-top:1200px;
+  margin-left:1100px;
 }
 
 
