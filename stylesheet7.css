@@ -99,14 +99,14 @@ p{
 
 }
 
-
+/*
 .circle {
   padding:0px;
   font-family:Arial;
   font-size: 80px;
   color:black;
 }
-
+*/
 
 
 
@@ -331,14 +331,19 @@ p{
 
 
 .zonnetje{
+  font-size: 30px;
+  text-align: center;
   font-family: 'Exo', sans-serif;
   position: fixed;
-  top:20px;
-  right:20px;
-  padding-left: 25px;
+  right:0px;
+  top:0px;
+  width:265px;
+  height:40px;
   z-index: 9999;
-  height: 0px;
   float: left; 
+  color:black;
+  background-color: white;
+  border: 2px solid black;
 }
 
 .zonnetje a{text-decoration: none;}
@@ -349,35 +354,32 @@ p{
 .nav-bar {
   font-family: 'Merriweather', serif;
   position: fixed;
-  top:100px;
-  right:20px;
+  top:25px;
+  right:0px;
+  width:250px;
   z-index: 99999;
   height: 0px;
   display: none;
-padding-left: 0px;
 
 }
 
 .nav-bar ul{
-    background: #cccccc;
+    background: #fff;
     float: right;
-    width: 100%;
-    padding-top: 20px;
     padding-right: 15px;
-    margin-left:0px;
-    padding-left: 0px;
     list-style-type: none;
     padding-bottom:30px; 
-    box-shadow: 15px 15px 55px rgba(0, 0, 0, 1);
-    
+    border: 2px solid black;
+    margin-left: 0px;
+    padding-left: 0px;
+    border-top: none;
 }
 
 .nav-bar li {
+  width:250px;
     display: block;
     line-height: 40px; 
     text-align: right;
-    margin-left:0px;
-    padding-left: 0px;
 }
 
 
@@ -385,18 +387,23 @@ padding-left: 0px;
   text-decoration: none;
 	font-size:28px;
 	color: #000;
-  margin-left:0px;
-  padding-left: 0px;
 }
 
 
 .zonnetje2{
-  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Exo', sans-serif;
   position: fixed;
-  bottom:20px;
-  right:20px;
+  right:0px;
+  bottom:0px;
+  width:120px;
+  height:40px;
   z-index: 9999;
   float: left; 
+  color:black;
+  background-color: white;
+  border: 2px solid black; 
 }
 .zonnetje2 a{text-decoration: none;}
 .zonnetje2 a:hover{cursor: pointer;}
@@ -405,29 +412,31 @@ padding-left: 0px;
 .nav-bar2 {
   font-family: 'Merriweather', serif;
   position: fixed;
-  bottom:150px;
-  right:20px;
-  padding-left: 25px;
+  bottom:130px;
+  right:0px;
+  width:200px;
   z-index: 99999;
   height: 0px;
   display: none;
 }
 
 .nav-bar2 ul{
-    background-color: #cccccc;;
+    background: #fff;
     float: right;
-    width: 100%;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin: 0px;
+    padding-right: 15px;
     list-style-type: none;
-    padding-bottom:10px;
-    box-shadow: 13px 13px 53px rgba(0, 0, 0, 1);
+    padding-bottom:30px; 
+    border: 2px solid black;
+    margin-left: 0px;
+    padding-left: 0px;
+    border-bottom: none;
 }
 
 .nav-bar2 li {
+    width:105px;
     display: block;
-    line-height: 23px;  
+    line-height: 40px; 
+    text-align: right;  
 }
 
 
