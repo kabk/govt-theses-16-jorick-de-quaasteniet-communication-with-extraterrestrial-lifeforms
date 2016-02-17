@@ -329,6 +329,10 @@ p{
   padding-top: 40px;
 }
 
+#up{font-size: 30px;
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+color:black;}
 
 .zonnetje{
   font-size: 30px;
@@ -338,7 +342,7 @@ p{
   right:0px;
   top:0px;
   width:265px;
-  height:40px;
+  height:50px;
   z-index: 9999;
   float: left; 
   color:black;
@@ -353,8 +357,9 @@ p{
 
 .nav-bar {
   font-family: 'Merriweather', serif;
+  color:black;
   position: fixed;
-  top:25px;
+  top:28px;
   right:0px;
   width:250px;
   z-index: 99999;
@@ -391,6 +396,11 @@ p{
 
 
 .zonnetje2{
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg); 
   font-size: 30px;
   text-align: center;
   font-family: 'Exo', sans-serif;
@@ -398,7 +408,7 @@ p{
   right:0px;
   bottom:0px;
   width:120px;
-  height:40px;
+  height:50px;
   z-index: 9999;
   float: left; 
   color:black;
@@ -412,9 +422,10 @@ p{
 .nav-bar2 {
   font-family: 'Merriweather', serif;
   position: fixed;
-  bottom:130px;
+  bottom:126px;
   right:0px;
   width:200px;
+  height:00px;
   z-index: 99999;
   height: 0px;
   display: none;
@@ -435,8 +446,7 @@ p{
 .nav-bar2 li {
     width:105px;
     display: block;
-    line-height: 40px; 
-    text-align: right;  
+    text-align: center;  
 }
 
 
