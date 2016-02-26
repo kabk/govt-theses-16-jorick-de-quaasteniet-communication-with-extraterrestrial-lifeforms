@@ -8,12 +8,12 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
 }
  .universe {
-   -webkit-transform: scale(80%);
-      -moz-transform: scale(80%);
-      transform: scale(80%);
+   -webkit-transform: scale(90%);
+      -moz-transform: scale(90%);
+      transform: scale(90%);
   }
 }
 
