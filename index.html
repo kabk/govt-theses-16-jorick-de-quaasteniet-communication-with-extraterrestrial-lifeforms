@@ -72,7 +72,19 @@ $( ".ufo" ).draggable({
 
 </script>
 
-    
+
+<!--
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27591074-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
 </head>
 
 
@@ -203,18 +215,17 @@ $(document).ready(function(){
    <ul>
     
     <li><a href="#startid" id="load">1....................Start</a>
-  	<li><a href="#abstractid">       2.................Abstract</a></li>
-  	<li><a href="#introductionid1">  3.............Introduction</a></li>
+  	<li><a href="#introductionid1">  2.............Introduction</a></li>
     <li><a href="#chapter1id_1">     3................Chapter_1</a></li>
     <li><a href="#chapter2id_1">     4................Chapter_2</a></li>
     <li><a href="#chapter3id_1">     5................Chapter_3</a></li>
     <li><a href="#chapter4id_1">     6................Chapter_4</a></li>
-    <li><a href="#chapter5id_1">     6................Chapter_5</a></li>
-    <li><a href="#chapter6id_1">     6................Chapter_6</a></li>
-    <li><a href="#conclusionid1">    7...............Conclusion</a></li>
-    <li><a href="#referencesid1">    8...............References</a></li>
+    <li><a href="#chapter5id_1">     7................Chapter_5</a></li>
+    <li><a href="#chapter6id_1">     8................Chapter_6</a></li>
+    <li><a href="#conclusionid1">    9...............Conclusion</a></li>
+    <li><a href="#referencesid">     #...............References</a></li>
+    <li><a href="#abstractid">       #.................Abstract</a></li>
     
-
   </ul>
 
 </nav>
@@ -246,11 +257,24 @@ $(document).ready(function(){
 </div>
 </a>
 
+
 <nav class="nav-bar3">
-  <ul>
-     <img src="screenshot.jpeg" width="400px" width="400px">
-  </ul>
+
+<img src="screenshot.jpeg">
+<a href="#startid"  alt="start"><div id="begin"></div></a>
+<a href="#introductionid1"  alt="introduction"><div id="intro"></div></a>
+<a href="#chapter1id_1"  alt="chapter1"><div id="chap1"></div></a>
+<a href="#chapter2id_1"  alt="chapter2"><div id="chap2"></div></a>
+<a href="#chapter3id_1"  alt="chapter3"><div id="chap3"></div></a>
+<a href="#chapter4id_1"  alt="chapter4"><div id="chap4"></div></a>
+<a href="#chapter5id_1"  alt="chapter5"><div id="chap5"></div></a>
+<a href="#chapter6id_1"  alt="chapter6"><div id="chap6"></div></a>
+<a href="#conclusionid1"  alt="conclusion"><div id="concl"></div></a>
+<a href="#referencesid"  alt="references"><div id="ref"></div></a>
+<a href="#thanksid"  alt="thanks"><div id="thx"></div></a>
+<a href="#abstractid"  alt="abstract"><div id="abs"></div></a>
 </nav>
+
 
 
 
@@ -259,7 +283,38 @@ $(document).ready(function(){
 <div class="universe">
 <svg>
 <polyline points="0,0 11500,11650 "></polyline>
-<polyline points="12400,12000 15000,15000 "></polyline>
+
+<polyline points="12413,12000 13600,12900 "></polyline>
+<polyline points="13980,14700 14700,14200 "></polyline>
+<polyline points="15350,14780 16200,9000 "></polyline>
+
+<polyline points="16450,10700 15600,10200 "></polyline>
+<polyline points="15150,9130 15400,10600 "></polyline>
+<polyline points="14410,8840 14900,9880 "></polyline>
+<polyline points="14410,10840 9400,9180 "></polyline>
+
+<polyline points="8700,11200 8360,9800 "></polyline>
+<polyline points="7900,10200 8211,11800 "></polyline>
+<polyline points="8100,13000 11100,16000 "></polyline>
+
+<polyline points="10900,17600 10300,17000 "></polyline>
+<polyline points="10400,19100 11000,18200 "></polyline>
+<polyline points="11200,20000 18000,18200 "></polyline>
+
+<polyline points="18700,19700 19200,18600 "></polyline>
+<polyline points="19900,19800 21900,10200 "></polyline>
+
+<polyline points="22700,11350 23300,11090 "></polyline>
+<polyline points="23700,11050 23350,10000 "></polyline>
+<polyline points="23000,9750 12750,2200 "></polyline>
+
+<polyline points="12700,2750 3750,9300 "></polyline>
+<polyline points="3500,10550 2750,11000 "></polyline>
+<polyline points="2500,11550 3950,20000 "></polyline>
+
+<polyline points="3900,20210 12450,25800 "></polyline>
+<polyline points="12990,26710 14000,24700 "></polyline>
+<polyline points="14090,25910 16000,26400 "></polyline>
 </svg>
 
 
@@ -269,16 +324,16 @@ $(document).ready(function(){
 </div>
 
 <div id="start">
-  <a name="start">
-<span id="main_titel">
-<div id="main_link1"><span class="hide2">EXTRA<br />TERRE<br />STRIAL</span><span class="hidden2"><br /><strong>ex·tra·ter·res·tri·al</strong> (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
+
+<span id="maintitel">
+<div id="mainlink1"><span class="hide2">EXTRA<br />TERRE<br />STRIAL</span><span class="hidden2"><br /><strong>ex·tra·ter·res·tri·al</strong> (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
 <em>adj.</em><br />
 Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
 <em>n.</em><br />
 An extraterrestrial being or life form. <br /><br /><em id="source">The Free Dictionary</em></span>
 </div>
 
-<div id="main_link1"><span class="hide2">SOLI<br />LOQU<br />IES</marquee></span><span class="hidden2"><br />
+<div id="mainlink1"><span class="hide2">SOLI<br />LOQU<br />IES</marquee></span><span class="hidden2"><br />
 <strong>so·lil·o·quy</strong>  (sə-lĭl′ə-kwē)<br /><br />
 <em>n. pl. so·lil·o·quies</em><br />
 1.<br /><br />
@@ -289,8 +344,8 @@ b. A specific speech or piece of writing in this form.<br /><br />
 </div>
 
 
-<a href="#introductionid1"> <img id="first_next" src="next.jpg"
-         onclick="this.src='next.gif';">
+<a href="#introductionid1"> <img id="first_next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
     </img></a>
 </div>
 
@@ -321,31 +376,45 @@ b. A specific speech or piece of writing in this form.<br /><br />
 
 <div id="abstract" class="container">
 
+
+
+
 <p>
-<span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="random/abstract/nasa.png">National Aeronautics and Space Administration <em id="source">www.nasa.gov</em> </span><span id="sup">a</span> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="random/abstract/pioneer_family.jpg">A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <em id="source">Image date: March 11, 1982. Image Credit: NASA</em></span><span id="sup">b</span> spacecrafts. Both of them had a gold-anodized aluminium plaquec on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any extraterrestrial life form that might come upon them. Some years later, in 1977, NASA launched the Voyager probesd. On board they included golden phonograph recordse containing a selection of soundsf and imagesg selected to portray our way of living on earth. The launching of these spacecraft could be compared to throwing a bottle with a message in the ocean, hoping that someone, or something, will encounter it and be able to read the message. <h3>But in the case of such an encounter, would these images and sounds be sufficiently communicative? How will it communicate with a life form that we know nothing of? What kind of influence does the choice of communication have on the first encounter? Can we apply the knowledge we have from our own ways of communicating?</h3></p>
-<p> In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. <h3>And who is to say whether these life forms are capable of communication?</h3><p> It might be bacteria, dwelling in the depths of Titan’sh methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p>
+<span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="ufo/abstract/nasa.png">National Aeronautics and Space Administration <em id="source"><a href="http://www.nasa.gov/" onclick="window.open(this.href)">www.nasa.gov</a></em> </span><span id="sup">a</span> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="ufo/abstract/pioneer_family.jpg">A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <em id="source">Image date: March 11, 1982. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)">NASA</a></em></span><span id="sup">b</span> spacecrafts. Both of them had a 
+<span class="hide">gold-anodized aluminium plaque</span><span class="hidden"><img src="ufo/abstract/Pioneer-Plaque.jpeg">The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan. <a href="http://nasa.gov/centers/ames/missions/archive/pioneer.html" onclick="window.open(this.href)"><em id="source">source</em></a></span>
+<span id="sup">c</span> on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any extraterrestrial life form that might come upon them. Some years later, in 1977, NASA launched the <span class="hide">Voyager probes</span><span class="hidden"><img src="ufo/abstract/voyager.jpg">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)"><em id="source">source</em></a> 
+</span><span id="sup">d</span>. On board they included <span class="hide">golden phonograph records</span><span class="hidden"><img src="ufo/abstract/golden1.jpg"><img src="random/abstract/golden2.jpg">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html"><em id="source">source</em></a>
+</span><span id="sup">e</span> containing a selection of <span class="hide">sounds</span><span class="hidden"> dsdfdfd</span><span id="sup">f</span> and <span class="hide">images</span><span class="hidden"><img src="ufo/abstract/animation.gif">126 images were included on the Golden Records</span><span id="sup">g</span> selected to portray our way of living on earth. The launching of these spacecraft could be compared to throwing a bottle with a message in the ocean, hoping that someone, or something, will encounter it and be able to read the message. <h3>But in the case of such an encounter, would these images and sounds be sufficiently communicative? How will it communicate with a life form that we know nothing of? What kind of influence does the choice of communication have on the first encounter? Can we apply the knowledge we have from our own ways of communicating?</h3></p>
+<p> In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. <h3>And who is to say whether these life forms are capable of communication?</h3><p> It might be bacteria, dwelling in the depths of <span class="hide">Titan’s</span><span class="hidden">addd</span><span id="sup">h</span> methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p>
 <h3>
  Apart from the possibilty that they exist, who is to say we will make first contact with them? They might innitiate contact. Will we be able to understand each other? Who decides on the content of our message? How important is our cultural context in such a message? 
   </h3>
 <p>
   Until we actually do make contact, the answers to these questions will remain mostly unanswered, as the messages remain soliloquies. But, we can at least consider them, seeing as the search for answers to these questions can teach us a lot about our own ways of communication and the way we look at ourselves as a species. And seeing as we are on the verge of colonising space, the first extraterrestrials we have to communicate with might be ourselves.
 </p>
- <a href="#introductionid1"> <img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';">
+ <a href="#introductionid1" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
     </img></a>
 
 </div>
 
 
-<div class="ufo"><img src="random/abstract/nasa.png"><p>National Aeronautics and Space Administration</p></div>
 
-<div class="ufo"><img src="random/abstract/pioneer_family.jpg"><p>A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. Image date: March 11, 1982. Image Credit: NASA</p></div>
-
-<div class="ufo"><img src="random/abstract/Liquid_lakes_on_titan.jpg"><p>Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells. Cassini radar image</p>
+<!--
+<div class="ufo"><img src="ufo/abstract/nasa.png"><p>National Aeronautics and Space Administration <a href="www.nasa.gov" onclick="window.open(this.href)"><em id="source">www.nasa.gov</em></a></p></div>
+<div class="ufo"><img src="ufo/abstract/pioneer_family.jpg"><p>A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. Image date: March 11, 1982. Image Credit: NASA</p></div>
+<div class="ufo"><img src="ufo/abstract/Pioneer-Plaque.jpeg"><p>The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan.</p>
+</div>
+<div class="ufo"><img src="ufo/abstract/voyager.jpg"><p>Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history.</p>
+</div>
+<div class="ufo"><img src="ufo/abstract/golden1.jpg"><img src="ufo/abstract/golden2.jpg"><p>NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials</p>
+</div>
+<div class="ufo"><img src="ufo/abstract/animation.gif"><p>126 images were included on the Golden Records</p>
+</div>
+<div class="ufo"><img src="ufo/abstract/Liquid_lakes_on_titan.jpg"><p>Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells. Cassini radar image</p>
 </div>
 
-
-
+-->
 
 
 <div id="introductionid1">
@@ -356,14 +425,16 @@ b. A specific speech or piece of writing in this form.<br /><br />
 <div id="introduction1" class="container">
 
 <h4>Pale Blue Dot</h4>
-<p><span class="firstline">In 1990,</span> a photo1 of Earth2 was taken from the Voyager 1 spacecraft, then 6,000,000,000 removed from its planet of origin. Our planet, reduced to the size of 0.12 pixel. In 2016, the year that I am writing this thesis, the spacecraft has travelled 20,000,000,000 kilometers and has entered interstellar space3 as the first human-made object to do so. Unimaginably large numbers that hint the slightest at how unimaginably large the universe is, and how unimaginably small we are in it. What is peculiar about this spacecraft is that next to its scientific mission, it is carrying an object of diplomacy. An object known to humankind as a record, inscribed with intructions on how to extract its contents. This Golden Record4—on which NASA5 stored images and sounds from Earth—is meant to communicate to any extraterrestrial6 life form that might come upon it what life of Earth looks and sounds like. An object specifically designed to communicate with extraterrestrials. </p><p>
+<p><span class="firstline">In 1990,</span> a <span class="hide">photo</span><span class=" hidden"><img src="ufo/introduction/Pale_Blue_Dot.png">This image of Earth is one of 60 frames taken by the Voyager 1 spacecraft on February 14, 1990 from a distance of more than 6 billion kilometers. 
+<em id="source"><a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)">NASA / Jet Propulsion Laboratory</a></em></span><span id="sup">1</span> of <span class="hide">Earth</span><span class="hidden"><img src="ufo/introduction/earth.gif">Earth is the third planet from the Sun, the densest planet in the Solar System, the largest of the Solar System’s four terrestrial planets, and the only astronomical object known to harbor life. <em id="source">Wikipedia</em></span><span id="sup">2</span> was taken from the Voyager 1 spacecraft, then 6,000,000,000 removed from its planet of origin. Our planet, reduced to the size of 0.12 pixel. In 2016, the year that I am writing this thesis, the spacecraft has travelled 20,000,000,000 kilometers and has entered <span class="hide">interstellar space</span><span class=" hidden">In astronomy, the interstellar medium (ISM) is the matter that exists in the space between the star systems in a galaxy. This matter includes gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills interstellar space and blends smoothly into the surrounding intergalactic space. <em id="source">Wikipedia</em></span><span id="sup">3</span> as the first human-made object to do so. Unimaginably large numbers that hint the slightest at how unimaginably large the universe is, and how unimaginably small we are in it. What is peculiar about this spacecraft is that next to its scientific mission, it is carrying an object of diplomacy. An object known to humankind as a record, inscribed with intructions on how to extract its contents. This <span class="hide">Golden Record</span><span class="hidden"><img src="ufo/introduction/golden1.jpg"><img src="ufo/introduction/golden2.jpg">NASA placed a message aboard Voyager 1 and 2 -a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html" onclick="window.open(this.href)"><em id="source"> source</em></a></span><span id="sup">4</span>—on which NASA5 stored images and sounds from Earth—is meant to communicate to any extraterrestrial6 life form that might come upon it what life of Earth looks and sounds like. An object specifically designed to communicate with extraterrestrials. </p><p>
   In the course of the last century, a number of such messages have been sent into outer space. However, as of yet, they remain unanswered. They have become soliloquies7—spoken with the supposedly collective voice of the inhabitants of Earth and sent into the great void of space, with its only audience remaining ourselves. The terrestrial8 context that we are accustomed to communicate in has been replaced here with an extraterrestrial one, and as such, the terrestrial design of these messages will have to make way for an extraterrestrial design. But this raises some questions—philosophical, political and ethical questions. Why do we want to send these messages? Who decides on the content of these messages? And how do we present ourselves in these messages?  </p>
 
   <p>It all might sound like science-fiction9—entertainment for star-gazers and conspiracy-theorists. But it is not just that. In history, science-fiction has been employed as a reflective device to predict the future and to hypothesize about the direction we as humankind10 are going into. Using our imagination it has taken us beyond the limits that science has given us in the past. It’s a reflection upon our society, to give social, economical and ecological commentary, and to explore the immensity of the universe, and the part that we play in it. Besides, many subjects that science-fiction has dealt with that seemed far-fetched at the time, were an inspiration for modern science and have become a reality for us now. Think about men walking on the moon11 (First men in the moon12), mobile phones (Star-Trek communicators13) and commercial space-travel14 (2001: A space odyssey15). </p>
 
 
-<h1 class="next"> <a href="#introductionid2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#introductionid2" style="cursor:sw-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 
 </div>
 
@@ -386,8 +457,9 @@ In the hypothetical case of contact with an extraterrestrial life-form, what wil
 </span>
 <p>
 However, as every message we have sent remains unanswered, it is important to keep in mind that there is a chance of us being the sole inhabitants of this universe. </p> <h3>If that is the case, is it still worth the effort to send messages into outer space? Is contact with extraterrestrials really the only purpose of these messages, or are there underlying existential motives that could be traced back all the way to our first ways of communicating on this planet?</h3>
-<h1 class="next"> <a href="#chapter1id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter1id_1" style="cursor:sw-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 
 </div>
 
@@ -416,8 +488,9 @@ One of the popular methods to hyphothesize about communicating with extraterrest
   <p>Either way, this seemingly small gesture has a lot of cultural and social relevance—to humans that is. When meeting with a life form from another planet, chances are small they will understand the significance and meaning of it. Also, they might not have hands. This tells us that it is important to keep in mind that an extraterrestrial life form might have a completely different physical appearance than ours, an anthropocentric24 approach to any form of communication and/or design is therefore discouraged. </p>
 
 
-<h1 class="next"> <a href="#chapter1id_2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter1id_2" style="cursor:w-resize;"> <img id="next" src="next/w.jpg"
+         onmouseover="this.src='next/w.gif';" onmouseout="this.src='next/w.jpg';">
+    </img></a>
 </div>
 
 
@@ -433,8 +506,9 @@ Exobiology25 is the speculative branch of biology that researches the different 
 The Martian ambassador does have hands though, but he doesn’t seem to understand the gesture of the handshake, the general therefore continues by pointing his finger in the air and moving it in the motion of a full circle, which the Martian repeats. This is actually a more realistic portrayal of how humans could initiate contact with extraterrestrials, seeing as many scientists agree that the language of physics and mathemetics is a universal one, as these are mostly constant throughout the universe. A circle, for example, is abundant in the universe. Also, as Bruno Munari28 pointed out in The Circle29, it seems to be one of the constants in human languages.</p>
 <p>
 This mathematical approach was already seen in one of the first ‘modern’ proposals for communicating with extraterrestrial life forms, which was done in 1820 by German mathemetician Carl Friedrich Gauss30 (1777-1855) who, in an attempt to create what could have been one of the largest pieces of land art ever made, suggested to shape an enormous portion of a Siberian forest into a triangle with three rectangles attached to it, planted in wheat. These shapes seen from space would suggest an understanding of the Pythagorean theorem, a mathemetical equation that only an intelligent life form could be capable of constructing. They would be large enough to be seen by life-forms on the Moon or Mars. A similar proposal came from Joseph Johann Littrow31 (1781 - 1840), although his was a bit more extreme. He suggested to dig enormous 30 kilometer wide canals in various geometric shapes in the Saharan desert, fill them with kerosene, and light them on fire. This to create giant signal fires which, ofcourse, would show a sign of human intelligence.</p>
-<h1 class="next"> <a href="#chapter1id_3"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter1id_3" style="cursor:n-resize;"> <img id="next" src="next/n.jpg"
+         onmouseover="this.src='next/n.gif';" onmouseout="this.src='next/n.jpg';">
+    </img></a>
 </div>
 
 
@@ -452,8 +526,9 @@ This mathematical approach was already seen in one of the first ‘modern’ pro
 <p>
 As for our presence, the question is whether or not it is still necessary to make these kind of landmarks to convey it. With the coming of the anthropocene37, the marks we create on our planet are becoming considerably noticable, both during night38 and day39. Any Martian with a telescope strong enough will be able to see our intelligent presence here on Earth. Our cities are growing bigger and emit enormous amounts of artificial light. In this way we are already communicating our presence, just not yet with any intentional message.
 In the early 19th century, it was widely believed that there was in fact life on Mars. It was even so commonly accepted in society, that the Pierre Guzman Prize40— which would be awarded to the first person to succesfully communicate with an extraterrestrial life form—excluded Mars as it seemed to be too easy of a target. This misconception of life on Mars came into being when Italian astronomer Giovanni Schiaparelli41 (1835 – 1910) decribed seeing long, straight canalli42—an Italian word for a natural occurrence—on Mars. The English-speaking academics mistook the word for engineered canals and so—by an error of translation—the Martians were born. later on, Percival Lowell43 further developed this theory44. This teaches us that even phenomena that look at first observation to be made by intelligent beings, are not necessarily so. One example of this on Earth are the Fairy circles45 in Southern Africa. They seem to be engineered in some way but are actually the result of a natural process.</p>
-<h1 class="next"> <a href="#chapter1id_4"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter1id_4" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
 </div>
 
 
@@ -475,8 +550,9 @@ As such, a finger of the hand can either offend49, support50 or direct51, and de
 The same goes for design. When designing something for human use, say a book50, every design choice has a certain connotation, whether intended or not. A certain typeface, the use of imagery and color, they all have something to say. A graphic designer51 is someone who uses these connotations to their advantage in order to convey a message. And this message is readable depending on the context in which it is displayed. Terrestrially speaking, this context is usually cultural. The Martians, however, haven’t had the same cultural evolution as we did. Any meaning that we are able to extract from a message in a terrestrial context, will most likely not be extracted by an extraterrestrial in an extraterrestrial context. For them, the only context they have is the carrier and the content of the message itself. The arrow on the Pioneer Plaques52 for example, is a typical anthropocentric symbol, which is derived from our historic usage53 of arrows, and which to us has become a way of pointing out a certain direction. To us, this seems clear, but a life form that at no point in its history made use of arrows might have difficulty extracting its meaning. One way of explaining the meaning of an arrow, is by means of interaction. When the recipient has to interact with the object to see what happens when an arrow is clicked, for example. > Like what is happening with arrows throughout this thesis. </p>
 <p>
   But what if were able to add this terrestrial context? Up until now, the contents of the messages sent didn’t have more than a couple of MB’s54 worth of data, due to technological restrictions. This capacity greatly diminishes the amount of contextual information we can add. If there was no data limit, wouldn’t it much simpler to add vast amounts of data? A complete encyclopedia55 of Earth and everything on it accompanied by annotations, connections, pictures, videos, sounds etc. Why try to explain the world that we live in with a few pictures if we can show everything? But will an extraterrestrial be able to extract any meaningful information out of such a data dump56?</p>
-<h1 class="next"> <a href="#chapter2id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter2id_1" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
 </div>
 
 
@@ -501,8 +577,8 @@ Much of the knowledge that we have of our ancient civilisations is gathered thro
 The history of (recorded) visual communication goes way back. Some 40.000 years back. When the prehistoric human started creating drawings and paintings on the walls of caves. The paintings in a cave at Maros60, Indonesia, are some of the oldest with a figurative character. We can clearly distinguish the shapes of animals and the contours of hands. This is because we know from context what terrestrial animals and hands look like. The exact meaning of these paintings is unknown—and will probably never be known—but what we do know is that they still communicate an intelligent presence to us. They are important to us because they are the first examples of human attempts at conveying a message through a visual medium—the first design derived from an intellectual thought process. Even after thousands of years, they still communicate to us. What if these paintings were to the prehistoric human what the extraterrestrial messages are to us now—a way of communicating with the unknown? Or a way to immortalize ourselves. Their intended recipients might be gods, extraterrestrials, or even future generations—us. If so, our space messages are a contemporary way of communicating towards the unknown. They are contemporary cave paintings.
 </p> 
 
-<h1 class="next"> <a href="#chapter2id_2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter2id_2" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';"></img></a>
 </div>
 
 
@@ -519,8 +595,8 @@ The history of (recorded) visual communication goes way back. Some 40.000 years 
 What happens though when the representative context isn’t there? What if the lines aren’t as figurative as the ones on Maros? In Southeast Europe, artifacts have been found that contain nonfigurative inscriptions of which the origin is unknown. These so called Vinca symbols61 are made out of lines and shapes of which the meaning is not recognizable by representation—they are abstract. Archeologists and linguists therefore believe them to be among the first examples of symbols, where the object or figure depicted represents another idea or concept. This idea or concept is known only by the members of the society in which it is used. And since the society that created the Vinca symbols does not exist anymore—and no ways of deciphering them has yet to be found—it might be that the symbols will forever remain unreadable to our society. We know they are made by humans, but we do not know what they mean. And if we can’t even read messages created by a human civilisation a couple of thousand years ago, how on Earth will we be able to create a message that an extraterrestrial civilisation hundreds or thousands of lightyears away can read?</p>
 
 
-<h1 class="next"> <a href="#chapter2id_3"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter2id_3" style="cursor:n-resize;"> <img id="next" src="next/s.jpg"
+         onmouseover="this.src='next/s.gif';" onmouseout="this.src='next/s.jpg';"></img></a>
 </div>
 
 
@@ -533,8 +609,8 @@ What happens though when the representative context isn’t there? What if the l
   <p>In other cases of indecipherable systems of writing from the past, the amount of researchable specimens plays a role. The Easter Island civilisation63, for example, is widely known for its mysterious statues, but far less known is the Rongorongo writing system64, a set of glyphs discovered in the 19th century. Only a handful of objects containing the glyphs have been found, and most of them— being wooden samples—are in bad condition. This makes it extremely difficult to find any patterns in the system, as there is little data to compare. A durable container and a high volume of content would greatly increase the possibilty of discovery and/or decipherment. If we want our message to last for many thousands of years—whether in space or on a planet—materials like diamond, gold or platinum can be used for durability, or less precious materials that would alow for a higher volume of samples.</p>
   <p>The remote location65 of the island meant that there was little to no contact with other civilisations, and therefore no translations in other writing systems exist. These factors contribute to the fact that the Rongorongo writing system hasn’t yet been deciphered, and most likely never will be.</p>
 
-<h1 class="next"> <a href="#chapter3id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter3id_1" style="cursor:nw-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';"></img></a>
 </div>
 
 
@@ -555,8 +631,9 @@ Earlier I mentioned that the messages that we have sent are spoken with the supp
   This is where the science-fiction becomes a reflective device for humankind.Sending messages intended for extraterrestrials is a quite recent development (if we exclude the Nazca lines and such early constructions, seeing as the meaning of these has been lost). Perhaps one could argue that the decline66 of religion67 is one the factors contributing to our new way of finding meaning in the universe—if there is no god out there that will hear us, maybe there is another life form?</p>
   <p>
   There have been some written proposals, but the Pioneer Plaques that were attached to the Pioneer 10 and 11 spacecraft68 were the first physical objects sent into space with a designed message intended for extraterrestrials. At first glance this message seems like an objective representation depicting the origins and the creators of the plaque. It contains the two-dimensional drawing of a nude human male and female, standing before an outline of the spacecraft for scale. The man’s hand is raised in a gesture of good will. According to NASA “The physical makeup of the man and woman were determined from results of a computerized analysis of the average person in our civilisation.”69 Yet, Carl Sagan70 (1934 -1996) explains their appearance is based on Greek statues71, making them considerably caucasian. The male is raising his hand as a way of greeting. His genitals are cleary visible. The female is standing next to him, with both arms lowered, and without any clear genitals. Is this a truthful representation of the diversity, biology and social structure of humankind? It seems that in both race and gender the image favors the caucasian male. For this, the image has received a lot of critique, from multiple points of view. One saying that the image is racist by showing a caucasian male and female to represent all of humankind, the other saying the image is too pornographic72. This shows that designing an actual objective message is impossible, seeing as every design decision has a certain connotation, implies a certain subjectivity, and will be interpreted in a certain way.</p>
-  <h1 class="next"> <a href="#chapter3id_2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+  <a href="#chapter3id_2" style="cursor:w-resize;"> <img id="next" src="next/w.jpg"
+         onmouseover="this.src='next/w.gif';" onmouseout="this.src='next/w.jpg';">
+    </img></a>
 </div>
 
 
@@ -579,8 +656,9 @@ As a response to the Golden Records, Artist Trevor Paglen created his own collec
 By thinking about how we might communicate with extraterrestrials or our future selves, we inevitably create a state of mind that reflects upon our actions now and how they will affect us in the long run. </p>
 <p>
 Trevor Paglen’s project was also a very personal one, and although he did consult a multitude of experts, in the end he selected the pictures himself, which leads us to the next question—who decides on the content of a message to be sent into space?</p>
-<h1 class="next"> <a href="#chapter3id_3"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+ <a href="#chapter3id_3" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 </div>
 
 
@@ -598,8 +676,9 @@ What is noticable is that the the content generated almost always resembles that
   But do we want everybody to be able to send these messages? What if we could send our immediate thoughts?  Should we apply a filter to these messages, in order to filter out abusive or insulting messages? For a government this task is difficult, as censoring is a politically dangerous area —hence the objectivity in government messages—but a corporation already has more freedom in this. They can provide anonimity, much like a confessional booth in church.</p>
   <p>
   Political or not, these messages all have in common that they are made by humans, by means of human decision-making. This will always result in a biased and subjective content, even when attempting to remain objective. A way of making sure the content is less biased is to generate it ‘randomly’. A set of rules could be created to generate the content for us. And to make it even easier, we could let a computer do the work. This will eliminate an amount of subjectivity, but it should not be forgotten that these rules are still engineered by human minds, and a computer is still operated by human input, and therefore can not be truly random and/or objective. </p>
-<h1 class="next"> <a href="#chapter4id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+ <a href="#chapter4id_1" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 </div>
 
 
@@ -615,8 +694,9 @@ A cipher is most likely an important elements to add to any message we will send
 <p>
 The message contained information about the biology of life on Earth such as the formulas of bases in human DNA. But why would we send this blueprint of human life? Is it purely for scientific intentions—to share knowledge—or is there a more survivalist intention? To ensure that our genetic code lives on. 
 The message was directed at the globular star cluster M1389, which is 25.000 light years removed from Earth, meaning that it will take 25.000 years to reach its destination, as radiowaves are lightwaves, and therefore travel by the speed of light. And it will take another 25.000 years to get an answer, if a reply comes in the same format. A very long distance relationship indeed. Also, since it took a total of 50.000 years for the reply to reach us, we might not even remember what our original message was. In the last decade, the amount of messages sent is still surveyable, but in a thousand years this might not be the case anymore. It is therefore important to make sure that we keep a repository of messages sent, one that will withstand the test of time. What good is a reply if we don’t know what the initial message was?</p>
-<h1 class="next"> <a href="#chapter4id_2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter4id_2" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 </div>
 
 
@@ -627,8 +707,9 @@ The message was directed at the globular star cluster M1389, which is 25.000 lig
 <div id="chapter4_2"  class="container">
 <p>
   The 2010 documentary Into Eternity90 deals with the inevitable terrestrial problem of nuclear waste from nuclear power plants. The problem here is not necessarily the storing of it—large repositories are being built for that specific reason—but the way we communicate to our very distant generations that these places should be avoided. In a hundred years this shouldn’t be a problem, but the thing is that most of the waste stays radioactive for many thousands of years, and who knows what civilisations will have fallen and risen by then? They might not be able to read our contemporary warning systems. Therefore, a warning system has to be designed that will remain readable over such a long period of time. Several proposals for communicative solutions have been made, including a field of giant spikes91, a marker system92 or even a ‘comic’93. The repository for extraterrestrial messages would have to be a similar construction, but instead of excluding people from its contents, it should include them, as these messages should not be forgotten. If we ever were to receive a reply, it would be quite a misfortune if we weren’t able to remember to what message the reply referred to. This shows that the questionaire about communicating with extraterrestrials is just as much about communicating into the future, and spans the lifetime of many human generations to come, and not just those living now. Apart from using the repository as a reference in the case that we do get a reply, it will also become a historic document, which won’t be specifically written as one. The messages often contain just a momentary image of human life at a certain time, just like the shape of a river is just a momentary image of the entire lifespan of that river. If we keep a database of the these messages for long enough, say thousands of years, we will eventually be able to see the natural shape of the lifespan of the civilisation that is humankind.</p>
-<h1 class="next"> <a href="#chapter5id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter5id_1" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
 </div>
 
 
@@ -644,8 +725,9 @@ The message was directed at the globular star cluster M1389, which is 25.000 lig
 The Arecibo message was only broadcast once, but what if the broadcasting would have continued? Say the original structure of 1679 bits would have been kept the same, but with every transmission a slight alternation would be made. This would in turn result in an interstellar animation. We could animate the human figure, making it act out some basic human gestures(animated image), which would lay a foundation for any future physical meeting—to communicate by mimicry. Just like the human general and Martian did in Mars Attacks! Up until now, most of the attempts at visual communication have been a static ones—the illustrations on the Pioneer plaques, the encoded images on the Voyager disks, the binary code of the Arecibo message—none of them utilize the element of time and space, elements that are abundant when it comes to interstellar communication. One of the simplest ways of conveying a message is by simply acting it out. And if used in the right context, it can already create an understanding of the message. The receiving party would know that us waving our hands at first contact has a meaning, and they could (if their physical form allows them to) recreate this gesture, or else, respond by showing us their custom of meeting at first contact.</p>
  <p>
 In the 1997 movie Contact94, Jodie Foster comes upon an extraterrestrial message transmitted via radiowaves. At first, the message seems to be of a simple mathematical origin,  it being a series of prime numbers95, without any further meaning. However, when further studied, the message is found to contain a massive amount of encrypted pages of information, which, by two-dimensional thinking, seem to not fit together in any way. But when looked at in a three-dimensional way, they do. And by using a cipher the extraterrestrials have added to the message, it is decrypted and found to be a blueprint for a highly sophisticated piece of extraterrestrial machinery.</p>
-<h1 class="next"> <a href="#chapter5id_2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter5id_2" style="cursor:w-resize;"> <img id="next" src="next/e.jpg"
+         onmouseover="this.src='next/e.gif';" onmouseout="this.src='next/e.jpg';">
+    </img></a>
 </div>
 
 
@@ -661,8 +743,9 @@ In the 1997 movie Contact94, Jodie Foster comes upon an extraterrestrial message
 In Giotto’s painting Christ before Caiaphas99 there is clearly something not right. The space looks distorted and unnatural to us, since we are trained in looking at two-dimensional images depicting three-dimensional space. This is because the famous Giotto was still experimenting with the rules of perspective. But since people weren’t accustomed yet to perspective in paintings, it probably did not look wrong to them. Only after the discovery of perspective in painting this became apparent. </p>
 <p>
   What if the two-dimensional way of portraying space is something inherent to humans or even primitive compared to any far more advanced civilisation. Theories such as that of Riemannian space63 are just an indication of how space can be interpreted in many different ways, ways of which we have no comprehension as of yet. </p>
-<h1 class="next"> <a href="#chapter5id_3"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter5id_3" style="cursor:n-resize;"> <img id="next" src="next/n.jpg"
+         onmouseover="this.src='next/n.gif';" onmouseout="this.src='next/n.jpg';">
+    </img></a>
 </div>
 
 
@@ -678,8 +761,9 @@ In the last decades, three-dimensional technologies have come a long way. Up unt
 
 <p>
 Next to these visual representations, audio might also be an important element to a message. The extraterrestrials in the 1977 movie “Close encounters of the third kind”106 broadcast a set of five musical tones that are heard all around the world. When a meeting is set-up, and the extraterrestrials arrive in their spacecraft, scientists play the five tones on a keyboard that is connected to an array of lights107. The extraterrestrials reply with playing a set of new tones, each accompanied by a colored light108. What happens next is a musical and visual collaboratory piece of human and extraterrestrial art109 that superceeds any content-driven message but that seems to speak directly driven by—and interpreted with—the senses.  The reason this is interesting is that sound (atmospheric vibrations) can be a more direct way of communication than just image. Sound, in combination with other methods of communication, could create a more emotional bond, something a purely visual message might not achieve. It could help in conveying more difficult concepts such as emotions. Seeing as auditory communication—let’s not forget about talking— is part of our human identity and is just as important as non-verbal communication. Therefore, it seems only logical that it should also be included in our attempts at communicating with extraterrestrials.</p>
-<h1 class="next"> <a href="#chapter6id_1"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#chapter6id_1" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
 </div>
 
 
@@ -697,23 +781,27 @@ While exploring space, we leave behind a lot of physical traces. The moon is alr
 <p>
 But some of the artifacts we leave behind are an oppurtunity for communication. The planting of flags can be seen a way of marking a place of newly discovered soil, which reminds us of colonialism112 in previous centuries. And in some way it is—we are exploring space and seeking for new possibilities. We now have the oppurtinity to prevent the mistakes we made back then. What if the US flag was more than just a flag that was placed to feed a certain national pride and/or claim for property? In a time where individual nationalities seem to become of less importance, we can further explore the universe—and in the case of contact with an extraterrestrial life form, we can identify ourselves—as a postnational113 entity. It is not only about how we will communicate with, but also how we will present ourselves to extraterrestrials. It is about our identity as a human species. What makes it even more relevant is that it is beginning to be very likely that in the coming decades we will start colonising planets—starting with Mars(src)—meaning that a new generation of humans not born on Earth will come into existence, not accustomed to the terrestrial context every single human so far is bound to. They will develop a new civilisation with a new culture. The only thing that will now of Earth is what they learn through stories or encyclopediae. These human Martians might be the first extraterrestrials that we will communicate with.
 </p>
-<h1 class="next"> <a href="#conclusion"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+<a href="#conclusionid1" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
+    </img></a>
 </div>
 
 
 
 <div id="conclusionid1">
-  <span class="bgtitle">C<br />O<br />N<br />C<br />L<br />S<br />S<br />I<br />O<br />N</span>
+  <span class="bgtitle">C<br />O<br />N<br />C<br />L<br />U<br />S<br />I<br />O<br />N</span>
 </div>
 
 <div id="conclusion1"  class="container">
-To communicate is part of human nature. Whether it is on the wall of a cave or on a golden plate we send into space, we want to make ourselves known. One of our biggest fears is our mortality, our finite amount of time we have on this planet. This makes the infinity of space such an appealing and logical step for exploration. One way of doing this is by sending our presence into it in the form of messages. The possibility of these messages actually being received by an extraterrestrial life form might be very small, but it is still present, and therefore relevant. And whether these messages will be answered or not, they will travel through space and outlive us. 
-
-As to answering my research question (question), it seems that a certain pattern has emerged regarding the ways of conveying the message. As only a limited amount of messages has been sent into outerspace—as the sending of such a message has been costly—it seems that the first extraterrestrial messages from the 1970’s have become a sort of template that every consecutive message that followed has implemented; a selection of audio and static, two-dimensional images, often as separate elements. This limited supply of data can also be attributed to the fact that the technologies used only allowed for a low amount of it. These elements are presented individually from each other and when taken out of context—which means off-planet—they lose any meaning they had, since there is no way of reading them anymore. A way to create meaning would be to combine the different elements to form a more coherent message. One where meaning can be created by the interaction of elements.
-Also, as most of these messages have been funded with government money, they are kept as objective as possible, since any subjective statement has the potential to become a political debate. But with technological advancements going hand in hand with the arrival of commercial corporations it seems that in the near future space will become public domain. It will not remain the realm of national governments as it has been in the past century, but it will become open for individual enterprises. It can be expected that messages sent through these channels are much more subjective than the ones attempting to include only objective facts about our biology, as terrestrial politics will be of less influence on them. In any way, the message we send will inevitably be subjective, as it is inherently designed by human input, and this can be seen as restricting. A way of lessening these restrictions would be to use randomly created content, by means of algorithms or computers, although these are still products of human thinking. Our only option is to embrace the subjectivity and continue discussion on the subject of extraterrestrial communication. And hope that on the day we make contact, we do not make the mistakes that could have been prevented by speculation—both theoretical as practical—and have a better understanding of who we are and how we want to present ourselves in this inifinitely vast universe.
-<h1 class="next"> <a href="#conclusionid2"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+  <p>
+To communicate is part of human nature. Whether it is on the wall of a cave or on a golden plate we send into space, we want to make ourselves known. One of our biggest fears is our mortality, our finite amount of time we have on this planet. This makes the infinity of space such an appealing and logical step for exploration. One way of doing this is by sending our presence into it in the form of messages. The possibility of these messages actually being received by an extraterrestrial life form might be very small, but it is still present, and therefore relevant. And whether these messages will be answered or not, they will travel through space and outlive us. </p>
+<p>
+As to answering my research question (question), it seems that a certain pattern has emerged regarding the ways of conveying the message. As only a limited amount of messages has been sent into outerspace—as the sending of such a message has been costly—it seems that the first extraterrestrial messages from the 1970’s have become a sort of template that every consecutive message that followed has implemented; a selection of audio and static, two-dimensional images, often as separate elements. This limited supply of data can also be attributed to the fact that the technologies used only allowed for a low amount of it. These elements are presented individually from each other and when taken out of context—which means off-planet—they lose any meaning they had, since there is no way of reading them anymore. A way to create meaning would be to combine the different elements to form a more coherent message. One where meaning can be created by the interaction of elements.</p>
+<p>
+Also, as most of these messages have been funded with government money, they are kept as objective as possible, since any subjective statement has the potential to become a political debate. But with technological advancements going hand in hand with the arrival of commercial corporations it seems that in the near future space will become public domain. It will not remain the realm of national governments as it has been in the past century, but it will become open for individual enterprises. It can be expected that messages sent through these channels are much more subjective than the ones attempting to include only objective facts about our biology, as terrestrial politics will be of less influence on them. In any way, the message we send will inevitably be subjective, as it is inherently designed by human input, and this can be seen as restricting. A way of lessening these restrictions would be to use randomly created content, by means of algorithms or computers, although these are still products of human thinking. Our only option is to embrace the subjectivity and continue discussion on the subject of extraterrestrial communication. And hope that on the day we make contact, we do not make the mistakes that could have been prevented by speculation—both theoretical as practical—and have a better understanding of who we are and how we want to present ourselves in this inifinitely vast universe.</p>
+<a href="#conclusionid2" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
+    </img></a>
 </div>
 
 
@@ -722,11 +810,188 @@ Also, as most of these messages have been funded with government money, they are
 </div>
 
 <div id="conclusion2"  class="container">
-As these messages will travel through space for thousands of years, it is also important to create a repository that includes every message we sent. So that if we ever are to receive a reply, thousands of years from now, we will be able to trace back what the original message was. In this way, thinking about the problems communicating with extraterrestrials will present to us will not only prove fruitful in terms of said communication, it will also aid us in communicating with our future generations, thousands or maybe even millions of years away from now. when we have colonised planets other than ours, creating generations of humans that can be considered the first extraterrestrials.  And how we can prevent the loss of meaning that seems to have befallen us with human artifacts such as those of the early cave paintings, or the symbols from communication systems that we will never be able to understand anymore. We musn’t forget the possiblity of us actually being alone in the universe, meaning our messages will remain soliloquies forever. And what if they are just a starting point of the creation of a universal language? One that will be readable by humans thousand of years from now. It could be used to create the first entry in the Encyclopia Galactica114. In the very near future, we will start colonising other planets. Humans might be the first extraterrestrials we will have to communicate with.
-<h1 class="next"> <a href="#references"><img id="next2" src="next.jpg"
-         onclick="this.src='next.gif';"></a></h1>
+  <p>
+As these messages will travel through space for thousands of years, it is also important to create a repository that includes every message we sent. So that if we ever are to receive a reply, thousands of years from now, we will be able to trace back what the original message was. In this way, thinking about the problems communicating with extraterrestrials will present to us will not only prove fruitful in terms of said communication, it will also aid us in communicating with our future generations, thousands or maybe even millions of years away from now. When we have colonised planets other than ours, creating generations of humans that can be considered the first extraterrestrials.</p>
+  <p>And how we can prevent the loss of meaning that seems to have befallen us with human artifacts such as those of the early cave paintings, or the symbols from communication systems that we will never be able to understand anymore. We musn’t forget the possiblity of us actually being alone in the universe, meaning our messages will remain soliloquies forever. And what if they are just a starting point of the creation of a universal language? One that will be readable by humans thousand of years from now. It could be used to create the first entry in the Encyclopia Galactica114. In the very near future, we will start colonising other planets. Humans might be the first extraterrestrials we will have to communicate with.</p>
+<a href="#thanksid" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
 </div>
 
+
+<div id="thanksid">
+</div>
+
+<div id="thanks"  class="container">
+  <h4>
+Special thanks to thesis supervisors:<br/><em> Nick Axel<br /> Marjan Brandsma<br /> Dirk Vis<br /><br/></em>
+And Friends and family for additional help/support<br /><br />
+Written and designed by:<br />
+<a href="http://jorickdequaasteniet.nl/" onclick="window.open(this.href)">Jorick de Quaasteniet</a>
+</h4>
+
+<a href="#referencesid" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="referencesid">
+  <span class="bgtitle">R<br />E<br />F<br />E<br />R<br />E<br />N<br />C<br />E<br />S</span>
+</div>
+
+<div id="references"  class="container">
+  <h4>Books/Literature </h4>
+
+<p>H.G. Wells (1901) <em>First men in the moon</em></p>
+
+<p>Bruno Munari (1971) <em>Design as Art, United Kingdom</em>, Penguin</p>
+
+<p>Andrew Robinson (2004) <em>Alfabet, hiëroglief en pictogram, de geschiedenis van het schrift</em>, Atrium</p>
+
+<p>Visual function, an introduction to Information Design, Paul Mijksenaar, 010 Publishers, 1997</p>
+
+<p>Archeology, anthropology, and Interstellar Communication, Douglas E. Vakoch, NASA, 2014</p>
+
+<p>Semiotik / Semiotics - Handbook of Linguistics and Communication Science, Walter de Gruyter, Berlin, New York, 2004</p>
+<p>Understanding Media: The Extensions of Man - Marshal McLuhan, 1964</p>
+
+<p>Cengage Advantage Books: The Power of Art, Richard Lewis, Susan Lewis, Cengage Learning, 2008
+And Friends and family for additional help/support</p>
+
+<h4>Movies/Documentaries</h4>
+<p>2001: A space odyssey, Stanley Kubrick & Arthur C. Clarke, 1968</p>
+<p>Mars Attacks!, Tim Burton, 1996</p>
+<p>The Fifth Element, Luc Besson, 1997</p>
+<p>Into Eternity, Michael Madsen, January 6, 2010</p>
+<p>Contact, Robert Zemeckis, 1997</p>
+
+<a href="#referencesid2" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+<div id="referencesid2">
+</div>
+
+<div id="references2"  class="container">
+<h4>Articles</h4>
+<p>
+Oxford User’s Guide to Mathematics. Oxford (2004) UK: Oxford University Press. p. 1188</p>
+
+<p>Age of Man (March 2011) National Geographic</p>
+
+<p>Reading Eagle  (Oct 21, 1969) Google News</p>
+
+<p>Charles Sanders Peirce(1931-58), Collected Writings (8 Vols.), Cambridge, MA, Harvard University Press</p>
+
+<p>What is graphic design? (2016) Juliette Cezzar http://www.aiga.org/what-is-design/</p>
+
+<p>Old European / Vinca / Danube script http://www.omniglot.com/writing/vinca.htm</p>
+
+<p>Animal Communications, Information Theory, and the Search for Extraterrestrial Intelligence (SETI) Laurance R. Doyle
+seti.org/seti-institute/animal-communication-information-theory-and-seti</p>
+
+<p>Could there be life in Titan’s methane sea? (2015) cosmosmagazine.com/space/could-there-be-life-titans-methane-sea
+Consulted: December 2015</p>
+
+<p>Sagan, C. (2009). Carl Sagan, Cosmic Connection: An Extraterrestrial Perspective, Cambridge University Press</p>
+
+<p>Daytona Beach Morning Journal (Mar 12, 1972)</p>
+
+<p>The Last Pictures: Interview with Trevor Paglen (2012) e-flux
+www.e-flux.com/journal/the-last-pictures-interview-with-trevor-paglen</p>
+
+<p>Annual report on internet usage (2015) ITU https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2015.pdf</p>
+
+<p>“The rise of additive manufacturing” (24th May 2010) The Engineer, Kate Cummins 
+http://www.theengineer.co.uk/the-rise-of-additive-manufacturing/
+Consulted January 2016</p>
+
+<p>Points of View: Gestalt principles (Part 1) (2010) Nature Methods
+http://www.nature.com/nmeth/journal/v7/n11/full/nmeth1110-863.html
+Consulted January 2016</p>
+
+<a href="#referencesid3" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+<div id="referencesid3">
+</div>
+
+<div id="references3"  class="container">
+<h4>Online media</h4>
+<p>
+Pioneer and Voyager missions
+http://nasa.gov/centers/ames/missions/archive/pioneer.html (2007)
+http://voyager.jpl.nasa.gov/ 
+http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html
+http://goldenrecord.org/
+Consulted November 2015</p>
+
+<p>NASA Soundcloud (2015)
+https://soundcloud.com/nasa/sets/golden-record-sounds-of</p>
+
+
+<p>
+Online dictionaries
+dictionary.com
+wikipedia.org
+merriam-webster.com</p>
+
+<p>
+virgingalactic.com</p>
+
+<p>hubblesite.org</p>
+
+<p>nativeamericannetroots.net</p>
+
+<p>Lines and Geoglyphs of Nasca and Pampas de Jumana (1994) UNESCO World Heritage Centre
+unesco.org/archives/multimedia/?s=films_details&pg=33&id=1264</p>
+
+<p>Google maps
+https://www.google.com/maps/</p>
+
+<p>https://www.google.com/trends/explore#q=
+  buddhism%2C%20christianity%2C%20judaism%2C%20hinduism&cmpt=q Google trends search on the word ‘religion’ (2005 - 2015)</p>
+
+<p>Trevor Paglen http://www.paglen.com/
+The Last Pictures www.thelastpictures.org</p>
+
+<p>Teen Age Message http://www.setileague.org/articles/tam.htm</p>
+
+
+<p>Astrobotic
+https://www.astrobotic.com/
+https://www.astrobotic.com/moon-mail</p>
+
+<p>Pocari to the Moon
+http://lunar-dream.com/</p>
+
+<p>SETI
+http://www.seti.org/seti-institute/project/details/arecibo-message</p>
+
+<p>Cosmos 12: Encyclopaedia Galactica (2014)  Shane L. Larson
+https://writescience.wordpress.com/tag/arecibo-message/</p>
+
+
+<p>Nuclear Energy Institute</p>
+http://nei.org/
+
+
+<p>mathsisfun.com</p>
+
+<p>Trash on the moon, a report prepared for the people of Earth (2012) Dakin Heart
+http://trashonthemoon.com/</p>
+
+<a href="#startid" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
 
 
 
