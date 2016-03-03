@@ -1,0 +1,1854 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html> <!--<![endif]-->
+<head>
+    
+    <title>XTRTRRSTRL SLLQS</title>
+    <meta charset="utf-8"/> <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
+
+      
+
+        <!-- A short description of the page: -->
+        <meta name="description" content="In the hypothetical case of contact with an extraterrestrial life form, what would our communication look like?">
+                
+        <!-- This is the title used by Facebook/Twitter: they recommend to leave out the site name -->
+        <meta property="og:title" content="Extraterrestrial communication" />
+        <!-- This is the the preview image used by Facebook/Twitter.
+             Facebook currently prefers a 1200x630 image
+             Import: this has to be an absolute url including the domain name -->
+        <meta property="og:image" content="http://kabk.github.com/govt-theses-16-jorick-de-quaasteniet-communication-with-extraterrestrial-lifeforms/images/header.gif">
+        
+        <!-- This metadata encodes the author of the page. It is currently not used by Facebook, Twitter,
+             but the script generating our index does use it. -->
+        <meta property="dc:creator" content="de Quaasteniet, Jorick"/>
+
+        <!-- When you first published the page, and when it was last modified -->
+        <meta property="dc:created" content="2015-12-05T00:00:00Z" />
+        <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
+	
+    <link rel="stylesheet" href="stylesheet8.css">
+    <link rel="stylesheet" href="imagesbg.css"> 
+    <link rel="stylesheet" href="screens.css">
+    <link rel="stylesheet" type="text/css" href="printbg.css" media="print" />
+    <!--  <link rel="stylesheet" type="text/css" href="printmap.css" media="print" />  -->
+    <link rel="icon" href="favicon.jpg" type="image/jpg" >
+
+<meta name="viewport" content="width=device-width">
+<link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1200px)' href='small.css' />
+
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="three.js"></script>
+
+
+    
+
+
+
+
+ <!-- fly to center of the page -->
+ <script type="text/javascript" language="javascript">
+  function ScrollRed (alignToTop) {
+            var redText = document.getElementById("startid");
+            redText.scrollIntoView (alignToTop);
+        }
+</script>
+	
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$( ".ufo" ).draggable({
+    handle: "img"
+});
+});//]]> 
+
+</script>
+
+
+<!--
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27591074-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
+</head>
+
+
+
+<body onload="extraterrestrial()">
+<script>
+function extraterrestrial() {
+    document.getElementById("load").click();
+}
+</script>
+
+
+<div class="loader">
+  <script>
+
+
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera( 15, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      document.body.appendChild( renderer.domElement );
+      
+      var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+      var geometry2 = new THREE.BoxGeometry( 0.3, 0.3, 0.3 );
+      var geometry3 = new THREE.BoxGeometry( 0.6, 0.6, 0.6 );
+
+      var material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframe_linewidth: 10  } );
+      var material2 = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframe_linewidth: 10  } );
+      var material3 = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframe_linewidth: 10  } );
+      var cube = new THREE.Mesh( geometry, material );
+      var cube2 = new THREE.Mesh( geometry2, material2 );
+      var cube3 = new THREE.Mesh( geometry3, material3 );
+      
+      
+
+      
+
+      scene.add( cube, cube2, cube3 );
+      
+
+      camera.position.z = 8;
+      
+
+      function render() {
+      cube.rotation.x += 0.01;
+      cube.rotation.y -= 0.01;
+      cube2.rotation.x -= 0.02;
+      cube2.rotation.y -= 0.02;
+      cube2.rotation.x -= 0.1;
+      cube3.rotation.y += 0.1;
+
+      requestAnimationFrame( render );
+      renderer.render( scene, camera );
+      renderer.setClearColor( 0xffffff, 0);
+      }
+      render();
+
+    </script></div>
+
+
+<script type="text/javascript">
+$(window).load(function() {
+ 
+  $("canvas").fadeOut("fast");
+})
+</script>
+
+
+
+  
+
+ <!-- make it fly diagonal! -->
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) { 
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top,
+        scrollLeft: $(hash).offset().left
+    }, 1500, function(){
+      window.location.hash = hash;
+    });
+  });
+});
+</script>
+
+ 
+
+<!-- navigation bar open and close -->
+<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+                
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      $(document).ready(function(){
+        $(".zonnetje").click(function(){
+          $(".nav-bar").slideToggle(0);
+        });
+      });
+
+    </script> 
+
+ <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+                
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      $(document).ready(function(){
+        $(".zonnetje2").click(function(){
+          $(".nav-bar2").slideToggle(0);
+        });
+      });
+
+    </script> 
+
+<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+                
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      $(document).ready(function(){
+        $(".zonnetje3").click(function(){
+          $(".nav-bar3").slideToggle(0);
+        });
+      });
+    </script> 
+
+
+
+<a>
+<div class="zonnetje">
+  	<img src="menudown.jpg"
+         onmouseover="this.src='menudown.gif';"
+         onmouseout="this.src='menudown.jpg';">
+</div>
+</a>
+
+<nav class="nav-bar">
+   <ul>
+    
+    <li><a href="#startid" id="load">1....................Title</a>
+  	<li><a href="#introductionid1">  2.............Introduction</a></li>
+    <li><a href="#chapter1id_1">     3................Chapter_1</a></li>
+    <li><a href="#chapter2id_1">     4................Chapter_2</a></li>
+    <li><a href="#chapter3id_1">     5................Chapter_3</a></li>
+    <li><a href="#chapter4id_1">     6................Chapter_4</a></li>
+    <li><a href="#chapter5id_1">     7................Chapter_5</a></li>
+    <li><a href="#chapter6id_1">     8................Chapter_6</a></li>
+    <li><a href="#conclusionid1">    9...............Conclusion</a></li>
+    <li><a href="#referencesid">     /...............References</a></li>
+    <li><a href="#abstractid">       /.................Abstract</a></li>
+    <li><a href="#colophonid">       /.................Colophon</a></li>
+    
+  </ul>
+
+</nav>
+
+
+
+<a>
+<div class="zonnetje2">
+   <img src="menudown.jpg"
+         onmouseover="this.src='menudown.gif';"
+         onmouseout="this.src='menudown.jpg';">
+</div>
+</a>
+
+<nav class="nav-bar2">
+  <ul>
+     <li><a href="#printid" onClick="window.print ()" value="print">#.....Print</a></li>
+  </ul>
+</nav>
+
+
+
+
+<a>
+<div class="zonnetje3">
+   <img id="kaartzonnetje" src="menudown_vert.jpg"
+         onmouseover="this.src='menudown_vert.gif';"
+         onmouseout="this.src='menudown_vert.jpg';">
+</div>
+</a>
+
+
+<nav class="nav-bar3">
+
+
+
+
+
+<img src="screenshot.jpeg">
+<a href="#startid"  alt="start"><div id="begin"></div><div class="mapitem" id="map1">(11400,11100)<br />title</div></a>
+<a href="#introductionid1"  alt="introduction"><div id="intro"></div><div class="mapitem" id="map2">(168,172)<br />introduction</div></a>
+<a href="#chapter1id_1"  alt="chapter1"><div id="chap1"></div><div class="mapitem" id="map3">(98,178)chapter 1</div></a>
+<a href="#chapter2id_1"  alt="chapter2"><div id="chap2"></div><div class="mapitem" id="map4">chapter 2</div></a>
+<a href="#chapter3id_1"  alt="chapter3"><div id="chap3"></div><div class="mapitem" id="map5">chapter 3</div></a>
+<a href="#chapter4id_1"  alt="chapter4"><div id="chap4"></div><div class="mapitem" id="map6">chapter 4</div></a>
+<a href="#chapter5id_1"  alt="chapter5"><div id="chap5"></div><div class="mapitem" id="map7">chapter 5</div></a>
+<a href="#chapter6id_1"  alt="chapter6"><div id="chap6"></div><div class="mapitem" id="map8">chapter 6</div></a>
+<a href="#conclusionid1"  alt="conclusion"><div id="concl"></div><div class="mapitem" id="map9">conclusion</div></a>
+<a href="#referencesid"  alt="references"><div id="ref"></div><div class="mapitem" id="map10">references</div></a>
+<a href="#colophonid"  alt="colophon"><div id="thx"></div><div class="mapitem" id="map11">colophon</div></a>
+<a href="#abstractid"  alt="abstract"><div id="abs"></div><div class="mapitem" id="map12">abstract</div></a>
+<a href="#printpageid"  alt="print"><div id="prnt"></div><div class="mapitem" id="map12">print</div></a>
+
+</nav>
+
+
+
+
+
+
+<div class="universe">
+
+
+<div id="half"></div>  
+<svg class="path">
+<polyline points="0,0 11500,11650 "></polyline>
+
+<polyline points="12413,12000 13600,12900 "></polyline>
+<polyline points="13980,14700 14700,14200 "></polyline>
+<polyline points="15350,14780 16200,9000 "></polyline>
+
+<polyline points="16450,10700 15600,10200 "></polyline>
+<polyline points="15150,9130 15400,10600 "></polyline>
+<polyline points="14410,8840 14900,9880 "></polyline>
+<polyline points="14410,10840 9400,9180 "></polyline>
+
+<polyline points="8700,11200 8360,9800 "></polyline>
+<polyline points="7900,10200 8211,11800 "></polyline>
+<polyline points="8100,13000 11100,16000 "></polyline>
+
+<polyline points="10900,17600 10300,17000 "></polyline>
+<polyline points="10400,19100 11000,18400 "></polyline>
+<polyline points="11200,20000 18000,18200 "></polyline>
+
+<polyline points="18700,19700 19200,18600 "></polyline>
+<polyline points="19900,19800 21900,10200 "></polyline>
+
+<polyline points="22700,11350 23300,11090 "></polyline>
+<polyline points="23700,11050 23350,10000 "></polyline>
+<polyline points="23000,9750 12750,2200 "></polyline>
+
+<polyline points="12700,2750 3750,9300 "></polyline>
+<polyline points="3500,10550 2750,11000 "></polyline>
+<polyline points="2500,11550 3950,20000 "></polyline>
+
+<polyline points="3900,20210 12450,25800 "></polyline>
+<polyline points="12990,26710 14000,24700 "></polyline>
+<polyline points="14090,25910 16000,26400 "></polyline>
+
+</svg>
+
+
+
+
+<div id="startid">
+</div>
+
+<div id="start">
+
+<span id="maintitel">
+<div id="mainlink1"><span class="hide2">EXTRA<br />TERRE<br />STRIAL</span><span class="hidden2"><br /><strong>ex·tra·ter·res·tri·al</strong><br /> (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
+<em>adj.</em><br />
+Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
+<em>n.</em><br />
+An extraterrestrial being or life form. <br /><br /><em id="source">The Free Dictionary</em></span>
+</div>
+
+<div id="mainlink1"><span class="hide2">SOLI<br />LOQU<br />IES</marquee></span><span class="hidden2"><br />
+<strong>so·lil·o·quy</strong><br />  (sə-lĭl′ə-kwē)<br /><br />
+<em>n. pl. so·lil·o·quies</em><br />
+1.<br /><br />
+a. A dramatic or literary form of discourse in which a character talks to himself or herself or reveals his or her thoughts when alone or unaware of the presence of other characters.<br /><br />
+b. A specific speech or piece of writing in this form.<br /><br />
+2. The act of speaking to oneself.<br /><br /><em id="source">The Free Dictionary</em>
+</span>
+
+</div>
+<audio controls id="firstaudio"><source src="sounds/extraterrestrialsoliloquies.mp3" type="audio/mpeg" ></audio> 
+
+<a href="#introductionid1"> <img id="first_next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+<div id="indexid">
+<span class="bgtitle">I<br />N<br />D<br />E<br />X</span>
+</div>
+<div id="printindex">
+ <span class="indexitem">Abstract........p.</span><br />
+ <span class="indexitem">Introduction....p.</span><br />
+ <span class="indexitem">Chapter_1.......p.</span><br />
+ <span class="indexitem">Chapter_2.......p.</span><br />
+ <span class="indexitem">Chapter_3.......p.</span><br />
+ <span class="indexitem">Chapter_4.......p.</span><br />
+ <span class="indexitem">Chapter_5.......p.</span><br />
+ <span class="indexitem">Chapter_6.......p.</span><br />
+ <span class="indexitem">Conclusion......p.</span><br />
+ <span class="indexitem">References......p.</span><br />
+ <span class="indexitem">Appendix........p.</span>
+</div>
+
+
+<span class="printabstract">
+<div id="abstractid">
+  <span class="bgtitle">A<br />B<br />S<br />T<br />R<br />A<br />C<br />T </span>
+</div>
+
+
+<div id="abstract" class="container">
+
+<p>
+<span class="firstline">In 1972 and 1973,</span> <span class="hide">NASA</span><span class="hidden"><img src="ufo/abstract/nasa.png">National Aeronautics and Space Administration <em id="source"><a href="http://www.nasa.gov/" onclick="window.open(this.href)">www.nasa.gov</a></em> </span><span id="sup">(a)</span> launched two probes into outerspace called the <span class="hide">Pioneer 10 and Pioneer 11</span><span class="hidden"><img src="ufo/abstract/pioneer_family.jpg">A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <em id="source">Image date: March 11, 1982. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)">NASA</a></em></span><span id="sup">(b)</span> spacecrafts. Both of them had a 
+<span class="hide">gold-anodized aluminium plaque</span><span class="hidden"><img src="ufo/abstract/Pioneer-Plaque.jpeg">The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan.<a href="http://nasa.gov/centers/ames/missions/archive/pioneer.html" onclick="window.open(this.href)"><em id="source">source</em></a></span>
+<span id="sup">(c)</span> on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any extraterrestrial life form that might come upon them. Some years later, in 1977, NASA launched the <span class="hide">Voyager probes</span><span class="hidden"><img src="ufo/abstract/voyager.jpg">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)"><em id="source">source</em></a> 
+</span><span id="sup">(d)</span>. On board they included <span class="hide">golden phonograph records</span><span class="hidden"><img src="ufo/abstract/golden1.jpg"><img src="ufo/abstract/golden2.jpg">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html"><em id="source">source</em></a>
+</span><span id="sup">(e)</span> containing a selection of <span class="hide">sounds</span><span class="hidden"> <em id="source"><a href="https://soundcloud.com/nasa/sets/golden-record-sounds-of" onclick="window.open(this.href)"><audio controls><source src="sounds/dog.mp3" type="audio/mpeg"></audio> <audio controls><source src="sounds/mudpots.mp3" type="audio/mpeg"></audio> <audio controls><source src="sounds/firespeech.mp3" type="audio/mpeg"></audio> NASA Soundcloud</a></em></span><span id="sup">(f)</span> and <span class="hide">images</span><span class="hidden"><img src="ufo/abstract/animation.gif">126 images were included on the Golden Records</span><span id="sup">(g)</span> selected to portray our way of living on earth. The launching of these spacecraft could be compared to throwing a bottle with a message in the ocean, hoping that someone, or something, will encounter it and be able to read the message. <h3>But in the case of such an encounter, would these images and sounds be sufficiently communicative? How will it communicate with a life form that we know nothing of? What kind of influence does the choice of communication have on the first encounter? Can we apply the knowledge we have from our own ways of communicating?</h3></p>
+<p> In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. <h3>And who is to say whether these life forms are capable of communication?</h3><p> It might be bacteria, dwelling in the depths of <span class="hide">Titan’s</span><span class="hidden">addd</span><span id="sup">(h)</span> methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p>
+<h3>
+ Apart from the possibilty that they exist, who is to say we will make first contact with them? They might innitiate contact. Will we be able to understand each other? Who decides on the content of our message? How important is our cultural context in such a message? 
+  </h3>
+<p>
+  Until we actually do make contact, the answers to these questions will remain mostly unanswered, as the messages remain soliloquies. But, we can at least consider them, seeing as the search for answers to these questions can teach us a lot about our own ways of communication and the way we look at ourselves as a species. And seeing as we are on the verge of colonising space, the first extraterrestrials we have to communicate with might be ourselves.
+</p>
+ <a href="#introductionid1" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
+    </img></a>
+
+</div>
+</span>
+
+
+<div id="introductionid1">
+  <span class="bgtitle">I<br />N<br />T<br />R<br />O<br />D<br />U<br />C<br />T<br />I<br />O<br />N</span>
+</div>
+
+
+<div id="introduction1" class="container">
+
+<h4>Pale Blue Dot</h4>
+<p><span class="firstline">In 1990,</span> a <span class="hide">photo</span><span class=" hidden"><img src="ufo/introduction/Pale_Blue_Dot.png">This image of Earth is one of 60 frames taken by the Voyager 1 spacecraft on February 14, 1990 from a distance of more than 6 billion kilometers. Earth is visible as a dot on the right of the picture, hence the name <em>Pale Blue Dot</em> 
+<em id="source"><a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)">NASA / Jet Propulsion Laboratory</a></em></span><span id="sup">(1)</span> of <span class="hide">Earth</span><span class="hidden"><img src="ufo/introduction/earth.gif">Earth is the third planet from the Sun and the fifth largest<br /><br />
+
+<strong>Planet Profile</strong><br />
+orbit: 149,600,000 km (1.00 AU) from Sun<br />
+diameter: 12,756.3 km<br />
+mass: 5.972e24 kg<br /><em id="source"><a href="http://nineplanets.org/earth.html" onclick="window.open(this.href)"><em id="source">Source</em></a></em></span><span id="sup">(2)</span> was taken from the Voyager 1 spacecraft, then 6,000,000,000 removed from its planet of origin. Our planet, reduced to the size of 0.12 pixel. In 2016, the year that I am writing this thesis, the spacecraft has travelled 20,000,000,000 kilometers and has entered <span class="hide">interstellar space</span><span class=" hidden">Interstellar space refers to the space in the galaxy that is not occupied by stars, their magnetic fields or their planetary systems. <em id="source"><a href="http://www.pbs.org/newshour/extra/2013/09/voyager-becomes-first-spacecraft-enter-interstellar-space/" onclick="window.open(this.href)">Source</a></em></span><span id="sup">3</span> as the first human-made object to do so. Unimaginably large numbers that hint the slightest at how unimaginably large the universe is, and how unimaginably small we are in it. What is peculiar about this spacecraft is that next to its scientific mission, it is carrying an object of diplomacy. An object known to humankind as a record, inscribed with intructions on how to extract its contents. This <span class="hide">Golden Record</span><span class="hidden"><img src="ufo/introduction/golden1.jpg"><img src="ufo/introduction/golden2.jpg">NASA placed a message aboard Voyager 1 and 2 -a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html" onclick="window.open(this.href)"><em id="source"> source</em></a></span><span id="sup">4</span>—on which <span class="hide">NASA</span><span class="hidden"><img src="ufo/introduction/nasa.png">National Aeronautics and Space Administration <a href="https://www.nasa.gov/" onclick="window.open(this.href)"><em id="source">nasa.gov</em></a></span><span id="sup">5</span> stored images and sounds from Earth—is meant to communicate to any <span class="hide">extraterrestrial</span><span class=" hidden"><strong>ex·tra·ter·res·tri·al</strong> (ĕk′strə-tə-rĕs′trē-əl)<br /><audio controls><source src="sounds/extraterrestrial.mp3" type="audio/mpeg"></audio> 
+<em>adj.</em><br />
+Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
+<em>n.</em><br />
+An extraterrestrial being or life form. <br /><br /><em id="source">The Free Dictionary</em></span></span><span id="sup">6</span> life form that might come upon it what life of Earth looks and sounds like. An object specifically designed to communicate with extraterrestrials. </p><p>
+  In the course of the last century, a number of such messages have been sent into outer space. However, as of yet, they remain unanswered. They have become <span class="hide">soliloquies</span><span class="hidden"><strong>so·lil·o·quy</strong><br />  (sə-lĭl′ə-kwē)<br />
+  <audio controls><source src="sounds/soliloquy.mp3" type="audio/mpeg"></audio>
+<em>n. pl. so·lil·o·quies</em><br />
+1.<br /><br />
+a. A dramatic or literary form of discourse in which a character talks to himself or herself or reveals his or her thoughts when alone or unaware of the presence of other characters.<br /><br />
+b. A specific speech or piece of writing in this form.<br /><br />
+2. The act of speaking to oneself.<br /><br /><em id="source">The Free Dictionary</em></span><span id="sup">7</span>—spoken with the supposedly collective voice of the inhabitants of Earth and sent into the great void of space, with its only audience remaining ourselves. The <span class="hide">terrestrial</span><span class="hidden"><em>adjective</em><br />
+  1.<br />
+  on or relating to the earth.<br />
+  2.<br />
+  of or on dry land.<br /><br />
+  
+  <em>noun</em><br />
+  1.<br />
+  an inhabitant of the earth<br /><span id="source">dictionary.com</span></span><span id="sup">8</span> context that we are accustomed to communicate in has been replaced here with an extraterrestrial one, and as such, the terrestrial design of these messages will have to make way for an extraterrestrial design. But this raises some questions—philosophical, political and ethical questions. Why do we want to send these messages? Who decides on the content of these messages? And how do we present ourselves in these messages?  </p>
+
+  <p>It all might sound like <span class="hide">science-fiction</span><span class="hidden">Science fiction (abbreviated SF or sci-fi with varying punctuation and capitalization) is a broad genre of fiction that often involves speculations based on current or future science or technology.
+<span id="source"><a href="http://www.goodreads.com/genres/science-fiction" onclick="window.open(this.href)">source</a></span></span><span id="sup">9</span>—entertainment for star-gazers and conspiracy-theorists. But it is not just that. In history, science-fiction has been employed as a reflective device to predict the future and to hypothesize about the direction we as <span class="hide">humankind</span><span class="hidden">Human beings collectively; the human race; humanity.
+<em id="source">dictionary.com</em></span><span id="sup">10</span> are going into. Using our imagination it has taken us beyond the limits that science has given us in the past. It’s a reflection upon our society, to give social, economical and ecological commentary, and to explore the immensity of the universe, and the part that we play in it. Besides, many subjects that science-fiction has dealt with that seemed far-fetched at the time, were an inspiration for modern science and have become a reality for us now. Think about men walking on the <span class="hide">moon</span><span class="hidden"><img src="ufo/introduction/neil.jpg">On July 20, 1969, Neil Armstrong became the first human to step on the moon.
+<a href="http://www.nasa.gov/mission_pages/apollo/apollo11.html" onclick="window.open(this.href)"><em id="source">source</em></a></span><span id="sup">11</span> (<span class="hide">First Men in the Moon</span><span class="hidden"><img src="ufo/introduction/men in the moon.jpg">Wells, H. G. (1901). <u>First Men in the Moon</u> London, United Kingdom: George Newnes </span><span id="sup">12</span>), mobile phones (<span class="hide">Star-Trek communicators</span><span class="hidden"><img src="ufo/introduction/communicator.jpg"><em id="source">Star Trek: The Original Series, Desilu Productions (September 1966–December 1967)</em></span><span id="sup">13</span>) and <span class="hide">commercial space-travel</span><span class="hidden"><img src="ufo/introduction/virgin-galactic.jpg"><em id="source"><a href="http://www.virgingalactic.com" onclick="window.open(this.href)">virgingalactic.com</a> </em></span><span id="sup">14</span> (<span class="hide">2001: A space odyssey</span><span class="hidden"><img src="ufo/introduction/2001-space.jpg"><em id="source">2001: A space odyssey, Stanley Kubrick & Arthur C. Clarke, 1968</em></span><span id="sup">15</span>). </p>
+
+
+<a href="#introductionid2" style="cursor:sw-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+
+</div>
+
+
+
+<div id="introductionid2">
+</div>
+
+<div id="introduction2" class="container">
+
+  <p>There is, however, still one subject that has eluded the transition from science-fiction to science and is still solely a product of fiction. And that is the subject of extraterrestrial life—life on other planets. It is the opinion (and maybe dream) of many scientists (and myself) that it will only be a matter of time until we find proof of extraterrestrial life forms.</p>
+<p>
+<span class="hide">“I think we’ll find E.T. within two dozen years”</span><span class="hidden"><em id="source">Seth Shostak, (Senior Astronomer and Director, SETI), NASA Innovative Advanced Concepts Symposium (2014) Stanford University, Stanford, California</em></span><span id="sup">16</span>
+</p>
+<p>And when we finally do make contact, it will be an entirely new question on how we are going to communicate with one another. Both in a practical way in the case of actual communication and in a reflective way; who are we and what can we say about ourselves? Therefore my research question is as follows: </p>
+
+
+<span class="firstline">
+In the hypothetical case of contact with an extraterrestrial life-form, what will the design of our way of communication look like, and what will it say about humankind?
+</span>
+<p>
+However, as every message we have sent remains unanswered, it is important to keep in mind that there is a chance of us being the sole inhabitants of this universe. </p> <h3>If that is the case, is it still worth the effort to send messages into outer space? Is contact with extraterrestrials really the only purpose of these messages, or are there underlying existential motives that could be traced back all the way to our first ways of communicating on this planet?</h3>
+<a href="#chapter1id_1" style="cursor:sw-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+
+</div>
+
+
+
+
+<div id="chapter1id_1">
+   <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.1</span>
+</div>
+
+<div id="chapter1_1"  class="container">
+ 
+<h2>Case study:<br /> <i>Mars Attacks!</i></h2>
+
+<h4>1a: The handshake</h4>
+<p>
+<span class="firstline">One of the popular</span> methods to hyphothesize about communicating with extraterrestrials is that of fiction. In both books (list) and movies (list) many scenarios are played out. In these, the dramatic element is of great importance, and as such, many of them depict the extraterrestrials as a malevolent species wanting to harm mankind. But even these stories can help us in thinking about communicating with extraterrestrials.</p>
+<p>
+  In the 1996 movie <span class="hide">Mars Attacks!</span><span class="hidden"><img src="ufo/case study/mars_attacks_ver3.jpg"><em>Mars Attacks!</em>, Tim Burton, 1996</span><span id="sup">17</span>, a seemingly friendly representative party from <span class="hide">Mars</span><span class="hidden"><img src="ufo/case study/mars.jpg">Mars is the fourth planet from the Sun and the seventh largest<br /><br />
+
+<strong>Planet Profile</strong><br/>
+orbit: 227,940,000 km (1.52 AU) from Sun <br />
+diameter: 6,794 km<br />
+mass: 6.4219e23 kg <br /> <a href="http://nineplanets.org/mars.html" onclick="window.open(this.href)"><em id="source">Hubble Space Telescope</em></a> </span><span id="sup">18</span> lands its <span class="hide">flying saucer</span><span class="hidden"><img src="ufo/case study/saucer.jpg">A flying saucer is an unidentified flying object (UFO) that is saucer-shaped. The term may also generally refer to any UFO. <em id="source">Wikipedia</em></span><span id="sup">19</span> in the Nevada desert to meet with humankind. They are warm-heartedly welcomed by a US army general. This scene—however silly and exaggerated the rest of the movie might be—has some noticable points when it comes to communicating with extraterrestrials. </p>
+
+  <p>
+  First of all, the handshake initiated by the human general. A handshake is a gesture of which the origins can be traced back all the way to the <span class="hide">ancient Greeks</span><span class="hidden"><img src="ufo/case study/ancient-handshake.jpg">Hera and Athena handshaking, late 5th century BC, Acropolis Museum, Athens</span><span id="sup">20</span>. It is usually meant as a way of introducing oneself into a social situation. But, handshakes are known to spread germs, which can be a powerful weapon. When America was <span class="hide">‘discovered’</span><span class="hidden"><img src="ufo/case study/disease.jpg"><em id="source">The arrival of Columbus in the Caribbean, 1492. State Archives of Florida</em>
+</span><span id="sup">21</span> in 1492, most of the native Americans died from the <span class="hide">diseases</span><span class="hidden">“Prior to the arrival of the Europeans, American Indians were remarkably free of serious diseases” <a href="http://nativeamericannetroots.net/diary/2095" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">22</span> Europeans brought with them to this continent.</p>
+  <p>
+  <u id="rule">Therefore, to avoid being wiped out by exotic and unknown diseases, it should be considered to initially refrain from any sort of physical contact.</u> Besides, the relevance of a handshake is based on the shared knowledge of both the receiving and initiating party that when one sticks his hand out towards the other, that hand is supposed to be grabbed by the hand of the other, after which both hands are shaken up and down by an agreeable amount of time. But even as simple a gesture as a handshake can end up in an awkward situation when different cultures with different customs <span class="hide">meet</span><span class="hidden"><img src="ufo/case study/politicians.gif">Hungarian Prime Minister Viktor Orban and President of the European Commission Jean-Claude Juncker shake hands</span><span id="sup">23</span>. </p>
+
+  <p>Either way, this seemingly small gesture has a lot of cultural and social relevance—to humans that is. When meeting with a life form from another planet, chances are small they will understand the significance and meaning of it. Also, they might not have hands. This tells us that <u id="rule">it is important to keep in mind that an extraterrestrial life form might have a completely different physical appearance than ours, an </u><span class="hide"><u> anthropocentric</u></span><span class="hidden">Interpreting or regarding the world in terms of human values and experiences. <em id="source">Merriam-Webster</em></span><span id="sup">24</span><u id="rule"> approach to any form of communication and/or design is therefore discouraged.</u> </p>
+
+
+<a href="#chapter1id_2" style="cursor:w-resize;"> <img id="next" src="next/w.jpg"
+         onmouseover="this.src='next/w.gif';" onmouseout="this.src='next/w.jpg';">
+    </img></a>
+</div>
+
+
+
+
+<div id="chapter1id_2">
+</div>
+
+<div id="chapter1_2"  class="container">
+<p>
+<span class="hide">Exobiology</span><span class="hidden"> The study of life beyond the earth’s atmosphere, as on other planets. <em id="source">dictionary.com</em></span><span id="sup">25</span> is the speculative branch of biology that researches the different ways life could have evolved on different planets. An extraterrestrial life form might have had a similar evolution as ours and look surpisingly humanoid, but it might also look unimaginably different than us. Therefore, the <span class="hide">SETI institute</span><span class="hidden">SETI, the Search for Extraterrestrial Intelligence, is an exploratory science that seeks evidence of life in the universe by looking for some signature of its technology. <a href="http://www.seti.org/" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">26</span> has started studying terrestrial species with a relative intelligence and social structure in order to learn about communicating with biologically different species. The <span class="hide">study</span><span class="hidden"><em>Animal Communications, Information Theory, and the Search for Extraterrestrial Intelligence (SETI)</em> Laurance R. Doyle<a href="http://www.seti.org/seti-institute/animal-communication-information-theory-and-seti" onclick="window.open(this.href)"><em id="source">Source</em>
+</a></span><span id="sup">27</span> includes bottlenose dolphins, humpback whales and squirrel monkeys. Studying these species could give us an insight on how communication could work with a life form completely different than ours. And it might teach us how to talk with a dolphin.</p>
+<p>
+The Martian ambassador does have hands though, but he doesn’t seem to understand the gesture of the handshake, the general therefore continues by pointing his finger in the air and moving it in the motion of a full circle, which the Martian repeats. This is actually a more realistic portrayal of how humans could initiate contact with extraterrestrials, seeing as many scientists agree that the language of physics and mathemetics is a universal one, as these are mostly constant throughout the universe. A circle, for example, is abundant in the universe. Also, as <span class="hide">Bruno Munari</span><span class="hidden"><img src="ufo/case study/brunomunari.jpg"><br />Bruno Munari was an Italian artist, designer, and inventor who contributed fundamentals to many fields of visual arts in modernism, futurism, and concrete art, and in non visual arts with his research. <em id="source">Wikipedia</em></span><span id="sup">28</span> pointed out in <span class="hide"><em>Design as Art</em></span><span class="hidden"><img src="ufo/case study/designasart.jpg"><em id="source">Bruno Munari (1971) Design as Art, United Kingdom, Penguin</em></span><span id="sup">29</span>, it seems to be one of the constants in human languages.</p>
+<p>
+This mathematical approach was already seen in one of the first ‘modern’ proposals for communicating with extraterrestrial life forms, which was done in 1820 by German mathemetician <span class="hide">Carl Friedrich Gauss</span><span class="hidden"><img src="ufo/case study/carl friedrich.jpg">Referred to as “the foremost of mathematicians”. <em id="source">Oxford User’s Guide to Mathematics. Oxford, UK: Oxford University Press. p. 1188</em></span><span id="sup">30</span> who, in an attempt to create what could have been one of the largest pieces of land art ever made, suggested to shape an enormous portion of a Siberian forest into a triangle with three rectangles attached to it, planted in wheat. These shapes seen from space would suggest an understanding of the Pythagorean theorem, a mathemetical equation that only an intelligent life form could be capable of constructing. They would be large enough to be seen by life-forms on the Moon or Mars. A similar proposal came from <span class="hide">Joseph Johann Littrow</span><span class="hidden"><img src="ufo/case study/joseph littrow.gif"> Joseph Johann von Littrow was an Austrian astronomer. He created the only conformal retroazimuthal map projection, which is known as the Littrow projection. <em id="source">Wikipedia</em></span><span id="sup">31</span>, although his was a bit more extreme. He suggested to dig enormous 30 kilometer wide canals in various geometric shapes in the Saharan desert, fill them with kerosene, and light them on fire. This to create giant signal fires which, ofcourse, would show a sign of human intelligence.</p>
+<a href="#chapter1id_3" style="cursor:n-resize;"> <img id="next" src="next/n.jpg"
+         onmouseover="this.src='next/n.gif';" onmouseout="this.src='next/n.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter1id_3">
+</div>
+
+<div id="chapter1_3"  class="container">
+<p>  
+  The large scale of these interventions can be compared to the <span class="hide">Nazca lines</span><span class="hidden"><img src="ufo/case study/nasca-lines-bird.jpg">These lines, which were scratched on the surface of the ground between 500 B.C. and A.D. 500, are among archaeology’s greatest enigmas because of their quantity, nature, size and continuity.” <em id="source">
+Lines and Geoglyphs of Nasca and Pampas de Jumana (1994) UNESCO World Heritage Centre</em></span><span id="sup">32</span> which some believe to be ancient messages to extraterrestrials. However, the exact meaning of these lines are lost in time. These kind of large scale geological interventions are also referred to as <span class="hide">geoglyphs</span><span class="hidden"><img src="ufo/case study/longman.jpg">A geoglyph is a large design or motif (generally longer than 4 metres) produced on the ground and typically formed by clastic rocks or similarly durable elements of the landscape, such as stones, stone fragments, live trees,[1] gravel, or earth. wiki
+<em id="source">The Long Man of Wilmington, East Sussex, England</em></span><span id="sup">33</span>, And they are also a good indication of how <u id="rule">even in the early days of space exploration the language of mathemetics (geometry in particular) was already considered a viable candidate as a form of communicating with extraterrestrial life forms.</u> It must be said though, that mathematical functions are still the product of human thought processes. We use the <span class="hide">Pythagorean theorem</span><span class="hidden"><img src="ufo/case study/pythagoras.gif">“In a right angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.” www.mathsisfun.com</span><span id="sup">34</span> to measure a certain value of a two-dimensional <span class="hide">Euclidian</span><span class="hidden">Relating to or denoting the system of geometry based on the work of Euclid and corresponding to the geometry of ordinary experience. <em id="source">wiki</em></span><span id="sup">35</span> plane. This theorem is based on the way we as humans perceive space. An extraterrestrial might have a completely different percept of space. But if the intention of our communication is only to make ourselves known in the universe, mathematics is a possible way of communicating our presence at the least.</p>
+<p>
+  This would certainly go for an extraterrestrial civilisation that has superceded its biological form. The knowledge on robotics and <span class="hide">artificial intelligence</span><span class="hidden">Artificial intelligence (AI) is the intelligence exhibited by machines or software. It is also the name of the academic field of study which studies how to create computers and computer software that are capable of intelligent behavior. <em id="source">Wikipedia</em></span><span id="sup">36</span> is rapidly increasing on our planet, so there is no reason not to consider the possibility of an extraterrestrial civilisation that has become completely artificial. In such a way, our first contact with extraterrestrial life forms might be with a computer of some sorts.</p> 
+  <p>The usage of scientific languages such as mathemetics also seem to work when communicating measurable things like blueprints, directions and technologies. But next to such an exchange of objective knowledge, how we will be able to express ourselves? Science alone might not be enough to communicate the complexities of our emotions and cultural concepts. Even Earthlings amongst each other tend to struggle when it comes to these subjects—sometimes because of a difference in language and culture, and sometimes simply because one can’t find the right words for expression. </p>
+
+<p>
+As for our presence, the question is whether or not it is still necessary to make these kind of landmarks to convey it. With the coming of the <span class="hide">anthropocene</span><span class="hidden">A word coined by Dutch chemist Paul Crutzen. “It’s a new name for a new geologic epoch—one defined by our own massive impact on the planet. That mark will endure in the geologic record long after our cities have crumbled.”  
+<em id="source">Age of Man (March 2011) National Geographic</em> </span><span id="sup">37</span>, the marks we create on our planet are becoming considerably noticable, both during <span class="hide">night</span><span class="hidden"><img src="ufo/case study/satelite image netherlands.jpg"> Europe at night from Space <em id="source">SPL/Barcroft Media</em></span><span id="sup">38</span> and <span class="hide">day</span><span class="hidden"><img src="ufo/case study/dubai.jpg">Dubai and its artificial islands<em id="source">Google maps</em></span><span id="sup">39</span>. Any Martian with a telescope strong enough will be able to see our intelligent presence here on Earth. <u id="rule">Our cities are growing bigger and emit enormous amounts of artificial light. In this way we are already communicating our presence, just not yet with any intentional message.</u>
+In the early 19th century, it was widely believed that there was in fact life on Mars. It was even so commonly accepted in society, that the <span class="hide">Pierre Guzman Prize</span><span class="hidden"><img src="ufo/case study/guzman-prix.jpg"><em id="source">Reading Eagle  (Oct 21, 1969) Google News Archiv</em></span><span id="sup">40</span>— which would be awarded to the first person to succesfully communicate with an extraterrestrial life form—excluded Mars as it seemed to be too easy of a target. This misconception of life on Mars came into being when Italian astronomer <span class="hide">Giovanni Schiaparelli</span><span class="hidden"><img src="ufo/case study/schiaparelli.jpg"> Giovanni Virginio Schiaparelli (14 March 1835 – 4 July 1910) was an Italian astronomer and science historian.<em id="source">Wikipedia</em></span><span id="sup">41</span> decribed seeing long, straight <span class="hide">canalli</span><span class="hidden"><img src="ufo/case study/Mars_twin_canals_by_Schiaparelli.jpg">Schiaparelli Drawing of Martian canals<em id="source">www.nasa.gov</em></span><span id="sup">42</span>—an Italian word for a natural occurrence—on Mars. The English-speaking academics mistook the word for engineered canals and so—by an error of translation—the Martians were born. later on, <span class="hide">Percival Lowell</span><span class="hidden"><img src="ufo/case study/percival.jpg">Percival Lawrence Lowell (March 13, 1855 – November 12, 1916) was an American businessman, author, mathematician, and astronomer who fueled speculation that there were canals on Mars. <em id="source">Wikipedia</em>
+</span><span id="sup">43</span> further developed this <span class="hide">theory</span><span class="hidden"><img src="ufo/case study/lfe-on-mars.jpg"><em id="sourc">New York Times, August 30, 1907</em></span><span id="sup">44</span>.<u id="rule">This teaches us that even phenomena that look at first observation to be made by intelligent beings, are not necessarily so.</u> One example of this on Earth are the <span class="hide">Fairy circles</span><span class="hidden"><img src="ufo/case study/namibia fairy circles.jpg">‘Fairy circles’ in the NamibRand Nature Reserve<em id="source">Google maps</em></span><span id="sup">45</span> in southern Africa. They seem to be engineered in some way but are actually the result of a natural process.</p>
+<a href="#chapter1id_4" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
+
+
+<div id="chapter1id_4">
+</div>
+
+<div id="chapter1_4"  class="container">
+<p> 
+<h4>1b: The semiotic value of a <span class="hide">white dove</span><span class="hidden"><img src="ufo/case study/animated-dove.gif"></span></h4>
+<p>
+The next part in the fictional encounter between humans and Martians is one of miscommunication. The first contact between the human general and Martian is established and the Martians declare that they come in peace. To celebrate this momentous occasion, a hippie in the crowd releases a white dove, which after a moment of joyous and very symbolical flight is incinerated by an energy beam originating from the Martian ambassador’s <span class="hide">raygun</span><span class="hidden"><img src="ufo/case study/raygun.jpg">A raygun is a type of fictional or futuristic directed-energy weapon.<em id="source">Wikipedia</em></span><span id="sup">46</span>.
+The white dove is one of the many kinds of birds that inhabit our planet, but to us humans, it has a special connotation. It is a symbol of peace that has been taught to us by cultural knowledge. When using a model like that of <span class="hide">Saussure</span><span class="hidden"><img src="ufo/case study/saussurean.png">In semiotics and linguistics, Ferdinand de Saussure’s dyadic model of the sign consisting of the signifier and the signified.<a href="http://www.oxfordreference.com/view/10.1093/oi/authority.20110803100443255" onclick="window.open(this.href)"><em id="source">Source</em></a> 
+</span><span id="sup">47</span> to analyse the symbolic meaning of a white dove, it can be said that the white dove in its form is the signifier and the concept of peace is the signified. During the evolution of our many cultures, the world has become saturated with these kind of symbols—we have given meaning to virtually every object, gesture and living thing thinkable. <p>
+
+<span class="hide">“We think only in signs”</center></span><span class="hidden"><em id="source">Charles Sanders Peirce(1931-58), Collected Writings (8 Vols.), Cambridge, MA, Harvard University Press</em></span><span id="sup">48</span>
+<p>
+As such, a finger of the hand can either <span class="hide">offend</span><span class="hidden"><img src="ufo/case study/marting freemand hobbit.jpg"></span><span id="sup">49</span>, <span class="hide">support</span><span class="hidden"><img src="ufo/case study/thumb.jpg"></span><span id="sup">50</span> or <span class="hide">direct</span><span class="hidden"><img src="ufo/case study/direction finger.jpg"></span><span id="sup">51</span>, and depending on the culture and context of usage these meanings assigned to each individual finger can differ.</p>
+
+<p>
+The same goes for design. When designing something for human use, say a <span class="hide">book</span><span class="hidden"> A set of written, printed, or blank sheets bound together into a volume. <em id="source">Merriam-Webster</em></span><span id="sup">52</span>, every design choice has a certain connotation, whether intended or not. A certain typeface, the use of imagery and color, they all have something to say. A <span class="hide">graphic design</span><span class="hidden">Graphic design, also known as communication design, is the art and practice of planning and projecting ideas and experiences with visual and textual content. The form of the communication can be physical or virtual, and may include images, words, or graphic forms. <a href="http://www.aiga.org/what-is-design/" onclick="window.open(this.href)"><em id="source">Source</em></a></span>er<span id="sup">53</span> is someone who uses these connotations to their advantage in order to convey a message. And this message is readable depending on the context in which it is displayed. Terrestrially speaking, this context is usually cultural. The Martians, however, haven’t had the same cultural evolution as we did. <u id="rule">Any meaning that we are able to extract from a message in a terrestrial context, will most likely not be extracted by an extraterrestrial in an extraterrestrial context.</u> For them, the only context they have is the carrier and the content of the message itself. The arrow on the <span class="hide">Pioneer Plaques</span><span class="hidden"><img src="ufo/case study/Pioneer-Plaque.jpg">The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan. The Pioneer 10 and 11 spacecraft both carried one of these plaques. <a href="http://www.nasa.gov/centers/ames/missions/archive/pioneer.html" onclick="window.open(this.href)"><em id="source">Source</em></a></span></span><span id="sup">54</span> for example, is a typical anthropocentric symbol, which is derived from our <span class="hide">historic usage</span><span class="hidden"><img src="ufo/case study/arrows.jpg"><em id="source">Bruno Munari, 1971, Design as Art, United Kingdom, Penguin</em></span><span id="sup">55</span> of arrows, and which to us has become a way of pointing out a certain direction. To us, this seems clear, but a life form that at no point in its history made use of arrows might have difficulty extracting its meaning. One way of explaining the meaning of an arrow, is by means of interaction. When the recipient has to interact with the object to see what happens when an arrow is clicked, for example. </p>
+<p>
+  What if were able to add this terrestrial context? Up until now, the contents of the messages sent didn’t have more than a couple of <span class="hide">MB</span><span class="hidden">The megabyte is a multiple of the unit byte for digital information. <em id="source">Wikipedia</em></span>'s<span id="sup">56</span> worth of data, due to technological restrictions. This capacity greatly diminishes the amount of contextual information we can add. <u id="rule">If there was no data limit, wouldn’t it much simpler to add vast amounts of data?</u> A complete <span class="hide">encyclopedia</span><span class="hidden">reference work that contains information on all branches of knowledge or that treats a particular branch of knowledge in a comprehensive manner. <a href="http://www.britannica.com/topic/encyclopaedia" onclick="window.open(this.href)"><em id="source">Encyclopedia Britannica</em> </a></span><span id="sup">57</span> of Earth and everything on it accompanied by annotations, connections, pictures, videos, sounds etc. <h3>Why try to explain the world that we live in with a few pictures if we can show everything? But will an extraterrestrial be able to extract any meaningful information out of such a <span class="hide">data dump</span><span class="hidden">A large amount of data transferred from one system or location to another. <em id="source">Wikipedia</em></span><span id="sup">58</span>?</h3></p>
+<a href="#chapter2id_1" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
+
+
+
+
+
+<div id="chapter2id_1">
+  <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.2</span>
+</div>
+
+<div id="chapter2_1"  class="container">
+<h2>Lessons from our past</h2>
+<h4>2a. Modern cave paintings</h4> 
+<p>
+<span class="firstline">In our search</span> for a way of communication with an extraterrestrial life form there is one main issue—we know nothing of said life form. We don’t know anything about its appearance, its evolutionary path and most importantly, its society. In other words, we don’t know who or what our recipient is and what context we should construct our message in. The only life form where we do know all these things of, is ourselves. It might therefore be a good idea to reflect at humankind, our history of communication and the terrestrial context of that communication. </p>
+<p>
+Much of the knowledge that we have of our ancient civilisations is gathered through the study of books, art and other representational works that these civilisations have left behind. But there are still a great many things left a mystery in our history. Why is it that—even when we did leave behind traces of our existence—we still can’t always find out what these traces mean in order to learn more about these civilisations? To answer this it is important to distinguish two kinds of communications. The first is to convey presence. This could already be achieved by creating patterns that are distinguishably artificial, like the geoglyphs mentioned before.</p> <p>The second one would be a way of meaninful communication, one where ideas and concepts would be conveyed and extracted. The problem with this kind of communication is that the chances of us understanding any extraterrestrial message of this kind is very low, and the same goes for any message we send them. We only have to look at our own history for that.</p>
+
+<p>In the 1997 movie <span class="hide">The Fifth Element</span><span class="hidden"><img src="ufo/lessons/fifth_poster.jpg"><em id="source">The Fifth Element, Luc Besson, 1997</em></span><span id="sup">59</span>, an archeologist finds <span class="hide">strange markings</span><span class="hidden"><img src="ufo/lessons/fifth_signs.jpg"></span><span id="sup">60</span> amongst <span class="hide">Egyptian hieroglyphics</span><span class="hidden">Egyptian hieroglyphs were a formal writing system used by the ancient Egyptians that combined logographic and alphabetic elements. <em id="source">Alfabet, hiëroglief en pictogram, de geschiedenis van het schrift (2004) Andrew Robinson, Atrium</em>
+
+</span><span id="sup">61</span>. They appear different from the rest and seem to refer to something of extraterrestrial origins. This usage of ancient civilisations in science-fiction is not uncommon. In many books and films—and even in some historic theories—extraterrestrials and otherworldly phenomena are often used as a way of explaining the initially mysterious imagery found of these civilisations.</p>
+
+<p>
+The history of (recorded) visual communication goes way back. Some 40.000 years back. When the prehistoric human started creating drawings and paintings on the walls of caves. The paintings in a cave at <span class="hide">Maros</span><span class="hidden"><img src="ufo/lessons/maros.jpg">Paintings of wild animals and hand markings left by adults and children on cave walls in Maros, Indonesia estimated to be 35.000 years old <em id="source">wiki</em></span><span id="sup">62</span>, Indonesia, are some of the oldest with a figurative character. We can clearly distinguish the shapes of animals and the contours of hands. This is because we know from context what terrestrial animals and hands look like. The exact meaning of these paintings is unknown—and will probably never be known—but what we do know is that they still communicate an intelligent presence to us. </p><p>They are important to us because they are the first examples of human attempts at conveying a message through a visual medium—the first design derived from an intellectual thought process. Even after thousands of years, they still communicate to us. What if these paintings were to the prehistoric human what the extraterrestrial messages are to us now—a way of communicating with the unknown? Or a way to immortalize ourselves. Their intended recipients might be gods, extraterrestrials, or even future generations—us. If so, <u id="rule">our space messages are a contemporary way of communicating towards the unknown. They are contemporary cave paintings.</u>
+</p> 
+
+<a href="#chapter2id_2" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';"></img></a>
+</div>
+
+
+
+
+
+
+<div id="chapter2id_2">
+</div>
+
+<div id="chapter2_2"  class="container">
+<h4>2b. The Rosetta cipher</h4>
+<p>
+What happens though when the representative context isn’t there? What if the lines aren’t as figurative as the ones on Maros? In Southeast Europe, artifacts have been found that contain nonfigurative inscriptions of which the origin is unknown. These so called <span class="hide">Vinca symbols</span><span class="hidden"><img src="ufo/lessons/vinca2.jpg">The Vinca symbols have been found on many of the artefacts excavated from sites in south-east Europe, in particular from Vinca near Belgrade, but also in Greece, Bulgaria, Romania, eastern Hungary, Moldova, southern Ukraine and the former Yugoslavia. <a href="http://www.omniglot.com/writing/vinca.htm" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">63</span> are made out of lines and shapes of which the meaning is not recognizable by representation—they are abstract. Archeologists and linguists therefore believe them to be among the first examples of symbols, where the object or figure depicted represents another idea or concept. This idea or concept is known only by the members of the society in which it is used. And since the society that created the Vinca symbols does not exist anymore—and no ways of deciphering them has yet to be found—it might be that the symbols will forever remain unreadable to our society. We know they are made by humans, but we do not know what they mean. And <u id="rule">if we can’t even read messages created by a human civilisation a couple of thousand years ago, how on Earth will we be able to create a message that an extraterrestrial civilisation hundreds or thousands of lightyears away can read?</u></p>
+
+
+<a href="#chapter2id_3" style="cursor:n-resize;"> <img id="next" src="next/s.jpg"
+         onmouseover="this.src='next/s.gif';" onmouseout="this.src='next/s.jpg';"></img></a>
+</div>
+
+
+
+<div id="chapter2id_3">
+</div>
+
+<div id="chapter2_3"  class="container">
+<p>To start, we would have to look at the way other ancient languages have been deciphered. With the most notorious being the Egyptian hieroglyphics. After the demise of the ancient Egyptian empire, the language of their hieroglyphics and related languages were almost completely lost due to the Christian and Arabic periods of influence that followed. This made it for archeologists and linguists in later centuries an almost impossible task to decipher any inscriptions they would find. The entire ancient Egyptian civilisation was covered in a cloud of mystery, which could only be solved through the deciphering of its language. Many theories arised on what the hieroglyphics could mean, but most of these were based on the assumption that they were figurative in essence—that what they depicted was also what they represented. It wasn’t until the discovery of the <span class="hide">Rosetta Stone</span><span class="hidden"><img src="ufo/lessons/rosettastone2.gif">The Rosetta stone was dicovered by troops from the Napoleonistic French army—then stationed in Rosetta, Egypt</span><span id="sup">64</span> that a breakthrough was found for deciphering the ancient language. The stone would become the very key to understanding the entire civilisation. </p><p>It carried one text, written in three different languages—Egyptian hieroglyphics, Demotic script and ancient Greek. By using the knowledge readily available on the Greek language, scholars were able to translate the other two languages, which resulted in the final deciphering of the Egyptian hieroglyphics. Only through comparison with a known language was the ancient Egyptian language decipherable. The relevance of this example lies within the usage of the Rosetta Stone as a cipher—a tool to decipher an encrypted message. Therefore, <u id="rule">if in a message a visual language would be used that included symbolic meaning, it would be important to add such a cipher to enable the receiving party to decipher the message.</u> This cipher could be ranging from the usage of a certain code or—as with the Rosetta Stone—by repeating the message in multiple ways. The only problem with this is, that with the Rosetta Stone, there was the Greek language to fall back on. A cipher only works when one knows what to translate to. This will probably not be the case with extraterrestrials. </p>
+  <p>In other cases of indecipherable systems of writing from the past, the amount of researchable specimens plays a role. <span class="hide">The Easter Island civilisation</span><span class="hidden"><img src="ufo/lessons/easter island statues.jpg">Polynesian people most likely settled on Easter Island sometime between 700 to 1100 CE, and created a thriving and industrious culture as evidenced by the island’s numerous enormous stone moai and other artifacts. <em id="source">Wikipedia</em></span><span id="sup">65</span>, for example, is widely known for its mysterious statues, but far less known is the <span class="hide">Rongorongo writing system</span><span class="hidden"><img src="ufo/lessons/rongorongo.gif">Rongorongo is a form of writing or proto-writing discovered on Easter Island in the Pacific during the 19th century.  <a href="http://www.omniglot.com/writing/rongorongo.htm" onclick="window.open(this.href)"><em id="source">Source</em></a>
+</span><span id="sup">66</span>, a set of glyphs discovered in the 19th century. Only a handful of objects containing the glyphs have been found, and most of them— being wooden samples—are in bad condition. This makes it extremely difficult to find any patterns in the system, as there is little data to compare. <u id="rule">A durable container and a high volume of content would greatly increase the possibilty of discovery and/or decipherment.</u> If we want our message to last for many thousands of years—whether in space or on a planet—materials like diamond, gold or platinum can be used for durability, or less precious materials that would alow for a higher volume of samples.</p>
+  <p>The remote <span class="hide">location</span><span class="hidden"><img src="ufo/lessons/easter island.jpg">Easter Island, or Rapa Nui, lies 3512 kilometers away from the nearest continental point. <em id="source">Google Maps</em>
+</span><span id="sup">67</span> of the island meant that there was little to no contact with other civilisations, and therefore no translations in other writing systems exist. These factors contribute to the fact that the Rongorongo writing system hasn’t yet been deciphered, and most likely never will be.</p>
+
+<a href="#chapter3id_1" style="cursor:nw-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';"></img></a>
+</div>
+
+
+
+
+
+
+<div id="chapter3id_1">
+  <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.3</span>
+</div>
+
+<div id="chapter3_1"  class="container">
+<h2>The politics of content</h2>
+<p>
+<span class="firstline">Earlier I mentioned</span> that the messages that we have sent are spoken with the supposedly collective voice of the people on Earth. And certainly, most of them were an attempt to create a collective and objective view of Earth and its inhabitants, but upon further study it becomes apparent that none of them actually are. <u id="rule">The message we send to extraterrestrials has the potential to tell them a lot about us. But it can also tell us a lot about ourselves, and how we perceive our planet.</u></p>
+
+<p>
+  This is where the science-fiction becomes a reflective device for humankind.Sending messages intended for extraterrestrials is a quite recent development (if we exclude the Nazca lines and such early constructions, seeing as the meaning of these has been lost). Perhaps one could argue that the <span class="hide">decline</span><span class="hidden"><img src="ufo/politics/decline.jpg">Google trends search on the main religions (2005 - 2015)<a href="https://www.google.com/trends/explore#q=buddhism%2C%20christianity%2C%20judaism%2C%20hinduism&cmpt=q" onclick="window.open(this.href)"><em id="source">Source</em></a>
+</span><span id="sup">68</span> of <span class="hide">religion</span><span class="hidden">An organized system of beliefs, ceremonies, and rules used to worship a god or a group of gods.<em id="source"> Merriam-Webster</em>
+
+</span><span id="sup">69</span> is one the factors contributing to our new way of finding meaning in the universe—if there is no god out there that will hear us, maybe there is another life form?</p>
+  <p>
+  There have been some written proposals, but the Pioneer Plaques that were attached to the <span class="hide">Pioneer 10 and 11 spacecraft</span><span class="hidden"><img src="ufo/politics/pioneer_family.jpg">A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. <em id="source">Image date: March 11, 1982. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)">NASA</a></em></span><span id="sup">70</span> were the first physical objects sent into space with a designed message intended for extraterrestrials. At first glance this message seems like an objective representation depicting the origins and the creators of the plaque. It contains the two-dimensional drawing of a nude human male and female, standing before an outline of the spacecraft for scale. The man’s hand is raised in a gesture of good will. According to NASA: <p><span class="hide">“The physical makeup of the man and woman were determined from results of a computerized analysis of the average person in our civilisation.”</span><span class="hidden"><em>The Pioneer Missions</em> (2007)<a href="http://www.nasa.gov/centers/ames/missions/archive/pioneer.html" onclick="window.open(this.href)"><em id="source">Source</em></a>
+</span><span id="sup">71</span></p>
+  <p> Yet, <span class="hide">Carl Sagan</span><span class="hidden"><img src="ufo/politics/carl-sagan.jpg">Carl Sagan was an American astronomer, who popularized the science of space with his 1980 educational series ‘Cosmos: A personal voyage’ and was one of the designers of the Pioneer plaque. <em id="source">Wikipedia</em></span><span id="sup">72</span>  explains their appearance is based on <span class="hide">Greek statues</span><span class="hidden"><em id="source">Sagan, C. (2009). Carl Sagan, Cosmic Connection: An Extraterrestrial Perspective, Cambridge University Press</em></span><span id="sup">73</span>, making them considerably caucasian. The male is raising his hand as a way of greeting. His genitals are cleary visible. The female is standing next to him, with both arms lowered, and without any clear genitals. Is this a truthful representation of the diversity, biology and social structure of humankind? It seems that in both race and gender the image favors the caucasian male. For this, the image has received a lot of critique, from multiple points of view. One saying that the image is racist by showing a caucasian male and female to represent all of humankind, the other saying the image is too <span class="hide">pornographic</span><span class="hidden"><img src="ufo/politics/pornographic.jpg"><em id="source">Daytona Beach Morning Journal (Mar 12, 1972)</em></span><span id="sup">74</span>. <u id="rule">This shows that designing an actual objective message is impossible, seeing as every design decision has a certain connotation, implies a certain subjectivity, and will be interpreted in a certain way.</u></p>
+  <a href="#chapter3id_2" style="cursor:w-resize;"> <img id="next" src="next/w.jpg"
+         onmouseover="this.src='next/w.gif';" onmouseout="this.src='next/w.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter3id_2">
+</div>
+
+<div id="chapter3_2"  class="container">
+  <p>
+What is worth mentioning is that the <span class="hide">Golden Records</span><span class="hidden">For more details on the Voyager missions, visit <em id="source"><a href="http://goldenrecord.org/" onclick="window.open(this.href)">goldenrecord.org</a></em></span><span id="sup">75</span> that were sent into space some four years after the Pioneer plaques were, contained <span class="hide">126 images</span><span class="hidden"><img src="ufo/politics/animation.gif"></span> including photos of many different ethnicities, a female scientist and nudity. It seemed like NASA listened to the people of Earth, except the prudes. They created a utopian view of Earth and humankind. Here it is not so much about actually communicating with extraterrestrials anymore as it is about making a reflection of life on Earth at a certain moment, although it being a heavily edited reflection. The Golden Records were both a message to extraterrestrials as they were to humans. </p>
+<p>
+  Again, it seems that its creators attempted to create an objective message, illustrating a complete and unbiased image of life on Earth. But, by trying to include as much as possible to form this complete image a great many things are inevitably excluded, as it was impossible to include everything on just one record. <span id="hideprint">The attempt tells us a lot about the state of mind of that certain time. Even now— only a few decades later—it seems very outdated already.</span> It included images that helped build a positive image, and excluded the negative. This raises an important question.<h3>When it comes to communicating with extraterrestrials, do we give a truthful description of who we are, or do we edit the truth?</h3> </p>
+  <p>
+If we compare with interhuman relations, an edit of the truth would seem the most obvious choice. After all, we normally attempt to present ourselves in the best possible way when we first meet another person. So why wouldn’t we in the case of a first meeting with an extraterrestrial life form? Do we only show the positive sides of humankind or also the great amount of negative ones? <u id="rule">A reason for also showing the negative side of humanity could be that the extraterrestrials might have experienced the same problems in earlier stages of their civilisation, and now have the knowledge to help us overcome them.</u> They might have definitive answers to the issues that threaten our existence.<h3 id="hideprint">But who decides on this important editorial question? Should this kind of decision-making be left to a select group of experts or is a more democratic way desirable?</h3></p> 
+<p>
+As a response to the Golden Records, Artist <span class="hide">Trevor Paglen</span><span class="hidden"><img src="ufo/politics/Trevor-Paglen-head_shot682x1024.jpg">Trevor Paglen is an artist whose work spans image-making, sculpture, investigative journalism, writing, engineering, and numerous other disciplines. Among his chief concerns are learning how to see the historical moment we live in and developing the means to imagine alternative futures. <em id="source"><a href="http://www.paglen.com/" onclick="window.open(this.href)">Paglen.com</a></em></span><span id="sup">76</span> created his own collection of images in 2012 which he called <span class="hide">The Last Pictures</span><span class="hidden"><img src="ufo/politics/17.jpg"><em id="src"><a href="http://www.thelastpictures.org/" onclick="window.open(this.href)">thelastpictures.org</a></em></span><span id="sup">77</span>. For Paglen, the selection process of these pictures differed in such a way, that he did not try to create a perfect image like that on the Golden Records. Instead, he talked with philosophers, artists, anthropologists and scientists to come up with a collection that would describe life on Earth as it as at this moment, with both its positive and negative sides. The pictures were engraved into a metal plate and attached to a <span class="hide">satellite</span><span class="hidden"></span><span id="sup">78</span> that would eventually end up in permanent orbit around Earth. This means that even in a millions years—when life on Earth will have dramatically changed or might even have ceased to exist—these pictures are still orbiting our planet. Much the same as the messages and carriers we sent intended for extraterrestrials. Most of these will take many thousands of years to reach their destination, or will even travel through space indefinitely—they have become monuments of our civilisation that will most likely outlive us. </p>
+<p><span class="hide">
+“The idea of creating “greetings” for the alien/future seems to embody an ethics in which we imagine that the future actually exists and, perhaps, as a consequence, care more about it.”</span><span class="hidden">The Last Pictures: Interview with Trevor Paglen (2012) e-flux<a href="http://www.e-flux.com/journal/the-last-pictures-interview-with-trevor-paglen/" onclick="window.open(this.href)"><em id="source">Interview</em></a>
+</span><span id="sup">79</span></p>
+<p>
+By thinking about how we might communicate with extraterrestrials or our future selves, we inevitably create a state of mind that reflects upon our actions now and how they will affect us in the long run. </p>
+<p>
+Trevor Paglen’s project was also a very personal one, and although he did consult a multitude of experts, in the end he selected the pictures himself, which leads us to the next question—who decides on the content of a message to be sent into space?</p>
+ <a href="#chapter3id_3" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter3id_3">
+</div>
+
+<div id="chapter3_3"  class="container">
+  <p>
+It does seem that in the last two decades, the METI (Messaging to Extra-Terrestrial Intelligence) approach has gotten a more democratic approach. Where first only a select few were deciding upon the design of such representational messages, the idea of a global—or at least widespread—discussion before sending any new messages has caught on. The <span class="hide">Teen Age Message</span><span class="hidden"><img src="ufo/politics/teen-age-theremin.jpg">In 2001, a group of Russian teens from Moscow, Kaluga, Voronezh, and Zheleznogorsk participated directly and via the Internet in composing a Teen-Age Message (TAM) to extraterrestrial intelligence, and in the selection of target stars. <em id="source"><a href="http://www.setileague.org/articles/tam.htm" onclick="window.open(this.href)">Source</a></em></span><span id="sup">80</span>, <span class="hide">A Message From Earth</span><span class="hidden">"A Message from Earth" is a high-powered digital radio signal that was sent on 9 October 2008 towards Gliese 581C. The signal is a digital time capsule containing 501 messages that were selected through a competition on the social networking site Bebo <em id="source">Wikipedia</em></span><span id="sup">81</span> and the <span class="hide">One Earth Message</span><span class="hidden">The signal is a digital time capsule containing 501 messages that were selected through a competition on the social networking site Bebo <em id="source">Wikipedia</em></span><span id="sup">82</span> all seemed to favour a crowdsourced content generation. A problem with this seemingly democratic way of forming a message, is that it is mostly done by online participation. And according to a recent study done by the <span class="hide">ITU</span><span class="hidden"><img src="ufo/politics/itu.png">“4 billion people from developing countries remain offline” Annual report on internet usage (2015) ITU<a href="https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2015.pdf" onclick="window.open(this.href)"><em id="source">Source</em></a>
+       </span><span id="sup">83</span>, only 40% of the world’s population has internet access. Meaning that more than half of the population will not have a say in the creation of this message—for now.
+</p>
+<p>
+What is noticable is that the the content generated almost always resembles that of the first attempts at communicating with extraterrestrials, even with the ones that are supposed to be a critique on them. It seems that these early attempts have become a template of some sorts, which could be attributed to the fact that sending a message into space is still a rather costly venture, often done with governments  involvement and thus taxpayer’s money. and in these cases, risks aren’t often taken for political reasons. If politics were of no importance, would we still create messages of the same sort? Or what if we could create our own personal message, and pay a corporation to deliver it, or even deliver it ourselves? <u id="rule">First steps towards a free-market-interstellar-communication-system have already been made. Space is becoming public domain.</u> </p>
+<p>Soon, we will all be able to send our own messages into outer space <span class="hide">Astrobotic</span><span class="hidden"><img src="ufo/politics/astro.png"><a href="https://www.astrobotic.com/" onclick="window.open(this.href)"><em id="source">astrobotic.com</em></a></span><span id="sup">84</span> is a company that will send an object of your choosing to the moon for a (comparatively) feasible price. Objects could range from scientific instruments for a university, branding items for <span class="hide">commercial businesses</span><span class="hidden"><img src="ufo/politics/pocari.jpg"> Japanese soda drink Pocari is planning on sending a can of their soda to the Moon for marketing purposes<a href="http://lunar-dream.com/" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">85</span> or <span class="hide">personal items</span><span class="hidden">  <img src="ufo/politics/moonmail.jpg">Send you personal items to the surface of the Moon with Astrobotic’s MoonMail.<a href="https://www.astrobotic.com/moon-mail" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">86</span>. This gives us an oppurtunity to move away from messages that try to please an international and global political agenda, and go towards more personal, subjective forms of communication, that are created by either individuals or groups of people without any (terrestrial) political limitations.</p>
+<p>
+  But do we want everybody to be able to send these messages? What if we could send our immediate thoughts?  Should we apply a filter to these messages, in order to filter out abusive or insulting messages? For a government this task is difficult, as censoring is a politically dangerous area —hence the objectivity in government messages—but a corporation already has more freedom in this. They can provide anonimity, much like a confessional booth in church.</p>
+  <p>
+  Political or not, these messages all have in common that they are made by humans, by means of human decision-making. This will always result in a biased and subjective content, even when attempting to remain objective. <u id="rule">A way of making sure the content is less biased is to generate it ‘randomly’.</u> A set of rules could be created to generate the content for us. And to make it even easier, we could let a computer do the work. This will eliminate an amount of subjectivity, but it should not be forgotten that these rules are still engineered by human minds, and a computer is still operated by human input, and therefore can not be truly random and/or objective. </p>
+ <a href="#chapter4id_1" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter4id_1">
+  <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.4</span>
+</div>
+
+<div id="chapter4_1"  class="container">
+<h2>Repository of soliloquies</h2>
+<p>
+<span class="firstline">A cipher is most likely</span> an important elements to add to any message we will send. An example of such a message containing a sort of cipher is the <span class="hide">Arecibo Message</span><span class="hidden"><a href="http://www.seti.org/seti-institute/project/details/arecibo-message" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">87</span>. This message, sent from Puerto Rico with the <span class="hide">Arecibo Radio Telescope</span><span class="hidden"><img src="ufo/repository/arecibo.jpg">The Arecibo Observatory as seen on Google Maps</span><span id="sup">88</span> in 1974, was the first powerful radio message constructed with the specific goal to communicate with extraterrestrials. The message contained an encoded and static image, made out of 1679 bits. The reason for this specific number is because it is a semiprime number (mathematics!), meaning it is only dividable into 73 rows and 23 colums, or 73 colums and 23 rows. This way, the receiving party has the option to arrange the bits either into a horizontal or a vertical arrangement. The first option would generate <span class="hide">gibberish</span><span class="hidden"><img src="ufo/repository/arecibosideways.jpg">The Arecibo message horizontally aligned <em id="source">Cosmos 12: Encyclopaedia Galactica (2014)  Shane L. Larson</em> <a href="https://writescience.wordpress.com/2014/02/25/cosmos-12-encyclopaedia-galactica/" onclick="window.open(this.href)"><em id="source">Source</em></a> </em></span><span id="sup">89</span>, the latter would show the actual <span class="hide">message</span><span class="hidden"><img src="ufo/repository/arecibovertical.jpg">
+The Arecibo message vertically aligned<em id="source">Cosmos 12: Encyclopaedia Galactica (2014)  Shane L. Larson  <a href="https://writescience.wordpress.com/2014/02/25/cosmos-12-encyclopaedia-galactica/" onclick="window.open(this.href)">Source</a></em>
+</span><span id="sup">90</span>. This already has potential for miscommunictaion, since for an extraterrestrial both might look like gibberish. At the top of the Arecibo image, the part that is transmitted first, there is a row of bits that explain how to read the binary message. <u id="rule">Even when making use of such a cipher, it is important to create a message that is as open as possible to decrypt.</u> The term for this is anticryptography—to make sure the contents of the message are easily extracted by the recipient. </p>
+<p>
+The message contained information about the biology of life on Earth such as the formulas of bases in human DNA. But why would we send this blueprint of human life? Is it purely for scientific intentions—to share knowledge—or is there a more survivalist intention? To ensure that our genetic code lives on. 
+The message was directed at the <span class="hide">globular star cluster M13</span><span class="hidden"><img src="ufo/repository/m13.jpg">M13 starcluster, one of our galaxy’s oldest star systems <em id="source">Image credit: CelestronImages</em></span><span id="sup">91</span>, which is 25.000 light years removed from Earth, meaning that it will take 25.000 years to reach its destination, as radiowaves are lightwaves, and therefore travel by the speed of light. And it will take another 25.000 years to get an answer, if a reply comes in the same format. A very long distance relationship indeed. Also, since it took a total of 50.000 years for the reply to reach us, we might not even remember what our original message was. In the last decade, the amount of messages sent is still surveyable, but in a thousand years this might not be the case anymore. <u id="rule">It is therefore important to make sure that we keep a repository of messages sent, one that will withstand the test of time.</u> <h3>What good is a reply if we don’t know what the initial message was?</h3></p>
+<a href="#chapter4id_2" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter4id_2">
+</div>
+
+<div id="chapter4_2"  class="container">
+<p>
+  The 2010 documentary <span class="hide">Into Eternity</span><span class="hidden"> <img src="ufo/repository/intoeternity.jpg"><em id="source">Into Eternity, Michael Madsen, January 6, 2010</em></span><span id="sup">92</span> deals with the inevitable terrestrial problem of nuclear waste from nuclear power plants. The problem here is not necessarily the storing of it—large repositories are being built for that specific reason—but the way we communicate to our very distant generations that these places should be avoided. In a hundred years this shouldn’t be a problem, but the thing is that most of the waste stays radioactive for many thousands of years, and who knows what civilisations will have fallen and risen by then? They might not be able to read our contemporary warning systems. Therefore, a warning system has to be designed that will remain readable over such a long period of time. Several proposals for communicative solutions have been made, including <span class="hide">a field of giant spikes</span><span class="hidden"><img src="ufo/repository/spikes.jpg">Spike Field, view 1    
+concept and art by Michael Brill.</span><span id="sup">93</span>, a <span class="hide">marker system</span><span class="hidden"><img src="ufo/repository/yucca.jpg"><br />Yucca Mountain information center concept. <a href="http://nei.org/Issues-Policy/Nuclear-Waste-Management" onclick="window.open(this.href)"><em id="source">Nuclear Energy Institute</em></a>
+</span><span id="sup">94</span> or even a <span class="hide">‘comic’</span><span class="hidden"><img src="ufo/repository/comic.gif">A short comic depicting what will happen when exposed to radioactive material. <em id="source">Illustrator: Jon Lomberg</em></span><span id="sup">95</span>.</p> <p>The repository for extraterrestrial messages would have to be a similar construction, but instead of excluding people from its contents, it should include them, as these messages should not be forgotten. If we ever were to receive a reply, it would be quite a misfortune if we weren’t able to remember to what message the reply referred to. This shows that the questionaire about communicating with extraterrestrials is just as much about communicating into the future, and spans the lifetime of many human generations to come, and not just those living now. Apart from using the repository as a reference in the case that we do get a reply, it will also become a historic document, which won’t be specifically written as one. The messages often contain just a momentary image of human life at a certain time, just like the shape of a river is just a momentary image of the entire lifespan of that river. If we keep a database of the these messages for long enough, say thousands of years, we will eventually be able to see the natural shape of the lifespan of the civilisation that is humankind.</p>
+<a href="#chapter5id_1" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+
+
+<div id="chapter5id_1">
+  <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.5</span>
+</div>
+
+<div id="chapter5_1"  class="container">
+<h2>Time, space and atmospheric vibrations</h2>
+<p>
+<span class="firstline">The Arecibo message</span> was only broadcast once, but what if the broadcasting would have continued? Say the original structure of 1679 bits would have been kept the same, but with every transmission a slight alternation would be made. This would in turn result in an interstellar animation. <u id="rule">We could animate the human figure, making it act out some basic human gestures(animated image), which would lay a foundation for any future physical meeting—to communicate by mimicry.</u> Just like the human general and Martian did in Mars Attacks! Up until now, most of the attempts at visual communication have been a static ones—the illustrations on the Pioneer plaques, the encoded images on the Voyager disks, the binary code of the Arecibo message—none of them utilize the element of time and space, elements that are abundant when it comes to interstellar communication. One of the simplest ways of conveying a message is by simply acting it out. And if used in the right context, it can already create an understanding of the message. The receiving party would know that us waving our hands at first contact has a meaning, and they could (if their physical form allows them to) recreate this gesture, or else, respond by showing us their custom of meeting at first contact.</p>
+ <p>
+In the 1997 movie <span class="hide">Contact</span><span class="hidden"><em id="source"><img src="ufo/timespace/jodie.jpg">Contact, 1997, Robert Zemeckis</em> (based on the identically titled novel by Carl Sagan)</span><span id="sup">96</span>, Jodie Foster comes upon an extraterrestrial message transmitted via radiowaves. At first, the message seems to be of a simple mathematical origin,  it being a series of <span class="hide">prime numbers</span><span class="hidden">“A Prime Number can be divided evenly only by 1 or itself.
+And it must be a whole number greater than 1.” <a href="https://www.mathsisfun.com/prime_numbers.html" onclick="window.open(this.href)"><em id="source">mathisfun.com</em></a></span><span id="sup">97</span>, without any further meaning. However, when further studied, the message is found to contain a massive amount of encrypted pages of information, which, by two-dimensional thinking, seem to not fit together in any way. But when looked at in a three-dimensional way, they do. And by using a cipher the extraterrestrials have added to the message, it is decrypted and found to be a blueprint for a highly sophisticated piece of extraterrestrial machinery.</p>
+<a href="#chapter5id_2" style="cursor:w-resize;"> <img id="next" src="next/e.jpg"
+         onmouseover="this.src='next/e.gif';" onmouseout="this.src='next/e.jpg';">
+    </img></a>
+</div>
+
+
+
+
+<div id="chapter5id_2">
+</div>
+
+<div id="chapter5_2"  class="container">
+  <p>
+  This thinking in three dimensions for communicating seems to make sense, seeing as the universe is a rather three-dimensional place. As humans, we are used to two-dimensional communication, ranging from the cave paintings beforementioned to printed matter such as books and posters. We are of course no strangers to thinking in three dimensions, as exhibited in some techniques in painting, clearly represented in many <span class="hide">renaissance paintings</span><span class="hidden"><img src="ufo/timespace/idealcity.jpg"><em id="source">View of an Ideal City, Piero della Franscesca, 1470, Galleria Nazionale delle Marche, Urbino</em>
+</span><span id="sup">98</span>. Here, perspective is used as a tool to illustrate space. But they are <span class="hide">illusions</span><span class="hidden"><img src="ufo/timespace/roadrunner.gif"><em id="source">Video clip from the animated Looney Tunes series Wile E. Coyote and The Road Runner
+</em></span><span id="sup">99</span>. They may seem to be spatial, but are actually just strokes of paint applied in such in way that the human eye gets tricked into thinking it can see depth. If you were interested in seeing what is behind the first set of colums in <span class="hide">this painting</span><span class="hidden"><img src="ufo/timespace/athens.jpg"><em id="source">The School of Athens, Raffaello Sanzio da Urbino, 1509, Stanza della Segnatura, Palazzi Pontifici, Vatican</em></span><span id="sup">100</span>, trying to look around them wouldn’t yield any results, it would just make you look stupid. </p>
+<p>In time, we have become accustomed to the usage of perspective in two-dimensional representations, but this only applies to shapes and situations of which we already have a spatial understanding. How can we expect any ET to understand a 2D image of a tree when they have no way of knowing what the 3D shape of it looks like, if we assume there are no trees on their planet? In <em>Contact</em>, the actual message  is embedded in 2D video frames of Hitler, which were one of the first international television broadcasts that ‘leaked’ into space. But even if any extraterrestrial would be able to get an image out of it, they would have no idea that this moving blob is actually one of the most evil persons the human race has ever produced. How will we ever be able to convey such complex concepts in ‘simple’ 2D images?</p>
+<p> 
+In Giotto’s painting <span class="hide">Christ before Caiaphas</span><span class="hidden"><img src="ufo/timespace/christcaif.jpg"><em id="source">Christ Before Caiaphas, Giotto, 1305, Scrovegni Chapel, Padua, Italy</em></span><span id="sup">101</span> there is clearly something not right. The space looks distorted and unnatural to us, since we are trained in looking at two-dimensional images depicting three-dimensional space. This is because the famous Giotto was still experimenting with the rules of perspective. But since people weren’t accustomed yet to perspective in paintings, it probably did not look wrong to them. Only after the discovery of perspective in painting this became apparent. </p>
+<p>
+  What if the two-dimensional way of portraying space is something inherent to humans or even primitive compared to any far more advanced civilisation. Theories such as that of <span class="hide">Riemannian space</span><span class="hidden"><img src="ufo/timespace/riemannian.gif">Riemannian geometry is the branch of differential geometry that studies Riemannian manifolds, smooth manifolds with a Riemannian metric, i.e. with an inner product on the tangent space at each point that varies smoothly from point to point. <em id="source">Wikipedia</em></span><span id="sup">102</span> are just an indication of how space can be interpreted in many different ways, ways of which we have no comprehension as of yet. </p>
+<a href="#chapter5id_3" style="cursor:n-resize;"> <img id="next" src="next/n.jpg"
+         onmouseover="this.src='next/n.gif';" onmouseout="this.src='next/n.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="chapter5id_3">
+</div>
+
+<div id="chapter5_3"  class="container">
+<p>
+In the last decades, three-dimensional technologies have come a long way. Up until now, every visual message we have sent contained mostly two-dimensional images, since we were accustomed to this form of visual representation. With technologies such as <span class="hide">holography</span><span class="hidden">Holography is the science and practice of making holograms. Typically, a hologram is a photographic recording of a light field, rather than of an image formed by a lens, and it is used to display a fully three-dimensional image of the holographed subject. <em id="source">Wikipedia</em></span><span id="sup">103</span> and <span class="hide">3D-printing</span><span class="hidden">Additive manufacturing is often referred to as 3D printing, as it works in a similar way to a laser printer. The technique builds a solid object from a series of layers – each one printed directly on top of the previous one. 
+<em id="source">“The rise of additive manufacturing” (24th May 2010) The Engineer, Kate Cummins,
+Consulted January 2016</em></span><span id="sup">104</span> we are heading towards a future where two-dimensional representation might someday become obsolete. And who knows what our next step in spatial representation might be after that of three dimensions? So why would we continue making use of solely two-dimensional imagery, when these images  are easily misunderstood or misinterpreted or even undecipherable? <u id="rule">We can construct three-dimensional models, that give the viewer the possibility to see the content of the message from different perspectives, contributing to a better understanding of it.</u> They would also be able to replicate the data of the 3D model into a physical model, to give it a place in both time and space.</p><p> This doesn’t mean two-dimensional images are irrelevant. They can enhance each other. Just like with the Rosetta Stone, the content can be created in different forms. <span class="hide">Joseph Kosuth</span><span class="hidden"><img src="ufo/timespace/kosuth.jpg"><br />Joseph Kosuth is one of the pioneers of Conceptual art and installation art, initiating language-based works and appropriation strategies in the 1960s. His work has consistently explored the production and role of language and meaning within art. <em id="source">Sean Kelly Gallery</em></span><span id="sup">105</span> used this way of creating meaning in his work <span class="hide">Three Chairs</span><span class="hidden"><img src="ufo/timespace/threechairs.jpg">1965. Wood folding chair, mounted photograph of a chair, and mounted photographic enlargement of the dictionary definition of “chair”, <a href="http://www.moma.org/learn/moma_learning/joseph-kosuth-one-and-three-chairs-1965" onclick="window.open(this.href)"><em id="source">MoMA</em></a></span><span id="sup">106</span> in which he presented a chair, a picture of a chair and a copy of the entry for chair in a dictionary. With his work he wanted to explore the way we create meaning by means of representation. The same methodology could be used in extraterrestrial messages. A sort of Rosetta Stone of visual meaning.</p>
+
+<p><span class="hide">
+“The Whole is Other than the Sum of the Parts”</span><span class="hidden">Points of View: Gestalt principles (Part 1) (2010) Nature Methods
+<a href="http://www.nature.com/nmeth/journal/v7/n11/full/nmeth1110-863.html" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">107</span></p>
+
+<p>
+Next to these visual representations, audio might also be an important element to a message. The extraterrestrials in the 1977 movie <span class="hide">Close encounters of the third kind</span><span class="hidden"><img src="ufo/timespace/closeposter.jpg"><em id="source">Close Encounters of the Third Kind, Steven Spielberg, 1978</em></span><span id="sup">108</span> broadcast a set of five musical tones that are heard all around the world. When a meeting is set-up, and the extraterrestrials arrive in their spacecraft, scientists play the five tones on a keyboard that is connected to an <span class="hide">array of lights</span><span class="hidden"><video src="ufo/timespace/close1_1.3gp" controls>
+</video><em id="source">Scene from Close Encounters of the Third Kind</em></span><span id="sup">109</span>. The extraterrestrials reply with playing a set of new tones, each accompanied by a <span class="hide">colored light</span><span class="hidden"><video src="ufo/timespace/close2.mp4" controls></video><em id="source">Scene from Close Encounters of the Third Kind</em></span><span id="sup">110</span>. What happens next is a musical and visual collaboratory piece of human and <span class="hide">extraterrestrial art</span><span class="hidden"><video src="ufo/timespace/close3.mp4" controls></video><video src="ufo/timespace/close4.mp4" controls></video><em id="source">Scenes from Close Encounters of the Third Kind</em></span><span id="sup">111</span> that superceeds any content-driven message but that seems to speak directly driven by—and interpreted with—the senses.  The reason this is interesting is that sound (atmospheric vibrations) can be a more direct way of communication than just image. Sound, in combination with other methods of communication, could create a more emotional bond, something a purely visual message might not achieve. It could help in conveying more difficult concepts such as emotions. Seeing as auditory communication—let’s not forget about talking— is part of our human identity and is just as important as non-verbal communication. Therefore, it seems only logical that it should also be included in our attempts at communicating with extraterrestrials.</p>
+<a href="#chapter6id_1" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
+
+
+
+
+<div id="chapter6id_1">
+  <span class="bgtitle">C<br />H<br />A<br />P<br />T<br />E<br />R<br />.6</span>
+</div>
+
+<div id="chapter6_1"  class="container">
+<h2>The extraterrestrial human</h2>
+<p>
+<span class="firstline">While exploring space,</span> we leave behind a lot of physical traces. The moon is already littered with <span class="hide">items</span><span class="hidden"><img src="ufo/human/moontrash.jpg"><a href="http://trashonthemoon.com/" onclick="window.open(this.href)"><em id="source">trashonthemoon.com</em> </a></span><span id="sup">112</span> we have left behind after moon missions. This <em>space waste</em> could be the first thing extraterrestrials come upon that will notify them of our existence. Some of this waste is literally waste, such as parts of rockets and satellites no longer of any use to us, or even <span class="hide">radioactive parts</span><span class="hidden">Many spacecraft, like the Voyager 1 and 2, carry a radioisotope thermoelectric generator onboard, which will remain radioactive for several hundreds of years.<a href="http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-reactors-for-space.aspx" onclick="window.open(this.href)"><em id="source">World Nuclear Association</em></a></span><span id="sup">113</span> moving through space. The Golden Records for example are accompanied by a radioisotope thermoelectric generator, which will remain radioactive for many years to come. Other items, such as the US flags on the moon, have an intended use. They have a more symbolic meaning, showing that a particular part of space has been explored by human beings. The physical objects we leave behind in space will most certainly say something about our species, if we keep polluting it as we do. </p>
+
+<p>
+But <u id="rule">some of the artifacts we leave behind are an oppurtunity for communication.</u> The planting of flags can be seen a way of marking a place of newly discovered soil, which reminds us of <span class="hide">colonialism</span><span class="hidden">The policy or practice of acquiring full or partial political control over another country, occupying it with settlers, and exploiting it economically. <em id="source">Oxford Dictionaries</em></span><span id="sup">114</span> in previous centuries. And in some way it is—we are exploring space and seeking for new possibilities. We now have the oppurtinity to prevent the mistakes we made back then. What if the US flag was more than just a flag that was placed to feed a certain national pride and/or claim for property? In a time where individual nationalities seem to become of less importance, we can further explore the universe—and in the case of contact with an extraterrestrial life form, we can identify ourselves—as a <span class="hide">postnational</span><span class="hidden"> Of or relating to a time or society in which national identity has become less important. <em id="source">Oxford Dictionaries</em></span><span id="sup">115</span> entity. It is not only about how we will communicate with, but also how we will present ourselves to extraterrestrials. It is about our identity as a human species. What makes it even more relevant is that it is beginning to be very likely that in the coming decades we will start colonising planets—<span class="hide">starting with Mars</span><span class="hidden"><a href="http://news.nationalgeographic.com/2015/06/150628-tesla-paypal-elon-musk-technology-steve-jobs-silicon-valley-electric-car-ngbooktalk/" onclick="window.open(this.href)"><em id="source">Elon Musk, A Man of Impossible Dreams, Wants To Colonize Mars</em></a>
+
+
+</span><span id="sup">116</span>—meaning that a new generation of humans not born on Earth will come into existence, not accustomed to the terrestrial context every single human so far is bound to. They will develop a new civilisation with a new culture. The only thing that will now of Earth is what they learn through stories or encyclopediae. <u id="rule">These human Martians might be the first extraterrestrials that we will communicate with.</u>
+</p>
+<a href="#conclusionid1" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
+    </img></a>
+</div>
+
+
+
+<div id="conclusionid1">
+  <span class="bgtitle">C<br />O<br />N<br />C<br />L<br />U<br />S<br />I<br />O<br />N</span>
+</div>
+
+<div id="conclusion1"  class="container">
+  <h4>To conclude</h4>
+  <p>
+<span class="firstline">To communicate is</span> part of human nature. Whether it is on the wall of a cave or on a golden plate we send into space, we want to make ourselves known. Our finite amount of time we have on this planet makes the infinity of space such an appealing and logical step for exploration. One way of doing this is by sending our presence into it in the form of messages. The possibility of these messages actually being received by an extraterrestrial life form might be very small, but it is still present, and therefore relevant. And whether these messages will be answered or not, they will travel through space and outlive us. </p>
+<p>
+As to answering my <span class="hide">research question</span><span class="hidden">In the hypothetical case of contact with an extraterrestrial life-form, what will the design of our way of communication look like, and what will it say about humankind?</span>, it seems that a certain pattern has emerged regarding the ways of conveying the message. As only a limited amount of messages has been sent into outerspace—as the sending of such a message has been costly—it seems that the first extraterrestrial messages from the 1970’s have become a sort of template that every consecutive message that followed has implemented; a selection of audio and static, two-dimensional images, often as separate elements. This limited supply of data can also be attributed to the fact that the technologies used only allowed for a low amount of it. These elements are presented individually from each other and when taken out of context—which means off-planet—they lose any meaning they had, since there is no way of reading them anymore. A way to create meaning would be to combine the different elements to form a more coherent message. One where meaning can be created by the interaction of elements.</p>
+<p>
+Also, as most of these messages have been funded with government money, they are kept as objective as possible, since any subjective statement has the potential to become a political debate. But with technological advancements going hand in hand with the arrival of commercial corporations it seems that in the near future space will become public domain. It will not remain the realm of national governments as it has been in the past century, but it will become open for individual enterprises. It can be expected that messages sent through these channels are much more subjective than the ones attempting to include only objective facts about our biology, as terrestrial politics will be of less influence on them. In any way, the message we send will inevitably be subjective, as it is inherently designed by human input, and this can be seen as restricting. A way of lessening these restrictions would be to use randomly created content, by means of algorithms or computers, although these are still products of human thinking. Our only option is to embrace the subjectivity and continue discussion on the subject of extraterrestrial communication. And hope that on the day we make contact, we do not make the mistakes that could have been prevented by speculation—both theoretical as practical—and have a better understanding of who we are and how we want to present ourselves in this inifinitely vast universe.</p>
+<a href="#conclusionid2" style="cursor:sw-resize;"> <img id="next" src="next/sw.jpg"
+         onmouseover="this.src='next/sw.gif';" onmouseout="this.src='next/sw.jpg';">
+    </img></a>
+</div>
+
+
+<div id="conclusionid2">
+</div>
+
+<div id="conclusion2"  class="container">
+  <p>
+As these messages will travel through space for thousands of years, it is also important to create a repository that includes every message we sent. So that if we ever are to receive a reply, thousands of years from now, we will be able to trace back what the original message was. In this way, thinking about the problems communicating with extraterrestrials will present to us will not only prove fruitful in terms of said communication, it will also aid us in communicating with our future generations, thousands or maybe even millions of years away from now. When we have colonised planets other than ours, creating generations of humans that can be considered the first extraterrestrials.</p>
+  <p>And how we can prevent the loss of meaning that seems to have befallen us with human artifacts such as those of the early cave paintings, or the symbols from communication systems that we will never be able to understand anymore. We musn’t forget the possiblity of us actually being alone in the universe, meaning our messages will remain soliloquies forever.</p> <h3>And what if they are just a starting point of the creation of a universal language?</h3> <p>One that will be readable by humans thousand of years from now. It could be used to create the first entry in the <span class="hide">Encyclopia Galactica</span><span class="hidden">The Encyclopedia Galactica is a fictional or hypothetical encyclopedia of a galaxy-spanning civilization, containing all the knowledge accumulated by a society with quadrillions of people and thousands of years of history. <em id="source">Wikipedia</em></span><span id="sup">114</span>. In the very near future, we will start colonising other planets. Humans might be the first extraterrestrials we will have to communicate with.</p>
+  <h4>End</h4>
+<a href="#colophonid" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+
+
+
+<div id="referencesid">
+  <span class="bgtitle">R<br />E<br />F<br />E<br />R<br />E<br />N<br />C<br />E<br />S</span>
+</div>
+
+<div id="references"  class="container">
+  <h4>Books/Literature </h4>
+
+<p>Wells, H. G. (1901). <u>First men in the moon</u> London, United Kingdom: George Newnes.</p>
+
+<p>Bruno Munari (1971) <em>Design as Art, United Kingdom</em>, Penguin</p>
+
+<p>Andrew Robinson (2004) <em>Alfabet, hiëroglief en pictogram, de geschiedenis van het schrift</em>, Atrium</p>
+
+<p>Visual function, an introduction to Information Design, Paul Mijksenaar, 010 Publishers, 1997</p>
+
+<p>Archeology, anthropology, and Interstellar Communication, Douglas E. Vakoch, NASA, 2014</p>
+
+<p>Semiotik / Semiotics - Handbook of Linguistics and Communication Science, Walter de Gruyter, Berlin, New York, 2004</p>
+<p>Understanding Media: The Extensions of Man - Marshal McLuhan, 1964</p>
+
+<p>Cengage Advantage Books: The Power of Art, Richard Lewis, Susan Lewis, Cengage Learning, 2008
+And Friends and family for additional help/support</p>
+
+<h4>Movies/Documentaries</h4>
+<p>2001: A space odyssey, Stanley Kubrick & Arthur C. Clarke, 1968</p>
+<p>Mars Attacks!, Tim Burton, 1996</p>
+<p>The Fifth Element, Luc Besson, 1997</p>
+<p>Into Eternity, Michael Madsen, January 6, 2010</p>
+<p>Contact, Robert Zemeckis, 1997</p>
+
+<a href="#referencesid2" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg"
+         onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/ne.jpg';">
+    </img></a>
+</div>
+
+
+<div id="referencesid2">
+</div>
+
+<div id="references2"  class="container">
+<h4>Articles</h4>
+<p>
+Oxford User’s Guide to Mathematics. Oxford (2004) UK: Oxford University Press. p. 1188</p>
+
+<p>Age of Man (March 2011) National Geographic</p>
+
+<p>Reading Eagle  (Oct 21, 1969) Google News</p>
+
+<p>Charles Sanders Peirce(1931-58), Collected Writings (8 Vols.), Cambridge, MA, Harvard University Press</p>
+
+<p>What is graphic design? (2016) Juliette Cezzar http://www.aiga.org/what-is-design/</p>
+
+<p>Old European / Vinca / Danube script http://www.omniglot.com/writing/vinca.htm</p>
+
+<p>Animal Communications, Information Theory, and the Search for Extraterrestrial Intelligence (SETI) Laurance R. Doyle
+seti.org/seti-institute/animal-communication-information-theory-and-seti</p>
+
+<p>Could there be life in Titan’s methane sea? (2015) cosmosmagazine.com/space/could-there-be-life-titans-methane-sea
+Consulted: December 2015</p>
+
+<p>Sagan, C. (2009). Carl Sagan, Cosmic Connection: An Extraterrestrial Perspective, Cambridge University Press</p>
+
+<p>Daytona Beach Morning Journal (Mar 12, 1972)</p>
+
+<p>The Last Pictures: Interview with Trevor Paglen (2012) e-flux
+www.e-flux.com/journal/the-last-pictures-interview-with-trevor-paglen</p>
+
+<p>Annual report on internet usage (2015) ITU https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2015.pdf</p>
+
+<p>“The rise of additive manufacturing” (24th May 2010) The Engineer, Kate Cummins 
+http://www.theengineer.co.uk/the-rise-of-additive-manufacturing/
+Consulted January 2016</p>
+
+<p>Points of View: Gestalt principles (Part 1) (2010) Nature Methods
+http://www.nature.com/nmeth/journal/v7/n11/full/nmeth1110-863.html
+Consulted January 2016</p>
+
+<p>
+Elon Musk, A Man of Impossible Dreams, Wants To Colonize Mars (2015) Simon Worral</p>
+
+<a href="#referencesid3" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+<div id="referencesid3">
+</div>
+
+<div id="references3"  class="container">
+<h4>Online media</h4>
+<p>
+Pioneer and Voyager missions
+http://nasa.gov/centers/ames/missions/archive/pioneer.html (2007)
+http://voyager.jpl.nasa.gov/ 
+http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html
+http://goldenrecord.org/
+Consulted November 2015</p>
+
+<p>NASA Soundcloud (2015)
+https://soundcloud.com/nasa/sets/golden-record-sounds-of</p>
+
+
+<p>
+Online dictionaries
+dictionary.com
+wikipedia.org
+merriam-webster.com</p>
+
+<p>
+virgingalactic.com</p>
+
+<p>http://nineplanets.org/</p>
+
+<p>nativeamericannetroots.net</p>
+
+<p>Lines and Geoglyphs of Nasca and Pampas de Jumana (1994) UNESCO World Heritage Centre
+unesco.org/archives/multimedia/?s=films_details&pg=33&id=1264</p>
+
+<p>Google maps
+https://www.google.com/maps/</p>
+
+<p>https://www.google.com/trends/explore#q=
+  buddhism%2C%20christianity%2C%20judaism%2C%20hinduism&cmpt=q Google trends search on the word ‘religion’ (2005 - 2015)</p>
+
+<p>Trevor Paglen http://www.paglen.com/
+The Last Pictures www.thelastpictures.org</p>
+
+<p>Teen Age Message http://www.setileague.org/articles/tam.htm</p>
+
+
+<p>Astrobotic
+https://www.astrobotic.com/
+https://www.astrobotic.com/moon-mail</p>
+
+<p>Pocari to the Moon
+http://lunar-dream.com/</p>
+
+<p>SETI
+http://www.seti.org/seti-institute/project/details/arecibo-message</p>
+
+<p>Cosmos 12: Encyclopaedia Galactica (2014)  Shane L. Larson
+https://writescience.wordpress.com/tag/arecibo-message/</p>
+
+
+<p>Nuclear Energy Institute</p>
+http://nei.org/
+
+
+<p>mathsisfun.com</p>
+
+<p>Trash on the moon, a report prepared for the people of Earth (2012) Dakin Heart
+http://trashonthemoon.com/</p>
+
+<a href="#startid" style="cursor:nw-resize;"> <img id="next" src="next/nw.jpg"
+         onmouseover="this.src='next/nw.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
+
+
+
+
+
+
+<div id="printpageid">
+  <span class="bgtitle">P<br />R<br />R<br />I<br />N<br />T</span>
+</div>
+
+<div id="printpage"  class="container">
+<h4><a href="#printid" onClick="window.print ()" value="print">Print or save in book format</a></h4>
+<img src="printbook.jpg" style="margin-left:340px;"><br />
+
+<a href="#startid" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg" onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/nw.jpg';">
+    </img></a>
+</div>
+
+
+
+
+
+<div class="ufo"><img src="ufo/abstract/nasa.png"><p>National Aeronautics and Space Administration <a href="www.nasa.gov" onclick="window.open(this.href)"><em id="source">www.nasa.gov</em></a></p><span id="sup2">a.</span></div>
+<div class="ufo"><img src="ufo/abstract/pioneer_family.jpg"><p>A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. Image date: March 11, 1982. Image Credit: NASA</p><span id="sup2">b.</span></div>
+<div class="ufo"><img src="ufo/abstract/Pioneer-Plaque.jpeg"><p>The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan.</p><span id="sup2">c.</span>
+</div>
+<div class="ufo"><img src="ufo/abstract/voyager.jpg"><p>Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history.</p><span id="sup2">d.</span>
+</div>
+
+
+
+<div id="one">
+<div class="ufo"><img src="ufo/abstract/golden1.jpg"><img src="ufo/abstract/golden2.jpg"><p>NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials</p><span id="sup2">e.</span>
+</div>
+<div class="ufo"><img src="ufo/abstract/animation.gif"><p>126 images were included on the Golden Records</p><span id="sup2">f.</span>
+</div>
+</div>
+
+
+<div class="ufo"><img src="ufo/abstract/Liquid_lakes_on_titan.jpg"><p>Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells. <em id="source">Cassini radar image</em></p><span id="sup2">g.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/Pale_Blue_Dot.png"><p>This image of Earth is one of 60 frames taken by the Voyager 1 spacecraft on February 14, 1990 from a distance of more than 6 billion kilometers. Earth is visible as a dot on the right of the picture, hence the name <strong>Pale Blue Dot</strong>.
+</p><span id="sup2">1.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/introduction/earth.gif"><p>Earth is the third planet from the Sun and the fifth largest<br /><br />
+
+<strong>Planet Profile</strong><br />
+orbit: 149,600,000 km (1.00 AU) from Sun<br />
+diameter: 12,756.3 km<br />
+mass: 5.972e24 kg<br />
+</p><span id="sup2">2.</span>
+</div>
+
+
+<div class="ufo"><p>
+Interstellar space refers to the space in the galaxy that is not occupied by stars, their magnetic fields or their planetary systems. <em id="source">http://www.pbs.org/newshour/extra/2013/09/voyager-becomes-first-spacecraft-enter-interstellar-space/</em>
+</p><span id="sup2">3.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/golden2.jpg"><p>NASA placed a message aboard Voyager 1 and 2 -a kind of time capsule, intended to communicate a story of our world to extraterrestrials <em id="source">www.voyager.jpl.nasa.gov/spacecraft/goldenrec.html source</em>
+</p><span id="sup2">4.</span>
+</div>
+</div>
+
+<div class="ufo"><p>
+<img src="ufo/introduction/nasa.png">National Aeronautics and Space Administration <em id="source">https://www.nasa.gov/</em>
+</p><span id="sup2">5.</span>
+</div>
+
+<div class="ufo"><p>
+<strong>ex·tra·ter·res·tri·al</strong> (ĕk′strə-tə-rĕs′trē-əl)<br />
+<em>adj.</em><br />
+Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
+<em>n.</em><br />
+An extraterrestrial being or life form. <br /><br /><em id="source">The Free Dictionary</em>
+</p><span id="sup2">6.</span>
+</div>
+
+<div class="ufo"><p>
+<strong>so·lil·o·quy</strong> (sə-lĭl′ə-kwē)<br />
+<em>n. pl. so·lil·o·quies</em><br />
+1.<br /><br />
+a. A dramatic or literary form of discourse in which a character talks to himself or herself or reveals his or her thoughts when alone or unaware of the presence of other characters.<br /><br />
+b. A specific speech or piece of writing in this form.<br /><br />
+2. The act of speaking to oneself.<br /><br /><em id="source">The Free Dictionary</em>
+</p><span id="sup2">7.</span>
+</div>
+
+
+<div class="ufo"><p>
+<em>adjective</em><br />
+  1.<br />
+  on or relating to the earth.<br />
+  2.<br />
+  of or on dry land.<br /><br />
+  
+  <em>noun</em><br />
+  1.<br />
+  an inhabitant of the earth<br /><span id="source">dictionary.com</span>
+</p><span id="sup2">8.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:240px;"><p>
+Science fiction (abbreviated SF or sci-fi with varying punctuation and capitalization) is a broad genre of fiction that often involves speculations based on current or future science or technology.
+<span id="source">http://www.goodreads.com/genres/science-fiction" onclick="window.open(this.href)
+</p><span id="sup2">9.</span>
+</div>
+
+<div class="ufo"><p>
+Human beings collectively; the human race; humanity.
+<em id="source">dictionary.com</em>
+</p><span id="sup2">10.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/neil.jpg"><p>On July 20, 1969, Neil Armstrong became the first human to step on the moon.
+<em id="source">http://www.nasa.gov/mission_pages/apollo/apollo11.html</em>
+</p><span id="sup2">11.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/men in the moon.jpg"><p>H.G. Wells (1901) <em>First men in the moon</em>
+</p><span id="sup2">12.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/communicator.jpg"><p><u>Star Trek: The Original Series</u>, Desilu Productions (September 1966–December 1967)
+</p><span id="sup2">13.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/virgin-galactic.jpg"><p><em id="source">http://www.virgingalactic.com</em>
+</p><span id="sup2">14.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/introduction/2001-space.jpg"><p><u>2001: A space odyssey</u> Stanley Kubrick & Arthur C. Clarke, 1968
+</p><span id="sup2">15.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:40px;"><p>
+Seth Shostak, (Senior Astronomer and Director, SETI)<u>NASA Innovative Advanced Concepts Symposium</u> (2014) Stanford University, Stanford, California
+</p><span id="sup2">16.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/mars_attacks_ver3.jpg"><p><u>Mars Attacks!</u>, Tim Burton, 1996
+</p><span id="sup2">17.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/Introduction/mars.jpg"><p>Mars is the fourth planet from the Sun and the seventh largest<br /><br />
+
+<strong>Planet Profile</strong><br/>
+orbit: 227,940,000 km (1.52 AU) from Sun <br />
+diameter: 6,794 km<br />
+mass: 6.4219e23 kg <br /> <em id="source">http://nineplanets.org/mars.html</em>
+</p><span id="sup2">18.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/saucer.jpg"><p>A flying saucer is an unidentified flying object (UFO) that is saucer-shaped. The term may also generally refer to any UFO. <em id="source">Wikipedia</em>
+</p><span id="sup2">19.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/ancient-handshake.jpg"><p><u>Hera and Athena handshaking</u> late 5th century BC<br /> <em id="source"> Acropolis Museum, Athens</em>
+</p><span id="sup2">20.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/case study/disease.jpg"><p><u>The arrival of Columbus in the Caribbean</u> 1492. State Archives of Florida
+</p><span id="sup2">21.</span>
+</div>
+
+<div class="ufo"><p>
+“Prior to the arrival of the Europeans, American Indians were remarkably free of serious diseases” <em id="source">http://nativeamericannetroots.net/diary/2095</em>
+</p><span id="sup2">22.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/politicians.gif"><p>Hungarian Prime Minister Viktor Orban and President of the European Commission Jean-Claude Juncker shake hands
+</p><span id="sup2">23.</span>
+</div>
+
+<div class="ufo"><p>
+Interpreting or regarding the world in terms of human values and experiences. <em id="source">Merriam-Webster</em>
+</p><span id="sup2">24.</span>
+</div>
+
+<div class="ufo"><p>
+The study of life beyond the earth’s atmosphere, as on other planets. <em id="source">dictionary.com</em>
+</p><span id="sup2">25.</span>
+</div>
+</div>
+
+<div class="ufo" style="margin-top:230px"><p>
+SETI, the Search for Extraterrestrial Intelligence, is an exploratory science that seeks evidence of life in the universe by looking for some signature of its technology. <em id="source">http://www.seti.org/"</em>
+</p><span id="sup2">26.</span>
+</div>
+
+<div class="ufo"><p>
+<u>Animal Communications, Information Theory, and the Search for Extraterrestrial Intelligence (SETI)</u> Laurance R. Doyle<em id="source">http://www.seti.org/seti-institute/animal-communication-information-theory-and-seti</em>
+</p><span id="sup2">27.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/brunomunari.jpg"><p>Bruno Munari was an Italian artist, designer, and inventor who contributed fundamentals to many fields of visual arts in modernism, futurism, and concrete art, and in non visual arts with his research. <em id="source">Wikipedia</em>
+</p><span id="sup2">28.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/case study/designasart.jpg"><p>Bruno Munari (1971)<u> Design as Art</u> United Kingdom, Penguin
+</p><span id="sup2">29.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/carl friedrich.jpg"><p>Referred to as “the foremost of mathematicians”. <u>Oxford User’s Guide to Mathematics</u> Oxford, UK: Oxford University Press. p. 1188
+</p><span id="sup2">30.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/joseph littrow.gif"><p>Joseph Johann von Littrow was an Austrian astronomer. He created the only conformal retroazimuthal map projection, which is known as the Littrow projection. <u>Wikipedia</u>
+</p><span id="sup2">31.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/nasca-lines-bird.jpg"><p>These lines, which were scratched on the surface of the ground between 500 B.C. and A.D. 500, are among archaeology’s greatest enigmas because of their quantity, nature, size and continuity.” <u>
+Lines and Geoglyphs of Nasca and Pampas de Jumana </u>(1994) UNESCO World Heritage Centre
+</p><span id="sup2">32.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/longman.jpg"><p>A geoglyph is a large design or motif (generally longer than 4 metres) produced on the ground and typically formed by clastic rocks or similarly durable elements of the landscape, such as stones, stone fragments, live trees,[1] gravel, or earth. wiki
+<u>The Long Man of Wilmington</u> East Sussex, England
+</p><span id="sup2">33.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/case study/pythagoras.gif"><p>“In a right angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.” <u>http://www.mathsisfun.com</u>
+</p><span id="sup2">34.</span>
+</div>
+
+<div class="ufo"><p>
+Relating to or denoting the system of geometry based on the work of Euclid and corresponding to the geometry of ordinary experience. <u>Wikipedia</u>
+</p><span id="sup2">35.</span>
+</div>
+
+<div class="ufo"><p>
+Artificial intelligence (AI) is the intelligence exhibited by machines or software. It is also the name of the academic field of study which studies how to create computers and computer software that are capable of intelligent behavior. <u>Wikipedia</u>
+</p><span id="sup2">36.</span>
+</div>
+
+<div class="ufo"><p>
+A word coined by Dutch chemist Paul Crutzen. “It’s a new name for a new geologic epoch—one defined by our own massive impact on the planet. That mark will endure in the geologic record long after our cities have crumbled.”  
+<u>Age of Man</u> (March 2011) National Geographic
+</p><span id="sup2">37.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/satelite image netherlands.jpg"><p>Europe at night from Space <u>SPL/Barcroft Media</u>
+</p><span id="sup2">38.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/dubai.jpg"><p>Dubai and its artificial islands <u>Google maps</u>
+</p><span id="sup2">39.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/guzman-prix.jpg"><p><u>Reading Eagle</u>  (Oct 21, 1969) Google News Archive
+</p><span id="sup2">40.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/schiaparelli.jpg"><p>Giovanni Virginio Schiaparelli (14 March 1835 – 4 July 1910) was an Italian astronomer and science historian.<u>Wikipedia</u>
+</p><span id="sup2">41.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/case study/Mars_twin_canals_by_Schiaparelli.jpg"><p>Schiaparelli Drawing of Martian canals <u>http://www.nasa.gov</u>
+</p><span id="sup2">42.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/percival.jpg"><p>Percival Lawrence Lowell (March 13, 1855 – November 12, 1916) was an American businessman, author, mathematician, and astronomer who fueled speculation that there were canals on Mars. <u>Wikipedia</u>
+</p><span id="sup2">43.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/case study/lfe-on-mars.jpg"><p><u>New York Times, August 30, 1907</u>
+</p><span id="sup2">44.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/namibia-fairy-circles.jpg"><p>‘Fairy circles’ in the NamibRand Nature Reserve<u>Google maps</u>
+</p><span id="sup2">45.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/raygun.jpg"><p>A raygun is a type of fictional or futuristic directed-energy weapon.<u>Wikipedia</u>
+</p><span id="sup2">46.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/saussurean.jpg"><p>In semiotics and linguistics, Ferdinand de Saussure’s dyadic model of the sign consisting of the signifier and the signified. <u>http://www.oxfordreference.com/"</u>
+</p><span id="sup2">47.</span>
+</div>
+
+<div class="ufo"><p>
+Charles Sanders Peirce(1931-58), <u>Collected Writings (8 Vols.)</u>, Cambridge, MA, Harvard University Press
+</p><span id="sup2">48.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/case study/marting-freemand-hobbit.jpg">
+<span id="sup2">49.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/thumb.jpg">
+<span id="sup2">50.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/direction-finger.jpg">
+<span id="sup2">51.</span>
+</div>
+
+<div class="ufo"><p>
+A set of written, printed, or blank sheets bound together into a volume. <u>Merriam-Webster</u>
+</p><span id="sup2">52.</span>
+</div>
+
+<div class="ufo"><p>
+Graphic design, also known as communication design, is the art and practice of planning and projecting ideas and experiences with visual and textual content. The form of the communication can be physical or virtual, and may include images, words, or graphic forms. <u>"http://www.aiga.org/what-is-design/"</u>
+</p><span id="sup2">53.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/Pioneer-Plaque.jpg"><p>The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan. The Pioneer 10 and 11 spacecraft both carried one of these plaques. <u>http://www.nasa.gov/centers/ames/missions/archive/pioneer.html</u>
+</p><span id="sup2">54.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/case study/arrows.jpg"><p>Bruno Munari, 1971, <u>Design as Art</u>, United Kingdom, Penguin
+</p><span id="sup2">55.</span>
+</div>
+
+<div class="ufo"><p>
+The megabyte is a multiple of the unit byte for digital information. <u>Wikipedia</u>
+</p><span id="sup2">56.</span>
+</div>
+
+<div class="ufo"><p>
+reference work that contains information on all branches of knowledge or that treats a particular branch of knowledge in a comprehensive manner. <u>http://www.britannica.com/topic/encyclopaedia</u>
+</p><span id="sup2">57.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:230px"><p>
+A large amount of data transferred from one system or location to another. <u>Wikipedia</u>
+</p><span id="sup2">58.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/fifth_poster.jpg"><p><u>The Fifth Element</u> Luc Besson, 1997
+</p><span id="sup2">59.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/fifth_signs.jpg"><p>Still from The Fifth Element
+</p><span id="sup2">60.</span>
+</div>
+
+<div class="ufo"><p>
+Egyptian hieroglyphs were a formal writing system used by the ancient Egyptians that combined logographic and alphabetic elements. <u>Alfabet, hiëroglief en pictogram</u> de geschiedenis van het schrift (2004) Andrew Robinson, Atrium
+</p><span id="sup2">61.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/maros.jpg"><p>Paintings of wild animals and hand markings left by adults and children on cave walls in Maros, Indonesia estimated to be 35.000 years old. <u>Wikipedia</u>
+</p><span id="sup2">62.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/vinca2.jpg"><p>The Vinca symbols have been found on many of the artefacts excavated from sites in south-east Europe, in particular from Vinca near Belgrade, but also in Greece, Bulgaria, Romania, eastern Hungary, Moldova, southern Ukraine and the former Yugoslavia. <u>http://www.omniglot.com/writing/vinca.htm</u>
+</p><span id="sup2">63.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/lessons/rosettastone2.gif" style="margin-top:140px"><p>The Rosetta stone was dicovered by troops from the Napoleonistic French army—then stationed in Rosetta, Egypt 
+</p><span id="sup2">64.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/lessons/easter island statues.jpg"><p>Polynesian people most likely settled on Easter Island sometime between 700 to 1100 CE, and created a thriving and industrious culture as evidenced by the island’s numerous enormous stone moai and other artifacts. <u>Wikipedia</u>
+</p><span id="sup2">65.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/rongorongo.gif" style="margin-top:130px"><p>Rongorongo is a form of writing or proto-writing discovered on Easter Island in the Pacific during the 19th century. <u>http://www.omniglot.com/writing/rongorongo.htm</u>
+</p><span id="sup2">66.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/lessons/easter-island.jpg"><p>Easter Island, or Rapa Nui, lies 3512 kilometers away from the nearest continental point. <u>Google Maps</u>
+</p><span id="sup2">67.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/decline.jpg"><p>Google trends search on the main religions (2005 - 2015)
+</p><span id="sup2">68.</span>
+</div>
+
+<div class="ufo"><p>
+An organized system of beliefs, ceremonies, and rules used to worship a god or a group of gods. <u>Merriam-Webster</u>
+</p><span id="sup2">69.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<img src="ufo/politics/pioneer_family.jpg"><p>A family portrait showing (from left to right) Pioneers 6-9, 10 and 11 and the Pioneer Venus Orbiter and Multiprobe series. Image date: March 11, 1982. <u>http://voyager.jpl.nasa.gov/</u>
+</p><span id="sup2">70.</span>
+</div>
+
+<div class="ufo"><p>
+The Pioneer Missions (2007) <u>http://www.nasa.gov/centers/ames/missions/archive/pioneer.html</u>
+</p><span id="sup2">71.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/carl-sagan.jpg"><p>Carl Sagan was an American astronomer, who popularized the science of space with his 1980 educational series ‘Cosmos: A personal voyage’ and was one of the designers of the Pioneer plaque. <u>Wikipedia</u>
+</p><span id="sup2">72.</span>
+</div>
+
+<div class="ufo"><p>
+Sagan, C. (2009). Carl Sagan <u>Cosmic Connection: An Extraterrestrial Perspective</u> Cambridge University Press 
+</p><span id="sup2">73.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/pornographic.jpg"><p>Daytona Beach Morning Journal (Mar 12, 1972)
+</p><span id="sup2">74.</span>
+</div>
+
+<div class="ufo"><p>
+For more details on the Voyager missions, visit <u>http://goldenrecord.org/</u>
+</p><span id="sup2">75.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/Trevor-Paglen-head_shot682x1024.jpg"><p>Trevor Paglen is an artist whose work spans image-making, sculpture, investigative journalism, writing, engineering, and numerous other disciplines. Among his chief concerns are learning how to see the historical moment we live in and developing the means to imagine alternative futures. <u>http://www.paglen.com/</u>
+</p><span id="sup2">76.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:120px">
+<img src="ufo/politics/17.jpg"><p><u>http://www.thelastpictures.org/</u>
+</p><span id="sup2">77.</span>
+</div>
+
+<div class="ufo"><p>
+In the context of spaceflight, a satellite is an artificial object which has been intentionally placed into orbit. Such objects are sometimes called artificial satellites to distinguish them from natural satellites such as Earth’s Moon. <u>Wikipedia</u>
+</p><span id="sup2">78.</span>
+</div>
+
+<div class="ufo"><p>
+The Last Pictures: Interview with Trevor Paglen (2012) e-flux <u>http://www.e-flux.com/journal/the-last-pictures-interview-with-trevor-paglen/</u>
+</p><span id="sup2">79.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/politics/teen-age-theremin.jpg"><p>In 2001, a group of Russian teens from Moscow, Kaluga, Voronezh, and Zheleznogorsk participated directly and via the Internet in composing a Teen-Age Message (TAM) to extraterrestrial intelligence, and in the selection of target stars. <u>http://www.setileague.org/articles/tam.htm</u>
+</p><span id="sup2">80.</span>
+</div>
+
+<div class="ufo"><p>
+"A Message from Earth" is a high-powered digital radio signal that was sent on 9 October 2008 towards Gliese 581C. The signal is a digital time capsule containing 501 messages that were selected through a competition on the social networking site Bebo <u>Wikipedia</u>
+</p><span id="sup2">81.</span>
+</div>
+</div>
+
+<div class="ufo" style="margin-top:130px"><p>
+The signal is a digital time capsule containing 501 messages that were selected through a competition on the social networking site Bebo <u>Wikipedia</u>
+</p><span id="sup2">82.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/itu.png"><p>“4 billion people from developing countries remain offline” Annual report on internet usage (2015) ITU <u>https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2015.pdf</u>
+</p><span id="sup2">83.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/astro.png"><p> <u>https://www.astrobotic.com/</u>
+</p><span id="sup2">84.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/politics/pocari.jpg"><p> Japanese soda drink Pocari is planning on sending a can of their soda to the Moon for marketing purposes <u>http://lunar-dream.com/</u>
+</p><span id="sup2">85.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:230px">
+<img src="ufo/politics/moonmail.jpg"><p>Send you personal items to the surface of the Moon with Astrobotic’s MoonMail. <u>https://www.astrobotic.com/moon-mail</u>
+</p><span id="sup2">86.</span>
+</div>
+
+<div class="ufo"><u><p>
+http://www.seti.org/seti-institute/project/details/arecibo-message</u>
+</p><span id="sup2">87.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/arecibo.jpg"><p>The Arecibo Observatory as seen on Google Maps
+</p><span id="sup2">88.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/arecibosideways.jpg"><p>The Arecibo message horizontally aligned <u>Cosmos 12: Encyclopaedia Galactica</u> (2014)  Shane L. Larson <u>https://writescience.wordpress.com/2014/02/25/cosmos-12-encyclopaedia-galactica/</u>
+</p><span id="sup2">89.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/arecibovertical.jpg"><p>
+The Arecibo message vertically aligned <u>Cosmos 12: Encyclopaedia Galactica</u> (2014)  Shane L. Larson <u>https://writescience.wordpress.com/2014/02/25/cosmos-12-encyclopaedia-galactica/</u>
+</p><span id="sup2">90.</span>
+</div>
+
+<div id="one">
+<div class="ufo" style="margin-top:230px">
+<img src="ufo/repository/m13.jpg"><p>M13 starcluster, one of our galaxy’s oldest star systems Image credit: CelestronImages
+</p><span id="sup2">91.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/intoeternity.jpg"><p><u>Into Eternity</u> Michael Madsen, January 6, 2010
+</p><span id="sup2">92.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/spikes.jpg"><p>Spike Field, view 1    
+concept and art by Michael Brill.
+</p><span id="sup2">93.</span>
+</div>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/repository/yucca.jpg"><p>Yucca Mountain information center concept. <u>http://nei.org/Issues-Policy/Nuclear-Waste-Management</u>
+</p><span id="sup2">94.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/repository/comic.gif"><p>A short comic depicting what will happen when exposed to radioactive material.Illustrator: Jon Lomberg
+</p><span id="sup2">95.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/timespace/jodie.jpg"><p><u>Contact</u> 1997, Robert Zemeckis</em> (based on the identically titled novel by Carl Sagan)
+</p><span id="sup2">96.</span>
+</div>
+
+<div id="one">
+<div class="ufo"><p>
+“A Prime Number can be divided evenly only by 1 or itself.
+And it must be a whole number greater than 1.” <u>https://www.mathsisfun.com/prime_numbers.html</u>
+</p><span id="sup2">97.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/timespace/idealcity.jpg"><p>View of an Ideal City, Piero della Franscesca, 1470, Galleria Nazionale delle Marche, Urbino
+</p><span id="sup2">98.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/timespace/roadrunner.gif"><p>Video clip from the animated Looney Tunes series Wile E. Coyote and The Road Runner
+</p><span id="sup2">99.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/timespace/athens.jpg"><p>The School of Athens, Raffaello Sanzio da Urbino, 1509, Stanza della Segnatura, Palazzi Pontifici, Vatican
+</p><span id="sup2">100.</span>
+</div>
+</div>
+
+<div class="ufo">
+<img src="ufo/timespace/christcaif.jpg"><p>Christ Before Caiaphas, Giotto, 1305, Scrovegni Chapel, Padua, Italy
+</p><span id="sup2">101.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/timespace/riemannian.gif"><p>Riemannian geometry is the branch of differential geometry that studies Riemannian manifolds, smooth manifolds with a Riemannian metric, i.e. with an inner product on the tangent space at each point that varies smoothly from point to point. <u>Wikipedia</u>
+</p><span id="sup2">102.</span>
+</div>
+
+<div class="ufo"><p>
+Holography is the science and practice of making holograms. Typically, a hologram is a photographic recording of a light field, rather than of an image formed by a lens, and it is used to display a fully three-dimensional image of the holographed subject.<u>Wikipedia</u>
+</p><span id="sup2">103.</span>
+</div>
+
+<div class="ufo"><p>
+Additive manufacturing is often referred to as 3D printing, as it works in a similar way to a laser printer. The technique builds a solid object from a series of layers – each one printed directly on top of the previous one. 
+<u>“The rise of additive manufacturing” (24th May 2010) The Engineer, Kate Cummins,</u>
+Consulted January 2016
+</p><span id="sup2">104.</span>
+</div>
+
+
+<div id="one">
+<div class="ufo" style="margin-top:230px">
+<img src="ufo/timespace/kosuth.jpg"><p>Joseph Kosuth is one of the pioneers of Conceptual art and installation art, initiating language-based works and appropriation strategies in the 1960s. His work has consistently explored the production and role of language and meaning within art. <u>Sean Kelly Gallery</u>
+</p><span id="sup2">105.</span>
+</div>
+
+
+<div class="ufo">
+<img src="ufo/timespace/threechairs.jpg"><p>1965. Wood folding chair, mounted photograph of a chair, and mounted photographic enlargement of the dictionary definition of “chair” <u>http://www.moma.org/learn/moma_learning/joseph-kosuth-one-and-three-chairs-1965</u>
+</p><span id="sup2">106.</span>
+</div>
+
+<div class="ufo"><p>
+Points of View: Gestalt principles (Part 1) (2010) Nature Methods
+<u>http://www.nature.com/nmeth/journal/v7/n11/full/nmeth1110-863.html</u>
+</p><span id="sup2">107.</span>
+</div>
+</div>
+
+<div class="ufo"><p>
+<img src="ufo/timespace/closeposter.jpg"><u>Close Encounters of the Third Kind</u> Steven Spielberg, 1978
+</p><span id="sup2">108.</span>
+</div>
+
+<div class="ufo">
+<video src="ufo/timespace/close1.mp4" controls>
+</video><p>Scene from Close Encounters of the Third Kind
+</p><span id="sup2">109.</span>
+</div>
+
+<div class="ufo">
+<video src="ufo/timespace/close2.mp4" controls></video><p>Scene from Close Encounters of the Third Kind
+</p><span id="sup2">110.</span>
+</div>
+
+<div id="one">
+<div class="ufo">
+<video src="ufo/timespace/close4.mp4" controls></video><p>Scenes from Close Encounters of the Third Kind
+</p><span id="sup2">111.</span>
+</div>
+
+<div class="ufo">
+<img src="ufo/human/moontrash.jpg"><p><u>http://trashonthemoon.com/</u>
+</p><span id="sup2">112.</span>
+</div>
+
+<div class="ufo"><p>World Nuclear Association <u>http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-reactors-for-space.aspx</u>
+</p><span id="sup2">113.</span>
+</div>
+
+<div class="ufo"><p>
+The policy or practice of acquiring full or partial political control over another country, occupying it with settlers, and exploiting it economically. <u>Oxford Dictionaries</u>
+</p><span id="sup2">114.</span>
+</div>
+
+<div class="ufo"><p>
+Of or relating to a time or society in which national identity has become less important. <u>Oxford Dictionaries</u>
+</p><span id="sup2">115.</span>
+</div>
+</div>
+
+<div class="ufo"><p>Elon Musk, A Man of Impossible Dreams, Wants To Colonize Mars
+<u>http://news.nationalgeographic.com/2015/06/150628-tesla-paypal-elon-musk-technology-steve-jobs-silicon-valley-electric-car-ngbooktalk/</u> 
+</p><span id="sup2">116.</span>
+</div>
+
+<div class="ufo"><p>The Encyclopedia Galactica is a fictional or hypothetical encyclopedia of a galaxy-spanning civilization, containing all the knowledge accumulated by a society with quadrillions of people and thousands of years of history. <u>Wikipedia</u> 
+</p><span id="sup2">117.</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="colophonid">
+</div>
+
+<div id="colophon"  class="container">
+  <h4>Colophon</h4>
+  <h4>
+<u>Special thanks to:</u><br/><em> Nick Axel<br /> Marjan Brandsma<br /> Dirk Vis<br />Eric Schrijver<br /><br/></em>
+And Friends and family for additional help/support<br /><br />
+<u>Written and designed by:</u><br /><span class="hide">Jorick de Quaasteniet</span><span class="hidden">
+<a href="http://jorickdequaasteniet.nl/" onclick="window.open(this.href)">Website</a><br />jorq90@hotmail.com</span><br />Royal Academy of Art, The Hague (NL), 2016 
+</h4>
+
+<a href="#referencesid" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
+         onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
+    </img></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".ufo").random();
+  });    
+$('.ufo').each(function(i,el){
+
+    var tLeft = Math.floor(Math.random()*29000),
+        tTop  = Math.floor(Math.random()*29000);
+
+    $(el).css({position:'absolute', left: tLeft, top: tTop});
+
+});
+</script>
+
+
+
+</div>
+</body>
+</html>
