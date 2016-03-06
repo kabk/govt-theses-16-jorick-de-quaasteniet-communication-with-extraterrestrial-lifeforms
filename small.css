@@ -48,12 +48,14 @@ p{
 
 .zonnetje2{display: none;}
 .zonnetje3{display: none;}
+.nav-bar3{display: none;}
+.nav-bar2{display: none;}
 
 .nav-bar ul{
-  -webkit-transform: scale(0.8);     /* Chrome and other webkit browsers */
-  -moz-transform: scale(0.8);        /* FF */
-  -o-transform: scale(0.8);          /* Opera */
-  -ms-transform: scale(0.8);         /* IE9 */
+  -webkit-transform: scale(0.86);     /* Chrome and other webkit browsers */
+  -moz-transform: scale(0.86);        /* FF */
+  -o-transform: scale(0.86);          /* Opera */
+  -ms-transform: scale(0.86);         /* IE9 */
   transform: scale(0.86);
   margin-top: 0px;
    border-top: 2px solid black;

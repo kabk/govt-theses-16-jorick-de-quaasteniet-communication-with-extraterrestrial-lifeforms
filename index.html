@@ -49,7 +49,40 @@
 <script src="three.js"></script>
 
 
-    
+   <script language=javascript>
+var rev = "bwd";
+function titlebar(val){
+    var msg  = "XTRTRRSTRL SLLQS";
+    var res = " ";
+    var speed = 300;
+    var pos = val;
+    msg = "   "+msg+"";    
+    var le = msg.length;
+    if(rev == "fwd"){ 
+        if(pos < le){ 
+            pos = pos+1; 
+            scroll = msg.substr(0,pos); 
+            document.title = scroll; 
+            timer = window.setTimeout("titlebar("+pos+")",speed); 
+        } else { 
+            rev = "fwd"; 
+            timer = window.setTimeout("titlebar("+pos+")",speed); 
+        }
+    } else { 
+        if(pos > 0) {
+            pos = pos-1; 
+            var ale = le-pos; 
+            scrol = msg.substr(ale,le); 
+            document.title = scrol; 
+            timer = window.setTimeout("titlebar("+pos+")",speed); 
+        } else { 
+            rev = "fwd"; 
+            timer = window.setTimeout("titlebar("+pos+")",speed); 
+        }
+    }
+}
+titlebar(0);
+</script> 
 
 
 
@@ -312,7 +345,7 @@ $(document).ready(function(){
 
 <nav class="nav-bar2">
   <ul>
-     <li><a href="#printid" onClick="window.print ()" value="print">#.....Print</a></li>
+     <li><a href="#printpageid">#.....Print</a></li>
   </ul>
 </nav>
 
@@ -330,24 +363,20 @@ $(document).ready(function(){
 
 <nav class="nav-bar3">
 
-
-
-
-
 <img src="screenshot.jpeg">
-<a href="#startid"  alt="start"><div id="begin"></div><div class="mapitem" id="map1">(11400,11100)<br />title</div></a>
-<a href="#introductionid1"  alt="introduction"><div id="intro"></div><div class="mapitem" id="map2">(168,172)<br />introduction</div></a>
-<a href="#chapter1id_1"  alt="chapter1"><div id="chap1"></div><div class="mapitem" id="map3">(98,178)chapter 1</div></a>
-<a href="#chapter2id_1"  alt="chapter2"><div id="chap2"></div><div class="mapitem" id="map4">chapter 2</div></a>
-<a href="#chapter3id_1"  alt="chapter3"><div id="chap3"></div><div class="mapitem" id="map5">chapter 3</div></a>
-<a href="#chapter4id_1"  alt="chapter4"><div id="chap4"></div><div class="mapitem" id="map6">chapter 4</div></a>
-<a href="#chapter5id_1"  alt="chapter5"><div id="chap5"></div><div class="mapitem" id="map7">chapter 5</div></a>
-<a href="#chapter6id_1"  alt="chapter6"><div id="chap6"></div><div class="mapitem" id="map8">chapter 6</div></a>
-<a href="#conclusionid1"  alt="conclusion"><div id="concl"></div><div class="mapitem" id="map9">conclusion</div></a>
-<a href="#referencesid"  alt="references"><div id="ref"></div><div class="mapitem" id="map10">references</div></a>
-<a href="#colophonid"  alt="colophon"><div id="thx"></div><div class="mapitem" id="map11">colophon</div></a>
-<a href="#abstractid"  alt="abstract"><div id="abs"></div><div class="mapitem" id="map12">abstract</div></a>
-<a href="#printpageid"  alt="print"><div id="prnt"></div><div class="mapitem" id="map12">print</div></a>
+<a href="#startid"  alt="start"><div id="begin"></div><div class="mapitem" id="map1">(11400,11100)<br /><strong>title</strong></div></a>
+<a href="#introductionid1"  alt="introduction"><div id="intro"></div><div class="mapitem" id="map2">(12900,13300)<br /><strong>introduction</strong></div></a>
+<a href="#chapter1id_1"  alt="chapter1"><div id="chap1"></div><div class="mapitem" id="map3">(9000,16150)<br /><strong>chapter 1</strong></div></a>
+<a href="#chapter2id_1"  alt="chapter2"><div id="chap2"></div><div class="mapitem" id="map4">(9100,8700)<br /><strong>chapter 2</strong></div></a>
+<a href="#chapter3id_1"  alt="chapter3"><div id="chap3"></div><div class="mapitem" id="map5">(16000,10900)<br /><strong>chapter 3</strong></div></a>
+<a href="#chapter4id_1"  alt="chapter4"><div id="chap4"></div><div class="mapitem" id="map6">(18000,17900)<br /><strong>chapter 4</strong></div></a>
+<a href="#chapter5id_1"  alt="chapter5"><div id="chap5"></div><div class="mapitem" id="map7">(10000,21900)<br /><strong>chapter 5</strong></div></a>
+<a href="#chapter6id_1"  alt="chapter6"><div id="chap6"></div><div class="mapitem" id="map8">(1900,11900)<br /><strong>chapter 6</strong></div></a>
+<a href="#conclusionid1"  alt="conclusion"><div id="concl"></div><div class="mapitem" id="map9">(8800,3400)<br /><strong>conclusion</strong></div></a>
+<a href="#referencesid"  alt="references"><div id="ref"></div><div class="mapitem" id="map10">(12900,13300)<br /><strong>references</strong></div></a>
+<a href="#colophonid"  alt="colophon"><div id="thx"></div><div class="mapitem" id="map11">(25500,12300)<br /><strong>colophon</strong></div></a>
+<a href="#abstractid"  alt="abstract"><div id="abs"></div><div class="mapitem" id="map12">(1200,26000)<br /><strong>abstract</strong></div></a>
+<a href="#printpageid"  alt="print"><div id="prnt"></div><div class="mapitem" id="map12">(27050,3050)<br /><strong>print</strong></div></a>
 
 </nav>
 
@@ -406,7 +435,7 @@ $(document).ready(function(){
 <div id="start">
 
 <span id="maintitel">
-<div id="mainlink1"><span class="hide2">EXTRA<br />TERRE<br />STRIAL</span><span class="hidden2"><br /><strong>ex·tra·ter·res·tri·al</strong><br /> (ĕk′strə-tə-rĕs′trē-əl)<br /><br />
+<div id="mainlink1"><span class="hide2">EXTRA<br />TERRE<br />STRIAL</span><span class="hidden2"><br /><strong>ex·tra·ter·res·tri·al</strong><br /> (ĕk′strə-tə-rĕs′trē-əl)<br /><audio controls><source src="sounds/extraterrestrial.mp3" type="audio/mpeg"></audio> <br />
 <em>adj.</em><br />
 Originating, located, or occurring outside Earth or its atmosphere: intelligent extraterrestrial life.<br /><br />
 <em>n.</em><br />
@@ -415,7 +444,7 @@ An extraterrestrial being or life form. <br /><br /><em id="source">The Free Dic
 
 <div id="mainlink1"><span class="hide2">SOLI<br />LOQU<br />IES</marquee></span><span class="hidden2"><br />
 <strong>so·lil·o·quy</strong><br />  (sə-lĭl′ə-kwē)<br /><br />
-<em>n. pl. so·lil·o·quies</em><br />
+<em>n. pl. so·lil·o·quies</em><br /><audio controls><source src="sounds/soliloquy.mp3" type="audio/mpeg"></audio>
 1.<br /><br />
 a. A dramatic or literary form of discourse in which a character talks to himself or herself or reveals his or her thoughts when alone or unaware of the presence of other characters.<br /><br />
 b. A specific speech or piece of writing in this form.<br /><br />
@@ -423,7 +452,7 @@ b. A specific speech or piece of writing in this form.<br /><br />
 </span>
 
 </div>
-<audio controls id="firstaudio"><source src="sounds/extraterrestrialsoliloquies.mp3" type="audio/mpeg" ></audio> 
+
 
 <a href="#introductionid1"> <img id="first_next" src="next/se.jpg"
          onmouseover="this.src='next/se.gif';" onmouseout="this.src='next/se.jpg';">
@@ -467,7 +496,7 @@ b. A specific speech or piece of writing in this form.<br /><br />
 <span class="hide">gold-anodized aluminium plaque</span><span class="hidden"><img src="ufo/abstract/Pioneer-Plaque.jpeg">The plaque was designed by Dr. Carl Sagan and Dr. Frank Drake and drawn by Linda Salzman Sagan.<a href="http://nasa.gov/centers/ames/missions/archive/pioneer.html" onclick="window.open(this.href)"><em id="source">source</em></a></span><span id="sup">(c)</span> on board engraved with illustrations of the physique of a human male and female. With additional symbols explaining its origin. These plates were added to the spacecraft to communicate with any extraterrestrial life form that might come upon them. Some years later, in 1977, NASA launched the <span class="hide">Voyager probes</span><span class="hidden"><img src="ufo/abstract/voyager.jpg">Voyager 1 has entered interstellar space. The NASA spacecraft, which rose from Earth on a September morning 36 years ago, has traveled farther than anyone, or anything, in history. <a href="http://voyager.jpl.nasa.gov/" onclick="window.open(this.href)"><em id="source">source</em></a> 
 </span><span id="sup">(d)</span>. On board they included <span class="hide">golden phonograph records</span><span class="hidden"><img src="ufo/abstract/golden1.jpg"><img src="ufo/abstract/golden2.jpg">NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials <a href="http://voyager.jpl.nasa.gov/spacecraft/goldenrec.html"><em id="source">source</em></a>
 </span><span id="sup">(e)</span> containing a selection of <span class="hide">sounds</span><span class="hidden"> <em id="source"><a href="https://soundcloud.com/nasa/sets/golden-record-sounds-of" onclick="window.open(this.href)"><audio controls><source src="sounds/dog.mp3" type="audio/mpeg"></audio> <audio controls><source src="sounds/mudpots.mp3" type="audio/mpeg"></audio> <audio controls><source src="sounds/firespeech.mp3" type="audio/mpeg"></audio> NASA Soundcloud</a></em></span><span id="sup">(f)</span> and <span class="hide">images</span><span class="hidden"><img src="ufo/abstract/animation.gif">126 images were included on the Golden Records</span><span id="sup">(g)</span> selected to portray our way of living on earth. The launching of these spacecraft could be compared to throwing a bottle with a message in the ocean, hoping that someone, or something, will encounter it and be able to read the message. <h3>But in the case of such an encounter, would these images and sounds be sufficiently communicative? How will it communicate with a life form that we know nothing of? What kind of influence does the choice of communication have on the first encounter? Can we apply the knowledge we have from our own ways of communicating?</h3></p>
-<p> In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. <h3>And who is to say whether these life forms are capable of communication?</h3><p> It might be bacteria, dwelling in the depths of <span class="hide">Titan’s</span><span class="hidden">addd</span><span id="sup">(h)</span> methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p>
+<p> In the last century, technological advancements have made it possible for humankind to explore the universe we live in. With the vast amount of galaxies already discovered—and that amount is only rising—it could be said that it is only a matter of time untill we find another life form in outerspace. <h3>And who is to say whether these life forms are capable of communication?</h3><p> It might be bacteria, dwelling in the depths of <span class="hide">Titan’s</span><span class="hidden"><img src="ufo/abstract/Liquid_lakes_on_titan.jpg"><br />Hydrocarbon lakes on Titan are believed to be a possible home for methane-based, oxygen-free cells. Cassini radar image (2006) <a href="www.cosmosmagazine.com/space/could-there-be-life-titans-methane-sea" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">(h)</span> methane lakes. But we might also stumble onto a planet whith a rich flora and fauna, just like our planet Earth, providing accomodation for a species capable of basic or highly advanced communication skills.</p>
 <h3>
  Apart from the possibilty that they exist, who is to say we will make first contact with them? They might innitiate contact. Will we be able to understand each other? Who decides on the content of our message? How important is our cultural context in such a message? 
   </h3>
@@ -578,7 +607,7 @@ mass: 6.4219e23 kg <br /> <a href="http://nineplanets.org/mars.html" onclick="wi
    https://en.wikipedia.org/wiki/Flying_saucer</em></span><span id="sup">(19)</span> in the Nevada desert to meet with humankind. They are warm-heartedly welcomed by a US army general. This scene—however silly and exaggerated the rest of the movie might be—has some noticable points when it comes to communicating with extraterrestrials. </p>
 
   <p>
-  First of all, the handshake initiated by the human general. A handshake is a gesture of which the origins can be traced back all the way to the <span class="hide">ancient Greeks</span><span class="hidden"><img src="ufo/case study/ancient-handshake.jpg">Hera and Athena handshaking, late 5th century BC, Acropolis Museum, Athens</span><span id="sup">(20)</span>. It is usually meant as a way of introducing oneself into a social situation. But, handshakes are known to spread germs, which can be a powerful weapon. When America was <span class="hide">‘discovered’</span><span class="hidden"><img src="ufo/case study/disease.jpg"><em id="source">The arrival of Columbus in the Caribbean, 1492. State Archives of Florida</em>
+  First of all, the handshake initiated by the human general. A handshake is a gesture of which the origins can be traced back all the way to the <span class="hide">ancient Greeks</span><span class="hidden"><img src="ufo/case study/ancient-handshake.jpg">Hera and Athena handshaking, late 5th century BC, Acropolis Museum, Athens</span><span id="sup">(20)</span>. It is usually meant as a way of introducing oneself into a social situation. But, handshakes are known to spread germs, which can be a powerful weapon. When America was <span class="hide">‘discovered’</span><span class="hidden"><img src="ufo/case study/disease.jpg">The arrival of Columbus in the Caribbean, 1492. State Archives of Florida
 </span><span id="sup">(21)</span> in 1492, most of the native Americans died from the <span class="hide">diseases</span><span class="hidden">“Prior to the arrival of the Europeans, American Indians were remarkably free of serious diseases” <a href="http://nativeamericannetroots.net/diary/2095" onclick="window.open(this.href)"><em id="source">Source</em></a></span><span id="sup">(22)</span> Europeans brought with them to this continent.</p>
   <p>
   <u id="rule">Therefore, to avoid being wiped out by exotic and unknown diseases, it should be considered to initially refrain from any sort of physical contact.</u> Besides, the relevance of a handshake is based on the shared knowledge of both the receiving and initiating party that when one sticks his hand out towards the other, that hand is supposed to be grabbed by the hand of the other, after which both hands are shaken up and down by an agreeable amount of time. But even as simple a gesture as a handshake can end up in an awkward situation when different cultures with different customs <span class="hide">meet</span><span class="hidden"><img src="ufo/case study/politicians.gif">Hungarian Prime Minister Viktor Orban and President of the European Commission Jean-Claude Juncker shake hands</span><span id="sup">(23)</span>. </p>
@@ -1122,7 +1151,8 @@ http://merriam-webster.com</em></p>
 
 <div id="printpage"  class="container">
 <h4><a href="#printid" onClick="window.print ()" value="print">Print or save in book format</a></h4>
-<img src="printbook.jpg" style="margin-left:340px;"><br />
+<h4>In order to enjoy reading this thesis off-screen, print double sided on the paper of your choosing.</h4>
+<img src="print.jpg" style="margin-left:160px;"><br />
 
 <a href="#startid" style="cursor:ne-resize;"> <img id="next" src="next/ne.jpg" onmouseover="this.src='next/ne.gif';" onmouseout="this.src='next/nw.jpg';">
     </img></a>
@@ -1672,7 +1702,7 @@ The signal is a digital time capsule containing 501 messages that were selected 
 
 <div id="one">
 <div class="ufo" style="margin-top:230px">
-<img src="ufo/politics/moonmail.jpg"><p>Send you personal items to the surface of the Moon with Astrobotic’s MoonMail. <u>https://www.astrobotic.com/moon-mail</u>
+<img src="ufo/politics/moonmail.jpg"><p>Send you personal items to the surface of the Moon with Astrobotic’s MoonMail. <a href="https://www.astrobotic.com/moon-mail">www.astrobotic.com/moon-mail</a>
 </p><span id="sup2">86.</span>
 </div>
 
@@ -1878,7 +1908,7 @@ Of or relating to a time or society in which national identity has become less i
 <u>Special thanks to:</u><br/><em> Nick Axel<br /> Marjan Brandsma<br /> Dirk Vis<br />Eric Schrijver<br /><br/></em>
 And Friends and family for additional help/support<br /><br />
 <u>Written and designed by:</u><br /><span class="hide">Jorick de Quaasteniet</span><span class="hidden">
-<a href="http://jorickdequaasteniet.nl/" onclick="window.open(this.href)">Website</a><br />jorq90@hotmail.com</span><br />Royal Academy of Art, The Hague (NL), 2016 
+<a href="http://jorickdequaasteniet.nl/" onclick="window.open(this.href)">Website</a><br />jorq90@hotmail.com</span><br />Royal Academy of Art, The Hague (NL), 2015-2016 
 </h4>
 
 <a href="#referencesid" style="cursor:se-resize;"> <img id="next" src="next/se.jpg"
