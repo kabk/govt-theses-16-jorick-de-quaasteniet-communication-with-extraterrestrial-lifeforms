@@ -1,0 +1,5 @@
+body{-webkit-transform: scale(0.77);     /* Chrome and other webkit browsers */
+  -moz-transform: scale(0.77);        /* FF */
+  -o-transform: scale(0.77);          /* Opera */
+  -ms-transform: scale(0.77);         /* IE9 */
+  transform: scale(0.77);}
