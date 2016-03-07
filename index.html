@@ -255,6 +255,21 @@ $(document).ready(function(){
 
     </script> 
 
+<script>
+$(document).mouseup(function (e)
+{
+    var container = $("#nav1");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
+</script>
+
+
+
  <script>
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -281,6 +296,20 @@ $(document).ready(function(){
     </script> 
 
 <script>
+$(document).mouseup(function (e)
+{
+    var container = $("#nav2");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
+</script>
+
+
+<script>
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -305,6 +334,20 @@ $(document).ready(function(){
     </script> 
 
 
+<script>
+$(document).mouseup(function (e)
+{
+    var container = $("#nav3");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
+</script>
+
+
 
 <a>
 <div class="zonnetje">
@@ -314,7 +357,7 @@ $(document).ready(function(){
 </div>
 </a>
 
-<nav class="nav-bar">
+<nav class="nav-bar" id="nav1">
    <ul>
     
     <li><a href="#startid" id="load">1....................Title</a>
@@ -344,7 +387,7 @@ $(document).ready(function(){
 </div>
 </a>
 
-<nav class="nav-bar2">
+<nav class="nav-bar2" id="nav2">
   <ul>
      <li><a href="#printpageid">#.....Print</a></li>
   </ul>
@@ -362,7 +405,7 @@ $(document).ready(function(){
 </a>
 
 
-<nav class="nav-bar3">
+<nav class="nav-bar3" id="nav3" >
 
 <img src="screenshot.jpeg">
 <a href="#startid"  alt="start"><div id="begin"></div><div class="mapitem" id="map1">(11400,11100)<br /><strong>title</strong></div></a>
